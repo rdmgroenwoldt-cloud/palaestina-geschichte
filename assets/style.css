@@ -218,6 +218,44 @@ nav.topnav .nl-group.open .mm-panel{display:grid}
 .mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{border-left:0;padding-left:0;margin-top:6px}
 .mm-rubrik{padding:8px 10px 3px}
 
+/* Breite Fenster (ab 1000 px): kein Akkordeon, sondern ein MEHRSPALTIGES PANEL
+   (Vorgabe der Betreiberin, 14.08.2026: „Menü rechts, aber mehrspaltig").
+   Alle Gruppen stehen mit ihren Links nebeneinander in CSS-Spalten; die
+   Gruppen-Knöpfe werden zu Überschriften, die Panels sind immer sichtbar. */
+@media (min-width:1000px){
+  nav.topnav .nav-links{left:20px;right:20px;width:auto;
+      column-width:200px;column-gap:24px;column-rule:1px solid var(--line);   /* ergibt bei 1.300 px fünf Spalten – vier reichen für die elf Gruppen nicht */
+      column-fill:auto;   /* Spalten nacheinander füllen; „balance" schob eine Gruppe in eine sechste Spalte außerhalb */
+      padding:12px 22px 14px}
+  nav.topnav.mm-mobile-open .nav-links{display:block}
+  /* Jede Gruppe bleibt EIN Block (Überschrift und Einträge zusammen). Damit die
+     acht Gruppen in fünf Spalten passen, stehen die drei Einzellinks (Start,
+     Deutschland, Engagieren) nicht in den Spalten, sondern als spaltenübergreifende
+     Zeilen darüber bzw. darunter (column-span). */
+  nav.topnav .nav-links > *{display:block;width:auto;margin:0 0 4px}
+  nav.topnav .nl-group{break-inside:avoid;margin-bottom:12px}
+  nav.topnav .nav-links > a.nl{column-span:all;display:flex;font-size:13px;font-weight:600;padding:7px 10px;
+      margin:0 0 6px}
+  nav.topnav .nav-links > a.nl + a.nl{margin-top:-4px}
+  /* Spezifitaet (0,3,1) noetig: die Basisregel "nav.topnav button.nl" (0,2,2) setzt nowrap/14px */
+  nav.topnav .nl-group .nl-trigger{pointer-events:none;display:flex;width:100%;font-size:11.5px;
+      letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;
+      padding:6px 10px 3px;background:none;box-shadow:none;white-space:normal;text-align:left;
+      line-height:1.25}
+  nav.topnav .nl-group .nl-trigger .mm-caret{display:none}
+  nav.topnav .nl-group .nl-trigger.active{color:var(--accent-tint);
+      background:color-mix(in srgb, var(--accent) 12%, transparent);box-shadow:inset 0 -2px 0 0 var(--accent)}
+  nav.topnav .nl-group .mm-panel{display:grid;padding:2px 0 2px 4px}
+  /* Im Mehrspalten-Panel nur die Titel: mit den Beschreibungszeilen wäre der
+     Inhalt höher als fünf Spalten – dann laufen die Spalten nach rechts hinaus. */
+  .mm-item{padding:5px 10px}
+  .mm-item .mm-t{font-size:13px;font-weight:500}
+  .mm-item.active .mm-t{font-weight:700}
+  .mm-item .mm-d{display:none}
+  .mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{margin-top:4px}
+  .mm-rubrik{padding:6px 10px 2px;font-size:10px}
+}
+
 /* Schmale Fenster: die Leiste nimmt die volle Breite unter dem Kopf ein */
 @media (max-width:760px){
   nav.topnav .nav-links{position:static;width:auto;flex-basis:100%;

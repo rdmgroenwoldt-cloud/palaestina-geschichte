@@ -276,10 +276,22 @@
       if (burger) burger.setAttribute("aria-expanded", "false");
     }
 
+    /* Ab 1000 px (siehe CSS) ist die Leiste ein mehrspaltiges Panel: Alle Gruppen
+       stehen offen nebeneinander, die Gruppen-Knöpfe sind nur Überschriften. */
+    var mqMega = window.matchMedia("(min-width: 1000px)");
+    function ariaNachModus() {
+      groups.forEach(function (g) {
+        var btn = g.querySelector(".nl-trigger");
+        if (btn) btn.setAttribute("aria-expanded", mqMega.matches ? "true" : (g.classList.contains("open") ? "true" : "false"));
+      });
+    }
+    ariaNachModus();
+
     groups.forEach(function (group) {
       var trigger = group.querySelector(".nl-trigger");
       if (!trigger) return;
       trigger.addEventListener("click", function () {
+        if (mqMega.matches) return;
         if (group.classList.contains("open")) {
           closeGroup(group);
         } else {
@@ -326,11 +338,14 @@
 
     // Beim Wechsel zwischen Drawer (breit) und Vollbreite (schmal) alle
     // offenen Zustände zurücksetzen, damit nichts hängen bleibt.
-    if (typeof mqDesktop.addEventListener === "function") {
-      mqDesktop.addEventListener("change", schliesseLeiste);
-    } else if (typeof mqDesktop.addListener === "function") {
-      mqDesktop.addListener(schliesseLeiste); // ältere Browser (Safari < 14)
-    }
+    var beiModuswechsel = function () { schliesseLeiste(); ariaNachModus(); };
+    [mqDesktop, mqMega].forEach(function (mq) {
+      if (typeof mq.addEventListener === "function") {
+        mq.addEventListener("change", beiModuswechsel);
+      } else if (typeof mq.addListener === "function") {
+        mq.addListener(beiModuswechsel); // ältere Browser (Safari < 14)
+      }
+    });
   }
 
   /* ------------------------------------------------------------
