@@ -1,0 +1,13 @@
+# Betriebssystem
+Thumbs.db
+desktop.ini
+.DS_Store
+# Editor / Sitzung
+.claude/
+*.log
+# Python
+__pycache__/
+*.pyc
+
+# Recherchenotizen: eigenes privates Repository (palaestina-wissensbank)
+wissensbank/
