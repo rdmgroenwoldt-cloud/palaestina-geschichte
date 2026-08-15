@@ -126,44 +126,12 @@ nav.topnav a.nl.active,nav.topnav button.nl.active{
 nav.topnav a.nl.active:hover,nav.topnav button.nl.active:hover{
     background:color-mix(in srgb, var(--accent) 20%, transparent)}
 
-/* ---------- Mega-Menü ---------- */
-/* Seit dem 14.08.2026 (Vorgabe der Betreiberin) gibt es KEINE waagerechte
-   Menueleiste mehr: Das gesamte Menue steckt auf allen Bildschirmbreiten hinter
-   dem Hamburger-Knopf. Auf breiten Fenstern oeffnet er eine schlanke Leiste
-   rechts (Drawer), auf schmalen die volle Breite. Die frueheren Verdichtungs-
-   regeln fuer 1540/1400 px sind damit entfallen. */
-nav.topnav .nl-group{position:relative}
+/* ---------- Menü: Grundelemente ---------- */
+/* Seit dem 14.08.2026 gibt es keine waagerechte Menueleiste mehr; das ganze
+   Menue steckt hinter dem Hamburger-Knopf (Aufbau siehe Block darunter). */
 nav.topnav .nl-trigger .mm-caret{width:6px;height:6px;border-right:1.5px solid currentColor;
-    border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-3px;flex:0 0 auto;
-    transition:transform .18s ease}
-nav.topnav .nl-group.open .nl-trigger .mm-caret{transform:rotate(-135deg);margin-top:1px}
-
-/* Mega-Menue: fuellt erst vier Zeilen, dann die naechste SPALTE. Dadurch stehen
-   lange Listen (Israel: acht Punkte) zwei- statt achtzeilig nebeneinander und
-   laufen nicht mehr aus dem Bild. Kurze Listen bleiben einspaltig. */
-.mm-panel{position:absolute;top:calc(100% + 8px);left:0;
-    min-width:270px;max-width:min(94vw,680px);
-    grid-template-rows:repeat(4,auto);grid-auto-flow:column;
-    grid-auto-columns:minmax(250px,1fr);
-    max-height:min(72vh,560px);overflow-y:auto;overscroll-behavior:contain;
-    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
-    box-shadow:var(--shadow-m);padding:8px;display:grid;gap:2px 6px;opacity:0;visibility:hidden;
-    transform:translateY(-6px);pointer-events:none;z-index:60;
-    transition:opacity .15s ease, transform .15s ease, visibility 0s linear .15s}
-/* Panels am rechten Rand klappen nach links auf, damit nichts abgeschnitten wird */
-.mm-panel.nach-links{left:auto;right:0}
-/* Trennlinie zwischen den Spalten, damit die Gruppen optisch fassbar bleiben */
-.mm-panel > .mm-item:nth-child(4n+1):not(:first-child){box-shadow:-7px 0 0 -6px var(--line)}
-nav.topnav .nl-group.open .mm-panel{opacity:1;visibility:visible;transform:none;
-    pointer-events:auto;transition:opacity .15s ease, transform .15s ease}
-/* ---- Panels mit Untergruppen: eigene Spalten mit Rubriküberschrift ----
-   Wird nur von Panels genutzt, die zusätzlich .mm-rubriken tragen; alle
-   übrigen Panels behalten das flache 4-Zeilen-Raster von oben. */
-.mm-panel.mm-rubriken{grid-template-rows:none;grid-auto-flow:column;
-    grid-auto-columns:minmax(248px,1fr);align-items:start;gap:2px 10px;
-    max-width:min(94vw,860px)}   /* breiter als flache Panels: drei Spalten nebeneinander */
+    border-bottom:1.5px solid currentColor;flex:0 0 auto;transition:transform .18s ease}
 .mm-panel.mm-rubriken > .mm-spalte{display:flex;flex-direction:column;gap:2px;min-width:0}
-.mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{border-left:1px solid var(--line);padding-left:9px}
 .mm-rubrik{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
     color:var(--muted);padding:7px 12px 5px}
 
@@ -177,12 +145,16 @@ nav.topnav .nl-group.open .mm-panel{opacity:1;visibility:visible;transform:none;
   .mm-panel,nav.topnav .nl-trigger .mm-caret{transition:none}
 }
 
-/* ---------- Hamburger-Menü (alle Bildschirmbreiten) ---------- */
-.mm-burger{display:flex;margin-left:auto;background:none;border:0;cursor:pointer;height:36px;
+/* ---------- Hamburger-Menü LINKS mit seitlichem Ausklappen ---------- */
+/* Vorgabe der Betreiberin (14.08.2026, dritte Fassung): Der Menü-Knopf sitzt
+   LINKS. Ein Klick klappt eine senkrechte Liste der HAUPTPUNKTE nach unten auf.
+   Klick auf einen Hauptpunkt oder Darüberfahren öffnet dessen UNTERPUNKTE in
+   einem Fenster RECHTS DANEBEN (Flyout). Unter 760 px (Handy) wird daraus ein
+   Akkordeon in voller Breite, weil rechts kein Platz für ein zweites Fenster ist. */
+.mm-burger{display:flex;order:-1;margin:0 10px 0 0;background:none;border:0;cursor:pointer;height:36px;
     padding:0 10px 0 8px;border-radius:8px;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;
     color:var(--ink2);font:inherit;font-size:13px;font-weight:600}
 .mm-burger:hover{background:var(--accent-soft);color:var(--ink)}
-/* Die drei Striche stehen in einem eigenen Kasten, daneben das Wort „Menü" */
 .mm-burger .mm-striche{display:flex;flex-direction:column;gap:4px;width:19px;flex:0 0 auto}
 .mm-burger .mm-striche > span{display:block;width:19px;height:2px;background:var(--ink);border-radius:2px;
     transition:transform .2s ease,opacity .2s ease}
@@ -191,78 +163,52 @@ nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(1){transform:tra
 nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(2){opacity:0}
 nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
-/* Die Linkliste ist standardmaessig zu und wird per Hamburger geoeffnet.
-   Auf breiten Fenstern: schlanke Leiste rechts unter dem Knopf (Drawer). */
-/* flex-wrap:nowrap ist Pflicht: mit wrap + max-height wuerde eine aufgeklappte
-   Gruppe in eine zweite Spalte rechts ausbrechen (am 14.08.2026 passiert). */
+/* Die Hauptliste: links unter dem Knopf, senkrecht, schmal. overflow bleibt
+   SICHTBAR, sonst würden die seitlichen Fenster abgeschnitten. */
 nav.topnav .nav-links{display:none;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:2px;
-    position:absolute;right:20px;top:calc(100% + 6px);width:min(440px,calc(100vw - 40px));
-    max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain;
+    position:absolute;left:20px;top:calc(100% + 6px);width:300px;
     background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
     box-shadow:var(--shadow-m);padding:8px;z-index:60}
 nav.topnav.mm-mobile-open .nav-links{display:flex}
 nav.topnav a.nl,nav.topnav button.nl{display:flex;width:100%;font-size:14px;padding:9px 12px}
-nav.topnav .nl-group{width:100%}
+/* Die Gruppe ist NICHT der Bezugsrahmen der Fenster – die Fenster richten sich an der
+   ganzen Hauptliste aus (oben bündig), damit auch bei den unteren Punkten lange
+   Listen nicht unten aus dem Bild laufen. */
+nav.topnav .nl-group{width:100%;position:static}
 nav.topnav .nl-trigger{justify-content:space-between}
-/* Panels sind im Drawer keine schwebenden Kaesten mehr, sondern Akkordeons */
-.mm-panel{position:static;box-shadow:none;border:0;padding:2px 0 6px 12px;max-width:none;
-    min-width:0;background:transparent;opacity:1;visibility:visible;transform:none;
-    pointer-events:auto;transition:none;display:none;
-    grid-template-rows:none;grid-auto-flow:row;grid-auto-columns:auto;
-    max-height:none;overflow:visible}
+/* Pfeil zeigt nach RECHTS (dort erscheinen die Unterpunkte) */
+nav.topnav .nl-trigger .mm-caret{transform:rotate(-45deg);margin-top:0}
+nav.topnav .nl-group.open .nl-trigger .mm-caret{transform:rotate(-45deg);margin-top:0}
+nav.topnav .nl-group.open > .nl-trigger{background:var(--accent-soft);color:var(--ink)}
+
+/* Das seitliche Fenster: rechts neben dem Hauptpunkt, auf gleicher Höhe */
+.mm-panel{position:absolute;left:calc(100% + 8px);top:0;
+    min-width:300px;width:max-content;max-width:min(60vw,360px);
+    max-height:calc(100vh - 90px);overflow-y:auto;overscroll-behavior:contain;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+    box-shadow:var(--shadow-m);padding:8px;display:none;
+    grid-template-rows:none;grid-auto-flow:row;grid-auto-columns:auto;gap:2px;
+    opacity:1;visibility:visible;transform:none;pointer-events:auto;transition:none;z-index:61}
 .mm-panel > .mm-item:nth-child(4n+1):not(:first-child){box-shadow:none}
 nav.topnav .nl-group.open .mm-panel{display:grid}
 .mm-item{padding:8px 10px}
-/* Untergruppen laufen untereinander, mit Rubrik statt Trennlinie */
-.mm-panel.mm-rubriken{grid-auto-flow:row;grid-auto-columns:auto;max-width:none}
+/* Untergruppen (Geschichte, Vertreibung) laufen im Fenster untereinander, mit Rubrik statt Trennlinie */
+.mm-panel.mm-rubriken{grid-auto-flow:row;grid-auto-columns:auto;max-width:min(60vw,360px)}
 .mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{border-left:0;padding-left:0;margin-top:6px}
 .mm-rubrik{padding:8px 10px 3px}
 
-/* Breite Fenster (ab 1000 px): kein Akkordeon, sondern ein MEHRSPALTIGES PANEL
-   (Vorgabe der Betreiberin, 14.08.2026: „Menü rechts, aber mehrspaltig").
-   Alle Gruppen stehen mit ihren Links nebeneinander in CSS-Spalten; die
-   Gruppen-Knöpfe werden zu Überschriften, die Panels sind immer sichtbar. */
-@media (min-width:1000px){
-  nav.topnav .nav-links{left:20px;right:20px;width:auto;
-      column-width:200px;column-gap:24px;column-rule:1px solid var(--line);   /* ergibt bei 1.300 px fünf Spalten – vier reichen für die elf Gruppen nicht */
-      column-fill:auto;   /* Spalten nacheinander füllen; „balance" schob eine Gruppe in eine sechste Spalte außerhalb */
-      padding:12px 22px 14px}
-  nav.topnav.mm-mobile-open .nav-links{display:block}
-  /* Jede Gruppe bleibt EIN Block (Überschrift und Einträge zusammen). Damit die
-     acht Gruppen in fünf Spalten passen, stehen die drei Einzellinks (Start,
-     Deutschland, Engagieren) nicht in den Spalten, sondern als spaltenübergreifende
-     Zeilen darüber bzw. darunter (column-span). */
-  nav.topnav .nav-links > *{display:block;width:auto;margin:0 0 4px}
-  nav.topnav .nl-group{break-inside:avoid;margin-bottom:12px}
-  nav.topnav .nav-links > a.nl{column-span:all;display:flex;font-size:13px;font-weight:600;padding:7px 10px;
-      margin:0 0 6px}
-  nav.topnav .nav-links > a.nl + a.nl{margin-top:-4px}
-  /* Spezifitaet (0,3,1) noetig: die Basisregel "nav.topnav button.nl" (0,2,2) setzt nowrap/14px */
-  nav.topnav .nl-group .nl-trigger{pointer-events:none;display:flex;width:100%;font-size:11.5px;
-      letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;
-      padding:6px 10px 3px;background:none;box-shadow:none;white-space:normal;text-align:left;
-      line-height:1.25}
-  nav.topnav .nl-group .nl-trigger .mm-caret{display:none}
-  nav.topnav .nl-group .nl-trigger.active{color:var(--accent-tint);
-      background:color-mix(in srgb, var(--accent) 12%, transparent);box-shadow:inset 0 -2px 0 0 var(--accent)}
-  nav.topnav .nl-group .mm-panel{display:grid;padding:2px 0 2px 4px}
-  /* Im Mehrspalten-Panel nur die Titel: mit den Beschreibungszeilen wäre der
-     Inhalt höher als fünf Spalten – dann laufen die Spalten nach rechts hinaus. */
-  .mm-item{padding:5px 10px}
-  .mm-item .mm-t{font-size:13px;font-weight:500}
-  .mm-item.active .mm-t{font-weight:700}
-  .mm-item .mm-d{display:none}
-  .mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{margin-top:4px}
-  .mm-rubrik{padding:6px 10px 2px;font-size:10px}
-}
-
-/* Schmale Fenster: die Leiste nimmt die volle Breite unter dem Kopf ein */
+/* Handy: Liste in voller Breite unter dem Kopf, Unterpunkte als Akkordeon darunter */
 @media (max-width:760px){
-  nav.topnav .nav-links{position:static;width:auto;flex-basis:100%;
-      border:0;border-radius:0;box-shadow:none;background:transparent;
-      padding:6px 0 14px;max-height:calc(100vh - 64px)}
   nav.topnav .inner{flex-wrap:wrap}
   .mm-burger .mm-wort{display:none}
+  nav.topnav .nav-links{position:static;width:auto;flex-basis:100%;
+      border:0;border-radius:0;box-shadow:none;background:transparent;
+      padding:6px 0 14px;max-height:calc(100vh - 64px);overflow-y:auto}
+  nav.topnav .nl-trigger .mm-caret{transform:rotate(45deg);margin-top:-3px}
+  nav.topnav .nl-group.open .nl-trigger .mm-caret{transform:rotate(-135deg);margin-top:1px}
+  .mm-panel{position:static;box-shadow:none;border:0;padding:2px 0 6px 12px;max-width:none;
+      min-width:0;width:auto;background:transparent;max-height:none;overflow:visible}
+  .mm-panel.mm-rubriken{max-width:none}
 }
 
 /* ---------- Hero mit Bild (Startseite) ---------- */

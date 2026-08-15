@@ -267,36 +267,39 @@
       if (btn) btn.setAttribute("aria-expanded", "true");
     }
 
-    /* Seit dem 14.08.2026 ist das Menue auf ALLEN Breiten ein Hamburger-Menue:
-       Die Gruppen sind Akkordeons in einer Ausklapp-Leiste. Es gibt deshalb
-       kein Hover-Oeffnen und keine Panel-Ausrichtung am Bildrand mehr. */
+    /* Seit dem 14.08.2026 ist das Menue ein Hamburger-Menue LINKS: Der Knopf
+       klappt die Hauptpunkte senkrecht auf; Klick oder Darueberfahren auf einem
+       Hauptpunkt oeffnet dessen Unterpunkte in einem Fenster RECHTS daneben
+       (Flyout, ab 761 px). Unter 760 px sind die Unterpunkte ein Akkordeon. */
+    var openTimer = null, closeTimer = null;
     function schliesseLeiste() {
       closeAllGroups();
       nav.classList.remove("mm-mobile-open");
       if (burger) burger.setAttribute("aria-expanded", "false");
     }
 
-    /* Ab 1000 px (siehe CSS) ist die Leiste ein mehrspaltiges Panel: Alle Gruppen
-       stehen offen nebeneinander, die Gruppen-Knöpfe sind nur Überschriften. */
-    var mqMega = window.matchMedia("(min-width: 1000px)");
-    function ariaNachModus() {
-      groups.forEach(function (g) {
-        var btn = g.querySelector(".nl-trigger");
-        if (btn) btn.setAttribute("aria-expanded", mqMega.matches ? "true" : (g.classList.contains("open") ? "true" : "false"));
-      });
-    }
-    ariaNachModus();
-
     groups.forEach(function (group) {
       var trigger = group.querySelector(".nl-trigger");
       if (!trigger) return;
       trigger.addEventListener("click", function () {
-        if (mqMega.matches) return;
         if (group.classList.contains("open")) {
           closeGroup(group);
         } else {
           openGroup(group);
         }
+      });
+      // Darueberfahren (nur breite Fenster, nur bei geoeffneter Hauptliste):
+      // kleine Verzoegerung, damit ein Vorbeifahren nichts aufreisst; beim
+      // Verlassen etwas Nachlauf, damit der Weg ins seitliche Fenster nicht abbricht.
+      group.addEventListener("mouseenter", function () {
+        if (!mqDesktop.matches || !nav.classList.contains("mm-mobile-open")) return;
+        window.clearTimeout(closeTimer);
+        openTimer = window.setTimeout(function () { openGroup(group); }, 110);
+      });
+      group.addEventListener("mouseleave", function () {
+        if (!mqDesktop.matches) return;
+        window.clearTimeout(openTimer);
+        closeTimer = window.setTimeout(function () { closeGroup(group); }, 260);
       });
     });
 
@@ -336,16 +339,13 @@
       });
     }
 
-    // Beim Wechsel zwischen Drawer (breit) und Vollbreite (schmal) alle
+    // Beim Wechsel zwischen Flyout (breit) und Akkordeon (schmal) alle
     // offenen Zustände zurücksetzen, damit nichts hängen bleibt.
-    var beiModuswechsel = function () { schliesseLeiste(); ariaNachModus(); };
-    [mqDesktop, mqMega].forEach(function (mq) {
-      if (typeof mq.addEventListener === "function") {
-        mq.addEventListener("change", beiModuswechsel);
-      } else if (typeof mq.addListener === "function") {
-        mq.addListener(beiModuswechsel); // ältere Browser (Safari < 14)
-      }
-    });
+    if (typeof mqDesktop.addEventListener === "function") {
+      mqDesktop.addEventListener("change", schliesseLeiste);
+    } else if (typeof mqDesktop.addListener === "function") {
+      mqDesktop.addListener(schliesseLeiste); // ältere Browser (Safari < 14)
+    }
   }
 
   /* ------------------------------------------------------------
