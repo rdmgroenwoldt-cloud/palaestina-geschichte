@@ -247,8 +247,6 @@
     var navLinks = nav.querySelector(".nav-links");
     var groups = Array.prototype.slice.call(nav.querySelectorAll(".nl-group"));
     var mqDesktop = window.matchMedia("(min-width: 761px)");
-    var openTimer = null;
-    var closeTimer = null;
 
     function closeGroup(group) {
       group.classList.remove("open");
@@ -267,38 +265,20 @@
       group.classList.add("open");
       var btn = group.querySelector(".nl-trigger");
       if (btn) btn.setAttribute("aria-expanded", "true");
-      ausrichten(group);
     }
 
-    /* Mehrspaltige Panels koennen am rechten Bildrand anstossen. Dann wird das
-       Panel rechtsbuendig unter den Knopf gelegt, statt aus dem Bild zu laufen. */
-    function ausrichten(group) {
-      var panel = group.querySelector(".mm-panel");
-      if (!panel || window.innerWidth <= 760) { return; }
-      panel.classList.remove("nach-links");
-      var r = panel.getBoundingClientRect();
-      if (r.right > window.innerWidth - 12) {
-        panel.classList.add("nach-links");
-      }
+    /* Seit dem 14.08.2026 ist das Menue auf ALLEN Breiten ein Hamburger-Menue:
+       Die Gruppen sind Akkordeons in einer Ausklapp-Leiste. Es gibt deshalb
+       kein Hover-Oeffnen und keine Panel-Ausrichtung am Bildrand mehr. */
+    function schliesseLeiste() {
+      closeAllGroups();
+      nav.classList.remove("mm-mobile-open");
+      if (burger) burger.setAttribute("aria-expanded", "false");
     }
-
-    /* Auch geschlossene Panels stehen im Layout an ihrer Position. Ragt eines
-       ueber den rechten Fensterrand, entsteht ein waagerechter Scrollbalken.
-       Deshalb wird die Ausrichtung fuer alle Gruppen berechnet, nicht erst
-       beim Oeffnen. */
-    function alleAusrichten() {
-      groups.forEach(ausrichten);
-    }
-    alleAusrichten();
-
-    window.addEventListener("resize", function () {
-      alleAusrichten();
-    });
 
     groups.forEach(function (group) {
       var trigger = group.querySelector(".nl-trigger");
       if (!trigger) return;
-
       trigger.addEventListener("click", function () {
         if (group.classList.contains("open")) {
           closeGroup(group);
@@ -306,23 +286,10 @@
           openGroup(group);
         }
       });
-
-      // Hover mit Verzögerung – nur auf Desktop-Breiten aktiv. Touch-Geräte
-      // lösen kein mouseenter/mouseleave aus, dort greift ausschließlich der
-      // Klick-Handler oben.
-      group.addEventListener("mouseenter", function () {
-        if (!mqDesktop.matches) return;
-        window.clearTimeout(closeTimer);
-        openTimer = window.setTimeout(function () { openGroup(group); }, 120);
-      });
-      group.addEventListener("mouseleave", function () {
-        if (!mqDesktop.matches) return;
-        window.clearTimeout(openTimer);
-        closeTimer = window.setTimeout(function () { closeGroup(group); }, 200);
-      });
     });
 
-    // Escape schließt das offene Panel und gibt den Fokus an dessen Button zurück.
+    // Escape: erst das offene Akkordeon schließen (Fokus zurück auf dessen
+    // Knopf), beim zweiten Mal die ganze Leiste (Fokus zurück auf den Hamburger).
     nav.addEventListener("keydown", function (e) {
       if (e.key !== "Escape" && e.key !== "Esc") return;
       var openGroupEl = groups.filter(function (g) { return g.classList.contains("open"); })[0];
@@ -330,16 +297,19 @@
         closeGroup(openGroupEl);
         var btn = openGroupEl.querySelector(".nl-trigger");
         if (btn) btn.focus();
+      } else if (nav.classList.contains("mm-mobile-open")) {
+        schliesseLeiste();
+        if (burger) burger.focus();
       }
     });
 
-    // Klick außerhalb des gesamten Menüs schließt alle offenen Panels.
+    // Klick außerhalb des gesamten Menüs schließt die Leiste samt Akkordeons.
     document.addEventListener("click", function (e) {
-      if (!nav.contains(e.target)) closeAllGroups();
+      if (!nav.contains(e.target)) schliesseLeiste();
     });
 
-    // Mobile: Hamburger klappt die gesamte Linkliste auf/zu; Kategorien
-    // bleiben darin als eigene Akkordeons per Klick bedienbar (s. oben).
+    // Hamburger klappt die gesamte Linkliste auf/zu; Kategorien bleiben darin
+    // als eigene Akkordeons per Klick bedienbar (s. oben).
     if (burger && navLinks) {
       burger.addEventListener("click", function () {
         var isOpen = nav.classList.toggle("mm-mobile-open");
@@ -347,27 +317,19 @@
         if (!isOpen) closeAllGroups();
       });
       // Ein Klick auf einen echten Link (Start oder eine Unterseite) navigiert
-      // ohnehin weg – das mobile Menü sauber mitschließen, falls die Seite
+      // ohnehin weg – die Leiste sauber mitschließen, falls die Seite
       // z. B. per Zurück-Button erneut sichtbar wird.
       navLinks.querySelectorAll("a.nl, .mm-item").forEach(function (a) {
-        a.addEventListener("click", function () {
-          nav.classList.remove("mm-mobile-open");
-          burger.setAttribute("aria-expanded", "false");
-        });
+        a.addEventListener("click", function () { schliesseLeiste(); });
       });
     }
 
-    // Beim Überschreiten der Breakpoint-Grenze (z. B. Fenster-Resize,
-    // Rotation) alle offenen Zustände zurücksetzen, damit nichts hängen bleibt.
-    var handleBreakpointChange = function () {
-      closeAllGroups();
-      nav.classList.remove("mm-mobile-open");
-      if (burger) burger.setAttribute("aria-expanded", "false");
-    };
+    // Beim Wechsel zwischen Drawer (breit) und Vollbreite (schmal) alle
+    // offenen Zustände zurücksetzen, damit nichts hängen bleibt.
     if (typeof mqDesktop.addEventListener === "function") {
-      mqDesktop.addEventListener("change", handleBreakpointChange);
+      mqDesktop.addEventListener("change", schliesseLeiste);
     } else if (typeof mqDesktop.addListener === "function") {
-      mqDesktop.addListener(handleBreakpointChange); // ältere Browser (Safari < 14)
+      mqDesktop.addListener(schliesseLeiste); // ältere Browser (Safari < 14)
     }
   }
 

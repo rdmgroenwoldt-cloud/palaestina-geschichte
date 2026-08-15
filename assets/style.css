@@ -127,18 +127,11 @@ nav.topnav a.nl.active:hover,nav.topnav button.nl.active:hover{
     background:color-mix(in srgb, var(--accent) 20%, transparent)}
 
 /* ---------- Mega-Menü ---------- */
-/* Elf Punkte in der Leiste (seit "Deutschland", 14.08.2026): unterhalb von
-   ~1540 px wird verdichtet, damit die Leiste moeglichst lange einzeilig bleibt.
-   Diese Bloecke MUESSEN nach den Basisregeln stehen (gleiche Spezifitaet). */
-@media (max-width:1540px){
-  nav.topnav a.nl,nav.topnav button.nl{font-size:12px;padding:7px 5px}
-  nav.topnav .brand{margin-right:8px;font-size:14px}
-}
-@media (max-width:1400px){
-  nav.topnav a.nl,nav.topnav button.nl{font-size:11px;padding:6px 3px;gap:3px}
-  nav.topnav .nav-links{gap:0}
-  nav.topnav .brand{font-size:13px;white-space:nowrap;margin-right:4px}
-}
+/* Seit dem 14.08.2026 (Vorgabe der Betreiberin) gibt es KEINE waagerechte
+   Menueleiste mehr: Das gesamte Menue steckt auf allen Bildschirmbreiten hinter
+   dem Hamburger-Knopf. Auf breiten Fenstern oeffnet er eine schlanke Leiste
+   rechts (Drawer), auf schmalen die volle Breite. Die frueheren Verdichtungs-
+   regeln fuer 1540/1400 px sind damit entfallen. */
 nav.topnav .nl-group{position:relative}
 nav.topnav .nl-trigger .mm-caret{width:6px;height:6px;border-right:1.5px solid currentColor;
     border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-3px;flex:0 0 auto;
@@ -184,46 +177,71 @@ nav.topnav .nl-group.open .mm-panel{opacity:1;visibility:visible;transform:none;
   .mm-panel,nav.topnav .nl-trigger .mm-caret{transition:none}
 }
 
-/* ---------- Mega-Menü: Hamburger für schmale Screens ---------- */
-.mm-burger{display:none;margin-left:auto;background:none;border:0;cursor:pointer;width:36px;height:36px;
-    border-radius:8px;align-items:center;justify-content:center;flex-direction:column;gap:4px;flex:0 0 auto}
-.mm-burger:hover{background:var(--accent-soft)}
-.mm-burger span{display:block;width:19px;height:2px;background:var(--ink);border-radius:2px;
+/* ---------- Hamburger-Menü (alle Bildschirmbreiten) ---------- */
+.mm-burger{display:flex;margin-left:auto;background:none;border:0;cursor:pointer;height:36px;
+    padding:0 10px 0 8px;border-radius:8px;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;
+    color:var(--ink2);font:inherit;font-size:13px;font-weight:600}
+.mm-burger:hover{background:var(--accent-soft);color:var(--ink)}
+/* Die drei Striche stehen in einem eigenen Kasten, daneben das Wort „Menü" */
+.mm-burger .mm-striche{display:flex;flex-direction:column;gap:4px;width:19px;flex:0 0 auto}
+.mm-burger .mm-striche > span{display:block;width:19px;height:2px;background:var(--ink);border-radius:2px;
     transition:transform .2s ease,opacity .2s ease}
-nav.topnav.mm-mobile-open .mm-burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
-nav.topnav.mm-mobile-open .mm-burger span:nth-child(2){opacity:0}
-nav.topnav.mm-mobile-open .mm-burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mm-burger .mm-wort{letter-spacing:.02em;line-height:1}
+nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(2){opacity:0}
+nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
+/* Die Linkliste ist standardmaessig zu und wird per Hamburger geoeffnet.
+   Auf breiten Fenstern: schlanke Leiste rechts unter dem Knopf (Drawer). */
+/* flex-wrap:nowrap ist Pflicht: mit wrap + max-height wuerde eine aufgeklappte
+   Gruppe in eine zweite Spalte rechts ausbrechen (am 14.08.2026 passiert). */
+nav.topnav .nav-links{display:none;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:2px;
+    position:absolute;right:20px;top:calc(100% + 6px);width:min(440px,calc(100vw - 40px));
+    max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+    box-shadow:var(--shadow-m);padding:8px;z-index:60}
+nav.topnav.mm-mobile-open .nav-links{display:flex}
+nav.topnav a.nl,nav.topnav button.nl{display:flex;width:100%;font-size:14px;padding:9px 12px}
+nav.topnav .nl-group{width:100%}
+nav.topnav .nl-trigger{justify-content:space-between}
+/* Panels sind im Drawer keine schwebenden Kaesten mehr, sondern Akkordeons */
+.mm-panel{position:static;box-shadow:none;border:0;padding:2px 0 6px 12px;max-width:none;
+    min-width:0;background:transparent;opacity:1;visibility:visible;transform:none;
+    pointer-events:auto;transition:none;display:none;
+    grid-template-rows:none;grid-auto-flow:row;grid-auto-columns:auto;
+    max-height:none;overflow:visible}
+.mm-panel > .mm-item:nth-child(4n+1):not(:first-child){box-shadow:none}
+nav.topnav .nl-group.open .mm-panel{display:grid}
+.mm-item{padding:8px 10px}
+/* Untergruppen laufen untereinander, mit Rubrik statt Trennlinie */
+.mm-panel.mm-rubriken{grid-auto-flow:row;grid-auto-columns:auto;max-width:none}
+.mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{border-left:0;padding-left:0;margin-top:6px}
+.mm-rubrik{padding:8px 10px 3px}
+
+/* Schmale Fenster: die Leiste nimmt die volle Breite unter dem Kopf ein */
 @media (max-width:760px){
-  .mm-burger{display:flex}
-  nav.topnav .nav-links{flex-basis:100%;display:none;flex-direction:column;gap:2px;
-      padding:6px 0 14px;max-height:calc(100vh - 64px);overflow-y:auto}
-  nav.topnav.mm-mobile-open .nav-links{display:flex}
-  nav.topnav a.nl{display:block;width:100%}
-  nav.topnav .nl-group{width:100%}
-  nav.topnav .nl-trigger{width:100%;justify-content:space-between}
-  .mm-panel{position:static;box-shadow:none;border:0;padding:2px 0 6px 12px;max-width:none;
-      min-width:0;background:transparent;opacity:1;visibility:visible;transform:none;
-      pointer-events:auto;transition:none;display:none;
-      grid-template-rows:none;grid-auto-flow:row;grid-auto-columns:auto;
-      max-height:none;overflow:visible}
-  .mm-panel > .mm-item:nth-child(4n+1):not(:first-child){box-shadow:none}
-  nav.topnav .nl-group.open .mm-panel{display:grid}
-  .mm-item{padding:8px 10px}
-  /* Untergruppen laufen auf schmalen Fenstern untereinander, ohne Trennlinie */
-  .mm-panel.mm-rubriken{grid-auto-flow:row;grid-auto-columns:auto}
-  .mm-panel.mm-rubriken > .mm-spalte + .mm-spalte{border-left:0;padding-left:0;margin-top:6px}
-  .mm-rubrik{padding:8px 10px 3px}
+  nav.topnav .nav-links{position:static;width:auto;flex-basis:100%;
+      border:0;border-radius:0;box-shadow:none;background:transparent;
+      padding:6px 0 14px;max-height:calc(100vh - 64px)}
+  nav.topnav .inner{flex-wrap:wrap}
+  .mm-burger .mm-wort{display:none}
 }
 
 /* ---------- Hero mit Bild (Startseite) ---------- */
+/* Das Kopfbild steht seit dem 14.08.2026 als INLINE background-image direkt auf
+   dem <header> (style="background-image:url('assets/img/…')") – nicht mehr als
+   url() in der Variablen --hero-img. Grund: Chrome löst url() in einer CSS-
+   Variablen relativ zum STYLESHEET auf (ergab assets/assets/img/… → 404),
+   Firefox relativ zur Seite; ein Inline-background-image ist in allen Browsern
+   seitenrelativ und funktioniert damit auch im Unterordner von GitHub Pages.
+   Der dunkle Verlauf liegt als ::before darüber; die Variable bleibt nur als
+   Rückfallwert (Verlauf aus :root) für Seiten ohne Bild. */
 header.hero{position:relative;padding:96px 0 64px;border-bottom:1px solid var(--line);
-    background:
-      linear-gradient(180deg, rgba(6,5,4,.78) 0%, rgba(6,5,4,.6) 45%, rgba(6,5,4,.93) 100%),
-      var(--hero-img) center 32%/cover no-repeat;
+    background:var(--hero-img) center 32%/cover no-repeat;
     color:#fff; isolation:isolate}
-header.hero::after{content:"";position:absolute;inset:0;z-index:-1;
-    background:linear-gradient(180deg, transparent 0%, var(--bg) 100%);opacity:0}
+header.hero::before{content:"";position:absolute;inset:0;z-index:0;
+    background:linear-gradient(180deg, rgba(6,5,4,.78) 0%, rgba(6,5,4,.6) 45%, rgba(6,5,4,.93) 100%)}
+header.hero > *{position:relative;z-index:1}
 header.hero .kicker{color:var(--accent-tint)}
 header.hero h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.5)}
 header.hero .lede{color:#f2efe7;text-shadow:0 1px 10px rgba(0,0,0,.4)}
@@ -235,20 +253,19 @@ h1{font-family:var(--serif);font-weight:700;font-size:clamp(32px,6vw,54px);line-
 .hero-note{margin-top:18px;font-size:13.5px;color:var(--muted);max-width:52em}
 
 /* ---------- Seiten-Hero (Unterseiten) ---------- */
-header.page-hero{position:relative;padding:56px 0 34px;border-bottom:1px solid var(--line);overflow:hidden}
+header.page-hero{position:relative;padding:56px 0 34px;border-bottom:1px solid var(--line);overflow:hidden;
+    background:var(--hero-img) right center/cover no-repeat}   /* Bild kommt inline, s. Kommentar bei header.hero */
 header.page-hero::before{content:"";position:absolute;inset:0;z-index:0;
-    background:
-      linear-gradient(100deg, var(--bg) 0%, var(--bg) 46%, color-mix(in srgb, var(--bg) 55%, transparent) 68%, color-mix(in srgb, var(--bg) 15%, transparent) 100%),
-      var(--hero-img) right center/cover no-repeat}
+    background:linear-gradient(100deg, var(--bg) 0%, var(--bg) 46%, color-mix(in srgb, var(--bg) 55%, transparent) 68%, color-mix(in srgb, var(--bg) 15%, transparent) 100%)}
 header.page-hero .wrap{position:relative;z-index:1}
 .crumb{font-size:12.5px;color:var(--muted);margin-bottom:8px}
 .crumb a{color:var(--muted)}
 header.page-hero h1{font-size:clamp(28px,5vw,42px);margin:4px 0 10px;color:var(--ink);max-width:24ch}
 header.page-hero .lede{font-size:17px;max-width:38ch}
 @media (max-width: 700px){
+  header.page-hero{background-position:center 25%}
   header.page-hero::before{background:
-      linear-gradient(180deg, var(--bg) 0%, var(--bg) 58%, color-mix(in srgb, var(--bg) 30%, transparent) 100%),
-      var(--hero-img) center 25%/cover no-repeat}
+      linear-gradient(180deg, var(--bg) 0%, var(--bg) 58%, color-mix(in srgb, var(--bg) 30%, transparent) 100%)}
   header.page-hero .lede{max-width:none}
 }
 
