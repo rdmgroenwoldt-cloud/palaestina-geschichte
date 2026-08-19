@@ -1361,3 +1361,28 @@ body{overflow-x:clip}
 @media (prefers-reduced-motion:reduce){
   .btn{transition:none}
 }
+
+/* ============================================================
+   FALLKACHELN — ein Fall pro Karte, Umdrehen zeigt den Ausgang
+   Vorderseite: wer, wann, was geschah. Rueckseite: was die Justiz
+   daraus machte. Nutzt die .flipcard-Mechanik (Abschnitt 5) und
+   das Skript in interactions.js; hier steht nur das Raster.
+   ============================================================ */
+.fallkacheln{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin:22px 0 26px;
+    align-items:start}
+@media (max-width:760px){.fallkacheln{grid-template-columns:1fr}}
+.fallkacheln .flipcard{min-width:0}
+.fallkacheln .flip-front,.fallkacheln .flip-back{min-height:212px}
+.fk-opfer{font-family:var(--serif);font-size:18px;font-weight:700;line-height:1.25;margin:0 0 2px}
+.fk-wann{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:9px}
+.fk-tat{font-size:13.5px;color:var(--ink2);line-height:1.55;margin:0 0 10px;max-width:none}
+.fk-ausgang{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    padding:4px 9px;border-radius:999px;margin-bottom:9px;
+    background:color-mix(in srgb, var(--accent) 16%, transparent);color:var(--accent)}
+.fk-ausgang.hart{background:color-mix(in srgb, var(--accent2) 18%, transparent);color:var(--accent2)}
+.fk-ausgang.keine{background:color-mix(in srgb, #b3261e 20%, transparent);color:#ff8a80}
+.fk-text{font-size:13px;line-height:1.6;color:var(--ink2);margin:0;max-width:none;
+    max-height:230px;overflow-y:auto;padding-right:6px;scrollbar-width:thin;
+    scrollbar-color:var(--line-strong) transparent}
+.fk-text p{font-size:13px;line-height:1.6;margin:0 0 8px;max-width:none}
+.fk-text p:last-child{margin-bottom:0}
