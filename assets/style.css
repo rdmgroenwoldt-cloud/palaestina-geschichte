@@ -1373,6 +1373,16 @@ body{overflow-x:clip}
 @media (max-width:760px){.fallkacheln{grid-template-columns:1fr}}
 .fallkacheln .flipcard{min-width:0}
 .fallkacheln .flip-front,.fallkacheln .flip-back{min-height:212px}
+.fk-kopf{display:flex;gap:13px;align-items:center;margin-bottom:9px}
+.fk-foto{flex:0 0 auto;width:76px;height:96px;border-radius:var(--radius-s);object-fit:cover;
+    object-position:center 22%;background:var(--frame-bg);border:1px solid var(--line-strong);
+    box-shadow:var(--shadow-s)}
+.fk-initial{flex:0 0 auto;width:76px;height:96px;border-radius:var(--radius-s);background:var(--accent-soft);
+    border:1px dashed var(--line-strong);display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-weight:700;font-size:23px;color:var(--accent);
+    -webkit-user-select:none;user-select:none}
+.fk-gestorben{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:3px}
+.fk-nachweis{display:block;margin-top:9px;font-size:10.5px;color:var(--muted);line-height:1.4}
 .fk-opfer{font-family:var(--serif);font-size:18px;font-weight:700;line-height:1.25;margin:0 0 2px}
 .fk-wann{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:9px}
 .fk-tat{font-size:13.5px;color:var(--ink2);line-height:1.55;margin:0 0 10px;max-width:none}
