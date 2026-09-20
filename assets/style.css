@@ -612,6 +612,24 @@ section>.phead:first-of-type{margin-top:var(--sp-4)}
 .qcard-src{font-size:11px;color:var(--muted);margin:0;max-width:none}
 .qcard-note{font-size:11px;color:var(--accent2);margin:0 0 6px;max-width:none;font-weight:600}
 
+/* ---------- Zitattreue: Wortlaut der Person vs. Zuschreibung durch die Quelle ----------
+   Grundregel dieser Website: Was eine Person gesagt hat, und wie eine Quelle es
+   zusammenfasst, sind zwei verschiedene Dinge und stehen deshalb optisch getrennt. */
+.wortlaut,.zuschreibung,.abweichung{max-width:none;margin:0 0 10px}
+.wl-l,.zs-l,.ab-l{display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;
+    font-weight:700;margin-bottom:4px}
+.wortlaut{font-size:13.5px;color:var(--ink)}
+.wortlaut .wl-l{color:var(--accent)}
+.wortlaut em{color:var(--ink2)}
+.zuschreibung{font-size:12.5px;color:var(--ink2);padding:8px 0 8px 11px;
+    border-left:2px solid color-mix(in srgb, var(--accent2) 55%, var(--line))}
+.zuschreibung .zs-l{color:var(--accent2)}
+.abweichung{font-size:12.5px;color:var(--ink2);padding:9px 12px;border-radius:var(--radius-s,8px);
+    background:color-mix(in srgb, var(--accent2) 7%, transparent);
+    border:1px solid color-mix(in srgb, var(--accent2) 26%, var(--line))}
+.abweichung .ab-l{color:var(--accent2)}
+.qcard .wortlaut:last-of-type,.qcard .abweichung:last-of-type{margin-bottom:8px}
+
 /* ---------- Quellenfestigkeits-Badges (Primärquelle vs. Presse-Zuschreibung) ---------- */
 .badge-primary{background:var(--accent-soft);color:var(--accent);border:1px solid var(--line-strong)}
 .badge-press{background:var(--accent2-soft);color:var(--accent2);border:1px solid color-mix(in srgb, var(--accent2) 38%, var(--line))}
