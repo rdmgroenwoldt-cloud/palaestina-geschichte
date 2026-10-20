@@ -1094,7 +1094,27 @@
     erstes.parentNode.insertBefore(hinweis, erstes);
   }
 
+  /* Sprungmarken in eingeklappte Bereiche (z. B. ältere Quartale auf nachrichten.html):
+     Zeigt die Adresse auf ein Ziel innerhalb eines geschlossenen <details>, wird es geöffnet. */
+  function initAnkerOeffnen() {
+    function oeffnen() {
+      var id = decodeURIComponent((location.hash || "").slice(1));
+      if (!id) return;
+      var ziel = document.getElementById(id);
+      if (!ziel) return;
+      var d = ziel.parentElement, geoeffnet = false;
+      while (d) {
+        if (d.tagName === "DETAILS" && !d.open) { d.open = true; geoeffnet = true; }
+        d = d.parentElement;
+      }
+      if (geoeffnet) ziel.scrollIntoView();
+    }
+    window.addEventListener("hashchange", oeffnen);
+    oeffnen();
+  }
+
   function init() {
+    initAnkerOeffnen();
     initBuchcover();
     initLesefortschritt();
     initKapitelband();
