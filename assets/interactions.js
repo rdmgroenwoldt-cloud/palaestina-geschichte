@@ -364,25 +364,41 @@
       if (!inner) return;
       card.dataset.flipReady = "1";
 
-      card.setAttribute("tabindex", "0");
-      card.setAttribute("role", "button");
-      card.setAttribute("aria-pressed", "false");
+      /* Barrierefreiheit (20.10.2026): Die Karte selbst ist KEIN Knopf mehr – mit role="button"
+         lasen Screenreader den ganzen Karteninhalt als eine Knopf-Beschriftung, und die Links der
+         Rückseite waren unerreichbar. Stattdessen wird der Hinweis „Karte umdrehen“ ein echter
+         <button>. Mausklick auf die Karte dreht weiterhin. */
+      card.removeAttribute("tabindex");
+      card.removeAttribute("role");
+      card.removeAttribute("aria-pressed");
 
-      function toggle() {
-        var flipped = card.classList.toggle("flipped");
-        card.setAttribute("aria-pressed", flipped ? "true" : "false");
+      var front = inner.querySelector(":scope > .flip-front");
+      var hinweis = front ? front.querySelector(".flip-hint") : null;
+      var knopf = document.createElement("button");
+      knopf.type = "button";
+      knopf.className = "flip-hint flip-knopf";
+      knopf.textContent = hinweis ? hinweis.textContent.trim() : "Karte umdrehen";
+      var titel = front ? front.querySelector("h3, h4") : null;
+      if (titel) knopf.setAttribute("aria-label", knopf.textContent + " – " + titel.textContent.replace(/\s+/g, " ").trim());
+      knopf.setAttribute("aria-pressed", "false");
+      if (hinweis) hinweis.parentNode.replaceChild(knopf, hinweis);
+      else if (front) front.appendChild(knopf);
+
+      function setzen(an) {
+        card.classList.toggle("flipped", an);
+        knopf.setAttribute("aria-pressed", an ? "true" : "false");
       }
 
       card.addEventListener("click", function (e) {
         // Echte Links auf der Karte sollen normal navigieren, nicht flippen.
         if (e.target.closest && e.target.closest("a")) return;
-        toggle();
+        setzen(!card.classList.contains("flipped"));
       });
-      card.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
-          e.preventDefault();
-          toggle();
-        }
+      // Wer per Tastatur auf einen Link der Rückseite springt, bekommt die Rückseite zu sehen –
+      // und beim Zurückspringen auf den Knopf wieder die Vorderseite.
+      card.addEventListener("focusin", function (e) {
+        if (e.target.closest(".flip-back")) setzen(true);
+        else if (e.target === knopf && e.relatedTarget && card.contains(e.relatedTarget)) setzen(false);
       });
     });
   }
