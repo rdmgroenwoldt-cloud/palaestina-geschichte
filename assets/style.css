@@ -1487,3 +1487,10 @@ img[data-cover]:not([src]) + .book-mini-cover-fallback{display:flex}
 button.flip-knopf{background:none;border:0;padding:2px 0;font:inherit;font-size:12px;font-weight:700;
   color:var(--accent);cursor:pointer;text-align:left}
 button.flip-knopf:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* Bildnachweise (PA-05, 20.10.2026): Lizenz- und Quellenlinks, Sammelzeile am Seitenende */
+a.lz{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+a.lz:hover{color:var(--accent)}
+.seiten-bildnachweis{margin:var(--sp-6, 40px) 0 0;padding-top:12px;border-top:1px solid var(--line);
+  font-size:12px;line-height:1.55;color:var(--muted);max-width:none}
+.seiten-bildnachweis span{display:inline}
