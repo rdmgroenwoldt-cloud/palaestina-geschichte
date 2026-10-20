@@ -1014,7 +1014,72 @@
     });
   }
 
+  /* Buchcover erst auf Wunsch laden (Datenschutz): Die Cover liegen bei covers.openlibrary.org
+     (Internet Archive, USA). Ohne Zustimmung geht keine Anfrage dorthin; die Bilder tragen nur
+     data-cover, der Text-Platzhalter ist sichtbar. „Immer anzeigen" merkt sich der Browser lokal. */
+  function initBuchcover() {
+    var SCHLUESSEL = "pal-buchcover";
+    document.querySelectorAll("[data-cover-zuruecksetzen]").forEach(function (knopf) {
+      var status = document.getElementById(knopf.getAttribute("data-cover-zuruecksetzen"));
+      function zeigen() {
+        var an = false;
+        try { an = window.localStorage.getItem(SCHLUESSEL) === "ja"; } catch (e) {}
+        if (status) status.textContent = an
+          ? "Derzeit gespeichert: Buchcover werden immer angezeigt."
+          : "Derzeit gespeichert: nichts – Buchcover werden erst auf Klick geladen.";
+      }
+      knopf.addEventListener("click", function () {
+        try { window.localStorage.removeItem(SCHLUESSEL); } catch (e) {}
+        zeigen();
+      });
+      zeigen();
+    });
+
+    var bilder = document.querySelectorAll("img[data-cover]");
+    if (!bilder.length) return;
+
+    function laden() {
+      bilder.forEach(function (img) {
+        if (!img.getAttribute("src")) img.setAttribute("src", img.getAttribute("data-cover"));
+      });
+      var h = document.querySelector(".cover-hinweis");
+      if (h) h.parentNode.removeChild(h);
+    }
+
+    var gemerkt = false;
+    try { gemerkt = window.localStorage.getItem(SCHLUESSEL) === "ja"; } catch (e) {}
+    if (gemerkt) { laden(); return; }
+
+    var erstes = bilder[0].closest(".booklist, .person-books") || bilder[0];
+    var hinweis = document.createElement("div");
+    hinweis.className = "cover-hinweis";
+    var p = document.createElement("p");
+    p.innerHTML = "<strong>Buchcover sind ausgeblendet.</strong> Sie werden von openlibrary.org " +
+      "(Internet Archive, USA) geladen – dabei erhält dieser Dienst Ihre IP-Adresse. " +
+      "<a href=\"datenschutz.html#buchcover\">Mehr dazu</a>";
+    var knoepfe = document.createElement("div");
+    knoepfe.className = "cover-knoepfe";
+    var einmal = document.createElement("button");
+    einmal.type = "button";
+    einmal.textContent = "Buchcover anzeigen";
+    einmal.addEventListener("click", laden);
+    var immer = document.createElement("button");
+    immer.type = "button";
+    immer.className = "zweit";
+    immer.textContent = "Immer anzeigen";
+    immer.addEventListener("click", function () {
+      try { window.localStorage.setItem(SCHLUESSEL, "ja"); } catch (e) {}
+      laden();
+    });
+    knoepfe.appendChild(einmal);
+    knoepfe.appendChild(immer);
+    hinweis.appendChild(p);
+    hinweis.appendChild(knoepfe);
+    erstes.parentNode.insertBefore(hinweis, erstes);
+  }
+
   function init() {
+    initBuchcover();
     initLesefortschritt();
     initKapitelband();
     initKapitelnavi();
