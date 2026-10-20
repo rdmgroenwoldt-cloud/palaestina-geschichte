@@ -1494,3 +1494,13 @@ a.lz:hover{color:var(--accent)}
 .seiten-bildnachweis{margin:var(--sp-6, 40px) 0 0;padding-top:12px;border-top:1px solid var(--line);
   font-size:12px;line-height:1.55;color:var(--muted);max-width:none}
 .seiten-bildnachweis span{display:inline}
+
+/* Balkendiagramm (waffen-israel.html, 20.10.2026): waagerechte Balken, Breite per --w */
+.balken{display:grid;gap:6px;margin:18px 0 10px;max-width:780px}
+.bk{display:grid;grid-template-columns:86px minmax(0,1fr) 96px;align-items:center;gap:10px;font-size:13px}
+.bk-j{color:var(--ink2);font-variant-numeric:tabular-nums}
+.bk-b{display:block;height:14px;width:var(--w);min-width:2px;border-radius:3px;background:var(--line-strong)}
+.bk-w{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink2)}
+.bk.hervor .bk-b{background:var(--accent2)}
+.bk.hervor .bk-j,.bk.hervor .bk-w{color:var(--ink);font-weight:700}
+@media (max-width:520px){.bk{grid-template-columns:64px minmax(0,1fr) 78px;font-size:12px}}
