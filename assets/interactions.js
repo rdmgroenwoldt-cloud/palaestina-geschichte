@@ -1,3 +1,5 @@
+/* Zahlenformat nach Seitensprache: Uebersetzungen (en/es) zeigen 750,000 bzw. 750.000 */
+var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lang || "de").slice(0, 2)] || "de-DE";
 /* ============================================================
    Palästina – Geschichte eines Landes · Interaktions-Bausteine
    Vanilla JS, keine externen Bibliotheken. Wird auf allen Seiten
@@ -423,7 +425,7 @@
     }
 
     function render(el, value, decimals) {
-      var text = value.toLocaleString("de-DE", {
+      var text = value.toLocaleString(SEITEN_LOCALE, {
         minimumFractionDigits: decimals,
         maximumFractionDigits: decimals
       });
@@ -1130,7 +1132,7 @@
         var raw = el.dataset.target, v = parseFloat(raw), i = raw.indexOf(".");
         if (isNaN(v)) return;
         var dez = i === -1 ? 0 : raw.length - i - 1;
-        el.textContent = (el.dataset.prefix || "") + v.toLocaleString("de-DE", { minimumFractionDigits: dez, maximumFractionDigits: dez }) + (el.dataset.suffix || "");
+        el.textContent = (el.dataset.prefix || "") + v.toLocaleString(SEITEN_LOCALE, { minimumFractionDigits: dez, maximumFractionDigits: dez }) + (el.dataset.suffix || "");
       });
       var fuss = document.querySelector(".druck-fuss");
       if (!fuss) { fuss = document.createElement("p"); fuss.className = "druck-fuss"; (document.querySelector("main") || document.body).appendChild(fuss); }
