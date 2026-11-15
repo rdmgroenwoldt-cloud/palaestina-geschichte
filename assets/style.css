@@ -891,7 +891,7 @@ section>.phead:first-of-type{margin-top:var(--sp-4)}
 
 /* ---- Sprungleiste – waagerecht (schmale Fenster) ---- */
 @media (max-width:1099px){
-  .kapitelnavi{display:flex;flex-direction:row;gap:8px;right:auto;left:0;width:100%;
+  .kapitelnavi{display:flex;flex-direction:row;gap:8px;right:auto;left:0;width:100%;box-sizing:border-box;max-width:100vw;
       top:auto;bottom:0;transform:none;border-radius:0;border-left:0;border-right:0;
       border-bottom:0;padding:9px 12px;overflow-x:auto;justify-content:flex-start;
       scrollbar-width:none}
@@ -1526,3 +1526,14 @@ a.lz:hover{color:var(--accent)}
 .suche-mehr{font-size:12.5px;color:var(--muted);margin:6px 0 0}
 .suche-leer{color:var(--ink2)}
 .hero .suche-form{margin-top:20px}
+
+/* ---- Balkendiagramme (.gen-chart): auf schmalen Bildschirmen nicht über den Rand ---- */
+.gen-chart > div[style*="grid-template-columns"]{grid-template-columns:minmax(72px,34%) minmax(0,1fr)!important}
+.gen-chart > div > div[style*="display:flex"]{min-width:0}
+.gen-chart > div > div > span[style*="white-space:nowrap"]{white-space:normal!important;min-width:0;overflow-wrap:anywhere}
+@media (max-width:560px){
+  .gen-chart > div[style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:3px!important}
+}
+
+/* ---- Lange deutsche Wörter in Überschriften und Kacheln: Silbentrennung statt Überbreite ---- */
+h1,h2,h3,h4,.zb span,.ct,.ms-kick,.sub,.kb-kt,.mm-t{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
