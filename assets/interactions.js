@@ -1113,6 +1113,35 @@
     oeffnen();
   }
 
+  /* ------------------------------------------------------------
+     Drucken / PDF: Knopf [data-drucken] ruft den Druckdialog auf;
+     vor dem Druck werden alle <details> geöffnet (danach wieder
+     geschlossen) und die Seitenadresse in den Druckfuß geschrieben.
+     ------------------------------------------------------------ */
+  function initDrucken() {
+    document.querySelectorAll("[data-drucken]").forEach(function (b) {
+      b.addEventListener("click", function () { window.print(); });
+    });
+    var geoeffnet = [];
+    window.addEventListener("beforeprint", function () {
+      geoeffnet = [];
+      document.querySelectorAll("details:not([open])").forEach(function (d) { d.open = true; geoeffnet.push(d); });
+      document.querySelectorAll(".count-up[data-target]").forEach(function (el) {
+        var raw = el.dataset.target, v = parseFloat(raw), i = raw.indexOf(".");
+        if (isNaN(v)) return;
+        var dez = i === -1 ? 0 : raw.length - i - 1;
+        el.textContent = (el.dataset.prefix || "") + v.toLocaleString("de-DE", { minimumFractionDigits: dez, maximumFractionDigits: dez }) + (el.dataset.suffix || "");
+      });
+      var fuss = document.querySelector(".druck-fuss");
+      if (!fuss) { fuss = document.createElement("p"); fuss.className = "druck-fuss"; (document.querySelector("main") || document.body).appendChild(fuss); }
+      fuss.textContent = window.location.href.split("#")[0];
+    });
+    window.addEventListener("afterprint", function () {
+      geoeffnet.forEach(function (d) { d.open = false; });
+      geoeffnet = [];
+    });
+  }
+
   function init() {
     initAnkerOeffnen();
     initBuchcover();
@@ -1129,6 +1158,7 @@
     initCompare();
     initLichtkasten();
     initFilter();
+    initDrucken();
   }
 
   if (document.readyState === "loading") {

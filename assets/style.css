@@ -1537,3 +1537,31 @@ a.lz:hover{color:var(--accent)}
 
 /* ---- Lange deutsche Wörter in Überschriften und Kacheln: Silbentrennung statt Überbreite ---- */
 h1,h2,h3,h4,.zb span,.ct,.ms-kick,.sub,.kb-kt,.mm-t{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+
+/* ===== Druckansicht / PDF (alle Seiten) ===== */
+.drucken-knopf{display:inline-flex;align-items:center;gap:.45em;margin:.4em 0 1.2em;padding:.55em 1.1em;font:inherit;font-size:.95rem;
+  border:1px solid var(--line);border-radius:999px;background:transparent;color:inherit;cursor:pointer}
+.drucken-knopf:hover{border-color:currentColor}
+.druck-fuss{display:none}
+@media print{
+  @page{margin:16mm 14mm}
+:root{color-scheme:light !important}
+  html,body{background:#fff !important;color:#000 !important;font-size:10.5pt;line-height:1.45}
+  nav.topnav,.kapitelnavi,.kapitelband,.lesefortschritt,.mm-burger,.drucken-knopf,.suche-form,footer .fnav,.carousel-btn,.kb-pfeil{display:none !important}
+  *{box-shadow:none !important;text-shadow:none !important;animation:none !important;transition:none !important}
+  .reveal{opacity:1 !important;transform:none !important}
+  header.page-hero{background:#fff none !important;color:#000 !important;padding:0 0 8pt !important;min-height:0 !important}
+  header.page-hero::before,header.page-hero::after{display:none !important}
+  body *{color:#000 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .zahlenband{break-inside:avoid;page-break-inside:avoid}
+  .page-hero *{color:#000 !important}
+  .page-hero img,.page-hero .hero-bild{display:none !important}
+  a{color:#000 !important;text-decoration:underline}
+  h2,h3{break-after:avoid;page-break-after:avoid}
+  .zb,.callout,.merksatz,figure,table,tr,.tl-item{break-inside:avoid;page-break-inside:avoid}
+  .zahlenband{border:1px solid #999 !important;background:#fff !important}
+  .zb b{color:#000 !important}
+  .callout,.merksatz{background:#fff !important;border:1px solid #999 !important;color:#000 !important}
+  hr.sep{margin:10pt 0 !important}
+  .druck-fuss{display:block;margin-top:14pt;font-size:8.5pt;color:#333}
+}
