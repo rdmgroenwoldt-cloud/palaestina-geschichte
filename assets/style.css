@@ -1504,3 +1504,25 @@ a.lz:hover{color:var(--accent)}
 .bk.hervor .bk-b{background:var(--accent2)}
 .bk.hervor .bk-j,.bk.hervor .bk-w{color:var(--ink);font-weight:700}
 @media (max-width:520px){.bk{grid-template-columns:64px minmax(0,1fr) 78px;font-size:12px}}
+
+/* ---- Website-Suche (suche.html, assets/suche.js) ---- */
+.nl.nl-suche::before{content:"⌕";margin-right:5px;font-size:1.05em}
+.suche-form{display:flex;gap:8px;max-width:640px;margin:18px 0 6px}
+.suche-form input[type=search]{flex:1;min-width:0;background:var(--card);border:1px solid var(--line-strong);color:var(--ink);
+  border-radius:var(--radius-s);padding:12px 14px;font-size:16px;font-family:inherit}
+.suche-form input[type=search]:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.suche-form button{background:var(--accent);color:var(--on-accent);border:0;border-radius:var(--radius-s);padding:0 18px;
+  font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.suche-stand{font-size:13px;color:var(--ink2);margin:6px 0 18px}
+.suche-seite{border:1px solid var(--line);background:var(--card);border-radius:var(--radius-m);padding:14px 16px;margin:0 0 14px}
+.suche-seite h3{font-size:18px;margin:0 0 8px}
+.suche-seite h3 a{color:var(--ink);text-decoration:none}
+.suche-seite h3 a:hover{color:var(--accent)}
+.suche-abschnitt{display:block;padding:9px 10px;margin:4px -10px 0;border-radius:var(--radius-s);text-decoration:none;color:var(--ink2)}
+.suche-abschnitt:hover,.suche-abschnitt:focus{background:var(--stripe)}
+.suche-ueb{display:block;font-weight:700;font-size:14px;color:var(--accent);margin-bottom:3px}
+.suche-text{display:block;font-size:13.5px;line-height:1.55}
+.suche-text mark{background:var(--accent-soft);color:var(--ink);border-radius:3px;padding:0 2px}
+.suche-mehr{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+.suche-leer{color:var(--ink2)}
+.hero .suche-form{margin-top:20px}
