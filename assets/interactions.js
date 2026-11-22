@@ -1169,3 +1169,62 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
     init();
   }
 })();
+
+/* ================= Sternenhimmel (22.11.2026) =================
+   Übernommen von der Medical-Point-Website (C:\Claude\medical-point,
+   assets/js/app.js): Canvas hinter allen Inhalten, funkelnde Sterne,
+   leichte Tiefenwirkung beim Scrollen, gelegentlich eine Sternschnuppe.
+   Bei „Bewegung reduzieren“ steht der Himmel still. Die Leinwand wird
+   hier erzeugt, damit keine Seite einzeln angepasst werden muss. */
+(function sterne() {
+  "use strict";
+  if (document.getElementById("sterne")) return;
+  const c = document.createElement("canvas");
+  c.id = "sterne"; c.setAttribute("aria-hidden", "true");
+  document.body.insertBefore(c, document.body.firstChild);
+  const ctx = c.getContext("2d"); if (!ctx) return;
+  const ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let w, h, dpr, liste = [], schnuppe = null, naechste = performance.now() + 4000;
+  function aufbau() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = c.width = Math.floor(innerWidth * dpr); h = c.height = Math.floor(innerHeight * dpr);
+    const anzahl = Math.min(1000, Math.floor((innerWidth * innerHeight) / 1700));
+    liste = Array.from({ length: anzahl }, () => ({
+      x: Math.random() * w, y: Math.random() * h,
+      r: (Math.random() ** 2 * 1.8 + 0.45) * dpr,
+      a: Math.random() * 0.45 + 0.55, s: Math.random() * 0.002 + 0.0005, p: Math.random() * 6.28,
+      t: Math.random() < 0.9 ? 0.06 + Math.random() * 0.12 : 0.25,
+      f: Math.random() < 0.12 ? "180,200,255" : Math.random() < 0.05 ? "255,220,200" : "255,255,255",
+    }));
+  }
+  function zeichne(zeit) {
+    ctx.clearRect(0, 0, w, h);
+    const sy = (window.scrollY || 0) * dpr;
+    for (const s of liste) {
+      const fl = ruhig ? s.a : s.a * (0.7 + 0.3 * Math.sin(zeit * s.s + s.p));
+      let y = (s.y - sy * s.t) % h; if (y < 0) y += h;
+      ctx.beginPath(); ctx.arc(s.x, y, s.r, 0, 6.283);
+      ctx.fillStyle = `rgba(${s.f},${fl})`; ctx.fill();
+      if (s.r > 1.3 * dpr) { ctx.beginPath(); ctx.arc(s.x, y, s.r * 3.2, 0, 6.283); ctx.fillStyle = `rgba(${s.f},${fl * 0.14})`; ctx.fill(); }
+    }
+    if (!ruhig) {
+      if (!schnuppe && zeit > naechste) {
+        schnuppe = { x: Math.random() * w * 0.8, y: Math.random() * h * 0.4, vx: (6 + Math.random() * 4) * dpr, vy: (2 + Math.random() * 2) * dpr, l: 1 };
+        naechste = zeit + 7000 + Math.random() * 9000;
+      }
+      if (schnuppe) {
+        const g = ctx.createLinearGradient(schnuppe.x, schnuppe.y, schnuppe.x - schnuppe.vx * 14, schnuppe.y - schnuppe.vy * 14);
+        g.addColorStop(0, `rgba(255,255,255,${schnuppe.l})`); g.addColorStop(1, "rgba(255,255,255,0)");
+        ctx.strokeStyle = g; ctx.lineWidth = 1.6 * dpr; ctx.beginPath();
+        ctx.moveTo(schnuppe.x, schnuppe.y); ctx.lineTo(schnuppe.x - schnuppe.vx * 14, schnuppe.y - schnuppe.vy * 14); ctx.stroke();
+        schnuppe.x += schnuppe.vx; schnuppe.y += schnuppe.vy; schnuppe.l -= 0.012;
+        if (schnuppe.l <= 0 || schnuppe.x > w + 200) schnuppe = null;
+      }
+      requestAnimationFrame(zeichne);
+    }
+  }
+  aufbau();
+  addEventListener("resize", () => { aufbau(); if (ruhig) zeichne(0); });
+  if (ruhig) { zeichne(0); addEventListener("scroll", () => zeichne(0), { passive: true }); }
+  else requestAnimationFrame(zeichne);
+})();

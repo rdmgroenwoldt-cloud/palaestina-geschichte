@@ -1567,70 +1567,10 @@ h1,h2,h3,h4,.zb span,.ct,.ms-kick,.sub,.kb-kt,.mm-t{hyphens:auto;-webkit-hyphens
 }
 
 /* ---------- STERNENHIMMEL (22.11.2026) ----------
-   Fester Sternenhimmel hinter allen Seiten, ohne Bilddatei: zwei Lagen
-   gekachelter Lichtpunkte (feste Sterne + funkelnde Sterne), dazu ein
-   ganz schwacher Schimmer. Liegt per isolation unter dem Inhalt; Karten
-   und Kästen behalten ihren eigenen Hintergrund. Bei reduzierter Bewegung
-   kein Funkeln, beim Drucken ausgeblendet. Erzeugt per Skript (Zufallssaat 1948). */
-body{isolation:isolate}
-body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-repeat:repeat}
-body::before{
-  background-image:
-    radial-gradient(1px 1px at 213px 108px,rgba(255,255,255,0.84) 50%,transparent 51%),
-    radial-gradient(1px 1px at 160px 82px,rgba(255,255,255,0.6) 50%,transparent 51%),
-    radial-gradient(1px 1px at 14px 71px,rgba(255,250,235,0.74) 50%,transparent 51%),
-    radial-gradient(1px 1px at 59px 139px,rgba(255,255,255,0.9) 50%,transparent 51%),
-    radial-gradient(1px 1px at 90px 262px,rgba(255,250,235,0.93) 50%,transparent 51%),
-    radial-gradient(1px 1px at 194px 33px,rgba(255,250,235,0.96) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 210px 15px,rgba(225,238,255,0.64) 50%,transparent 51%),
-    radial-gradient(1px 1px at 133px 318px,rgba(225,238,255,0.57) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 274px 123px,rgba(255,250,235,0.99) 50%,transparent 51%),
-    radial-gradient(1px 1px at 30px 267px,rgba(255,255,255,0.69) 50%,transparent 51%),
-    radial-gradient(1px 1px at 283px 68px,rgba(255,255,255,0.56) 50%,transparent 51%),
-    radial-gradient(1px 1px at 230px 197px,rgba(255,255,255,0.59) 50%,transparent 51%),
-    radial-gradient(1px 1px at 137px 42px,rgba(225,238,255,0.79) 50%,transparent 51%),
-    radial-gradient(1px 1px at 193px 79px,rgba(255,250,235,0.78) 50%,transparent 51%),
-    radial-gradient(1px 1px at 134px 139px,rgba(255,255,255,0.57) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 9px 206px,rgba(225,238,255,0.61) 50%,transparent 51%),
-    radial-gradient(1px 1px at 151px 9px,rgba(255,250,235,0.65) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 154px 243px,rgba(255,250,235,0.85) 50%,transparent 51%),
-    radial-gradient(1px 1px at 216px 124px,rgba(225,238,255,0.92) 50%,transparent 51%),
-    radial-gradient(1px 1px at 179px 135px,rgba(255,250,235,0.85) 50%,transparent 51%),
-    radial-gradient(1px 1px at 48px 282px,rgba(225,238,255,0.81) 50%,transparent 51%),
-    radial-gradient(1px 1px at 206px 14px,rgba(255,255,255,0.89) 50%,transparent 51%),
-    radial-gradient(1px 1px at 133px 252px,rgba(225,238,255,0.68) 50%,transparent 51%),
-    radial-gradient(1px 1px at 43px 188px,rgba(255,255,255,0.69) 50%,transparent 51%),
-    radial-gradient(1px 1px at 258px 197px,rgba(255,250,235,0.68) 50%,transparent 51%),
-    radial-gradient(1px 1px at 58px 106px,rgba(225,238,255,0.93) 50%,transparent 51%),
-    radial-gradient(1px 1px at 229px 109px,rgba(255,255,255,0.66) 50%,transparent 51%),
-    radial-gradient(1px 1px at 135px 43px,rgba(225,238,255,0.91) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 209px 199px,rgba(255,250,235,0.95) 50%,transparent 51%),
-    radial-gradient(1px 1px at 245px 154px,rgba(225,238,255,0.99) 50%,transparent 51%),
-    radial-gradient(1px 1px at 210px 126px,rgba(255,255,255,0.7) 50%,transparent 51%),
-    radial-gradient(1px 1px at 146px 57px,rgba(255,255,255,0.58) 50%,transparent 51%),
-    radial-gradient(1px 1px at 270px 138px,rgba(255,250,235,0.72) 50%,transparent 51%),
-    radial-gradient(1px 1px at 58px 275px,rgba(255,250,235,0.72) 50%,transparent 51%),
-    radial-gradient(ellipse 70% 45% at 75% 15%,rgba(70,90,140,.10),transparent 70%),
-    radial-gradient(ellipse 60% 40% at 15% 80%,rgba(60,110,95,.08),transparent 70%);
-  background-size:320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,320px 320px,100% 100%,100% 100%;
-  background-repeat:repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,repeat,no-repeat,no-repeat}
-body::after{
-  background-image:
-    radial-gradient(2px 2px at 236px 159px,rgba(255,250,235,0.86) 50%,transparent 51%),
-    radial-gradient(2px 2px at 268px 490px,rgba(255,255,255,0.88) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 494px 174px,rgba(225,238,255,0.81) 50%,transparent 51%),
-    radial-gradient(2.5px 2.5px at 128px 272px,rgba(255,255,255,0.9) 50%,transparent 51%),
-    radial-gradient(2px 2px at 165px 587px,rgba(255,255,255,0.88) 50%,transparent 51%),
-    radial-gradient(2.5px 2.5px at 295px 507px,rgba(255,255,255,0.97) 50%,transparent 51%),
-    radial-gradient(2px 2px at 271px 92px,rgba(225,238,255,0.92) 50%,transparent 51%),
-    radial-gradient(2px 2px at 458px 467px,rgba(255,250,235,0.98) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 220px 437px,rgba(255,255,255,0.99) 50%,transparent 51%),
-    radial-gradient(2px 2px at 398px 51px,rgba(255,250,235,0.93) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 215px 80px,rgba(255,250,235,0.98) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 186px 323px,rgba(255,250,235,0.86) 50%,transparent 51%),
-    radial-gradient(2.5px 2.5px at 590px 427px,rgba(255,255,255,0.82) 50%,transparent 51%),
-    radial-gradient(1.5px 1.5px at 90px 59px,rgba(255,250,235,0.96) 50%,transparent 51%);
-  background-size:610px 590px;animation:sterne-funkeln 6s ease-in-out infinite alternate}
-@keyframes sterne-funkeln{from{opacity:.35}to{opacity:1}}
-@media (prefers-reduced-motion:reduce){body::after{animation:none;opacity:.8}}
-@media print{body::before,body::after{display:none}}
+   Wie auf der Medical-Point-Website: eine Leinwand (#sterne), die
+   assets/interactions.js erzeugt und zeichnet – funkelnde Sterne,
+   Tiefenwirkung beim Scrollen, gelegentlich eine Sternschnuppe.
+   Liegt per isolation unter dem Inhalt; beim Drucken ausgeblendet. */
+body{background:#000;isolation:isolate}
+#sterne{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block;pointer-events:none}
+@media print{#sterne{display:none}}
