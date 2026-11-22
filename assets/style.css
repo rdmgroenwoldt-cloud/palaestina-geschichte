@@ -1698,7 +1698,7 @@ nav.topnav a.nl-suche{display:none}
 @media print{.top-suche{display:none}}
 
 /* ---------- NACHTBLAU → BORDEAUX/OLIV (23.11.2026) ----------
-   Farben auf Wunsch der Betreiberin: Hintergrund Bordeauxrot statt Blau,
+   Farben auf Wunsch der Betreiberin: Hintergrund wieder Schwarz (Bordeaux verworfen),
    Akzent Olivgrün statt Gold (Variablennamen --gold/--gold-tief beibehalten).
    Inspiration: kids4hope.com (nicht übernommen, nur die Stimmung): nachtblauer
    Verlauf statt Schwarz, Glas-Kacheln mit hellem Haarrand und großen Radien,
@@ -1707,9 +1707,9 @@ nav.topnav a.nl-suche{display:none}
    Hauptknopf, pillenförmige Knöpfe. Serifen-Überschriften und Grün als
    Linkfarbe bleiben – die Seite ist eine Informationsseite. */
 :root{
-  --bg:#170610;
+  --bg:#000000;
   --card:rgba(255,255,255,.065);
-  --card-solid:#2b0c1a;
+  --card-solid:#17160f;
   --ink:#f4efe6;
   --ink2:rgba(244,239,230,.82);
   --muted:rgba(244,239,230,.64);
@@ -1717,24 +1717,22 @@ nav.topnav a.nl-suche{display:none}
   --gold:#b4c26a;
   --gold-tief:#8c9a43;
   --radius-s:12px; --radius-m:18px; --radius-l:22px;
-  --shadow-s:0 6px 22px rgba(12,2,6,.5), inset 0 1px 0 rgba(255,255,255,.06);
-  --shadow-m:0 18px 40px rgba(12,2,6,.6), inset 0 1px 0 rgba(255,255,255,.07);
+  --shadow-s:0 6px 22px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);
+  --shadow-m:0 18px 40px rgba(0,0,0,.62), inset 0 1px 0 rgba(255,255,255,.07);
 }
-html{background:#12040b}
+html{background:#000}
 body{background:
-    radial-gradient(1100px 640px at 78% 8%, rgba(176,40,72,.26), transparent 66%),
-    radial-gradient(820px 560px at 4% 46%, rgba(150,30,58,.16), transparent 70%),
-    linear-gradient(180deg,#12040b 0%,#250917 30%,#330c1f 55%,#250917 80%,#12040b 100%);
+    #000;
   background-attachment:fixed}
 
 /* Kopfleiste: Glas + Flaggenlinie */
-nav.topnav{background:rgba(23,6,16,.8);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
+nav.topnav{background:rgba(0,0,0,.78);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
     border-bottom:0}
 nav.topnav::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;pointer-events:none;
     background:linear-gradient(90deg,#e4312b 0%,#e4312b 18%,#0b0b0b 34%,#f4efe6 55%,#149954 78%,#149954 100%);opacity:.85}
 
 /* Seitenköpfe: nachtblau statt schwarz abgedunkelt */
-header.hero::before{background:linear-gradient(180deg, rgba(23,6,14,.74) 0%, rgba(23,6,14,.55) 45%, rgba(23,6,14,.95) 100%)}
+header.hero::before{background:linear-gradient(180deg, rgba(0,0,0,.74) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.95) 100%)}
 header.hero,header.page-hero{border-bottom-color:rgba(244,239,230,.10)}
 h1{letter-spacing:-.02em}
 
