@@ -37,7 +37,11 @@
      Kontraste rechnerisch geprüft (WCAG-Formel): Fließtext --ink auf --bg
      16.9:1, --ink2 9.5:1, --muted 5.6:1 — alle deutlich über AA (4.5:1). */
   --bg:#0a0a08;
-  --card:#17160f;
+  /* Flächen durchscheinend (22.11.2026), damit der Sternenhimmel wie auf der
+     Medical-Point-Website auch hinter Karten und Kästen sichtbar bleibt.
+     Deckende Variante für Stellen, die über Inhalt liegen: --card-solid. */
+  --card:rgba(23,22,15,.6);
+  --card-solid:#17160f;
   --ink:#f1ede2;
   --ink2:#b9b3a4;
   --muted:#8f8879;
@@ -167,7 +171,7 @@ nav.topnav.mm-mobile-open .mm-burger .mm-striche span:nth-child(3){transform:tra
    SICHTBAR, sonst würden die seitlichen Fenster abgeschnitten. */
 nav.topnav .nav-links{display:none;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:2px;
     position:absolute;left:20px;top:calc(100% + 6px);width:300px;
-    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+    background:var(--card-solid);border:1px solid var(--line);border-radius:var(--radius-m);
     box-shadow:var(--shadow-m);padding:8px;z-index:60}
 nav.topnav.mm-mobile-open .nav-links{display:flex}
 nav.topnav a.nl,nav.topnav button.nl{display:flex;width:100%;font-size:14px;padding:9px 12px}
@@ -185,7 +189,7 @@ nav.topnav .nl-group.open > .nl-trigger{background:var(--accent-soft);color:var(
 .mm-panel{position:absolute;left:calc(100% + 8px);top:0;
     min-width:300px;width:max-content;max-width:min(60vw,360px);
     max-height:calc(100vh - 90px);overflow-y:auto;overscroll-behavior:contain;
-    background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+    background:var(--card-solid);border:1px solid var(--line);border-radius:var(--radius-m);
     box-shadow:var(--shadow-m);padding:8px;display:none;
     grid-template-rows:none;grid-auto-flow:row;grid-auto-columns:auto;gap:2px;
     opacity:1;visibility:visible;transform:none;pointer-events:auto;transition:none;z-index:61}
