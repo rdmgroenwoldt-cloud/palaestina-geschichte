@@ -1237,3 +1237,42 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
   if (!window.matchMedia("(max-width: 759px)").matches) return;
   document.querySelectorAll("footer details.fg[open]").forEach(function (d) { d.open = false; });
 })();
+
+/* ================= Suche in der oberen Leiste (22.11.2026) =================
+   Vorgabe: Suche oben, nicht im Menü – wie auf üblichen Websites. Das Feld
+   wird hier in die Leiste eingesetzt, damit keine Seite einzeln angepasst
+   werden muss. Auf schmalen Bildschirmen erst nur die Lupe; ein Tipp klappt
+   das Feld unter der Leiste auf. Ergebnisse zeigt suche.html (?q=…). */
+(function obenSuche() {
+  "use strict";
+  var leiste = document.querySelector("nav.topnav .inner");
+  if (!leiste || leiste.querySelector(".top-suche")) return;
+  var sprache = (document.documentElement.lang || "de").slice(0, 2);
+  var T = {
+    de: { ph: "Website durchsuchen …", knopf: "Suchen", lupe: "Suche öffnen" },
+    en: { ph: "Search the site …", knopf: "Search", lupe: "Open search" },
+    es: { ph: "Buscar en el sitio …", knopf: "Buscar", lupe: "Abrir búsqueda" }
+  }[sprache] || null;
+  if (!T) T = { ph: "Website durchsuchen …", knopf: "Suchen", lupe: "Suche öffnen" };
+  var lupeSvg = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="15.5" y1="15.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  var form = document.createElement("form");
+  form.className = "top-suche"; form.setAttribute("role", "search");
+  form.action = "suche.html"; form.method = "get";
+  form.innerHTML =
+    '<button type="button" class="ts-lupe" aria-label="' + T.lupe + '" aria-expanded="false">' + lupeSvg + '</button>' +
+    '<input type="search" name="q" placeholder="' + T.ph + '" aria-label="' + T.ph + '" autocomplete="off">' +
+    '<button type="submit" class="ts-los" aria-label="' + T.knopf + '">' + lupeSvg + '</button>';
+  leiste.appendChild(form);
+  var feld = form.querySelector("input");
+  try { var q = new URL(window.location.href).searchParams.get("q"); if (q && /suche\.html$/.test(location.pathname)) feld.value = q; } catch (e) {}
+  var lupe = form.querySelector(".ts-lupe");
+  lupe.addEventListener("click", function () {
+    var offen = form.classList.toggle("offen");
+    lupe.setAttribute("aria-expanded", offen ? "true" : "false");
+    if (offen) feld.focus();
+  });
+  form.addEventListener("submit", function (e) { if (!feld.value.trim()) { e.preventDefault(); feld.focus(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && form.classList.contains("offen")) { form.classList.remove("offen"); lupe.setAttribute("aria-expanded", "false"); lupe.focus(); }
+  });
+})();
