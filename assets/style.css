@@ -1772,22 +1772,58 @@ details.auf > summary:hover{background:rgba(255,255,255,.10)}
 /* Bänder (volle Breite) durchscheinend, damit Verlauf und Sterne sichtbar bleiben */
 .band{background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015));border-color:rgba(255,255,255,.10)}
 
-/* ---------- SCHRIFT POPPINS (23.11.2026) ----------
-   Auf Wunsch der Betreiberin statt Fraunces/Inter. Lokal eingebunden
-   (assets/fonts, Fontsource, SIL Open Font License – POPPINS-OFL.txt),
-   kein Abruf bei Google – DSGVO. */
-@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/poppins-latin-400-normal.woff2") format("woff2")}
-@font-face{font-family:"Poppins";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/poppins-latin-400-italic.woff2") format("woff2")}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/poppins-latin-500-normal.woff2") format("woff2")}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/poppins-latin-600-normal.woff2") format("woff2")}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/poppins-latin-700-normal.woff2") format("woff2")}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/poppins-latin-ext-400-normal.woff2") format("woff2");
-    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+/* (Poppins am 23.11.2026 wieder entfernt – Medical-Point-Stil mit Systemschrift, siehe unten) */
+
+/* ---------- MEDICAL-POINT-STIL MIT FLAGGENFARBEN (23.11.2026) ----------
+   Vorgabe der Betreiberin: wie die Medical-Point-Website (C:\Claude\medical-point),
+   Farben der palästinensischen Flagge „mal allein, mal als Verlauf, wie es passt“.
+   Kräftige Systemschrift, dunkelblaue Glas-Kästen auf Schwarz, Kopfzeilen mit
+   rot-grünem Strich, rote Hauptknöpfe, grüne Links. Überschreibt NACHTBLAU/OLIV. */
 :root{
-  --serif:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --rot:#e4312b; --rot-hell:#ff6b5a;
+  --gruen:#149954; --gruen-hell:#3fcf85;
+  --papier:#f6f3ec;
+  --accent:#3fcf85; --accent-tint:#7fe3ad; --link:#3fcf85;
+  --accent2:#ff6b5a;
+  --card:rgba(18,41,122,.30);
+  --card-solid:#0d1640;
+  --flaeche:linear-gradient(160deg,rgba(18,41,122,.50),rgba(6,18,56,.58));
+  --line:rgba(255,255,255,.14);
+  --ink:#ffffff; --ink2:rgba(255,255,255,.80); --muted:rgba(255,255,255,.62);
+  --serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --radius-s:12px; --radius-m:16px; --radius-l:22px;
 }
-body{font-size:15.5px;line-height:1.72}
-h1,h2,h3,h4{font-weight:600;letter-spacing:-.015em}
-h1{line-height:1.12}
-.zb b{font-weight:600}
+body{font-family:var(--sans);font-size:16.5px;line-height:1.68}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:800;letter-spacing:-.01em}
+h1{font-weight:800;line-height:1.1}
+.zb b{font-family:var(--serif);font-weight:800}
+h2::after{background:linear-gradient(90deg,var(--rot),var(--rot-hell) 40%,var(--gruen-hell))}
+
+/* Kopfzeilen: hell, mit rot-grünem Strich davor */
+.sub,.kicker,header.hero .kicker{color:rgba(255,255,255,.78);letter-spacing:.14em;font-weight:700}
+.sub::before,.kicker::before{content:"";display:inline-block;width:26px;height:3px;border-radius:2px;margin-right:10px;
+    vertical-align:middle;background:linear-gradient(90deg,var(--rot) 0 50%,var(--gruen) 50% 100%)}
+
+/* Dunkelblaue Glas-Kästen */
+.card,.tile,.steckbrief,.lernkarte,details.expand,.punkte > li,.prozess .schritt,.qcard,.person,.book,.event,.doc,.viz,.callout,.merksatz,
+.zb,.zb:first-child,.band{background:var(--flaeche);border-color:rgba(255,255,255,.14)}
+.callout.alert{border-left-color:var(--rot)}
+.card:hover,.tile:hover{border-color:rgba(63,207,133,.55)}
+.merksatz::before{background:linear-gradient(180deg,var(--rot),var(--gruen))}
+
+/* Knöpfe: rot mit Verlauf (Hauptknopf), umrandet (Zweitknopf) */
+.btn{background:linear-gradient(135deg,var(--rot),var(--rot-hell));color:#fff;
+    box-shadow:0 10px 28px rgba(228,49,43,.35)}
+.btn:hover{color:#fff;filter:brightness(1.07)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45);box-shadow:none}
+.btn.ghost:hover{border-color:var(--gruen-hell);color:var(--gruen-hell)}
+.suche-form button,.top-suche .ts-los:hover{color:#fff}
+.suche-form button{background:linear-gradient(135deg,var(--rot),var(--rot-hell));box-shadow:0 8px 22px rgba(228,49,43,.3)}
+
+/* Aufklapp-Knöpfe und Abzeichen */
+details.auf > summary{color:var(--gruen-hell);border-color:rgba(63,207,133,.45);background:rgba(20,153,84,.12)}
+.badge{border-radius:999px}
+
+/* Kopfleiste: Linie als Flaggenverlauf (rot – weiß – grün) */
+nav.topnav::after{background:linear-gradient(90deg,var(--rot) 0%,var(--rot) 22%,#f4efe6 50%,var(--gruen) 78%,var(--gruen) 100%);opacity:.9}
