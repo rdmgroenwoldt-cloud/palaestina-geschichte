@@ -1626,3 +1626,10 @@ details.quellen-auf[open]{border-top:1px solid var(--line);padding-top:6px}
   main.wrap > section:has(> h2) .callout{max-width:none}
   main.wrap > section:has(> h2) details.auf{max-width:88ch}
 }
+
+/* ---------- LESBARKEIT: Karten als Link (22.11.2026) ----------
+   Ist eine ganze Karte ein Link (a.card), erbte der Fließtext die grüne
+   Linkfarbe – anstrengend zu lesen. Jetzt: Titel grün, Text weiß. */
+a.card{color:var(--ink);text-decoration:none}
+a.card > b,a.card > strong,a.card h3,a.card h4{display:block;color:var(--accent);margin-bottom:4px}
+a.card:hover > b,a.card:hover > strong{text-decoration:underline}
