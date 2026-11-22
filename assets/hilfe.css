@@ -1,0 +1,61 @@
+/* Projektseiten "Hilfe für Gaza": Bilder-Karussell, Videos, Logo-Zeile, Spendenkarte */
+.hk-huelle{position:relative;margin:18px 0 6px}
+.hk-galerie{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3 * 16px) / 4);gap:16px;
+    overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+    padding:4px 2px 14px;scrollbar-width:thin}
+.hk-galerie figure{margin:0;max-width:none;scroll-snap-align:start;background:var(--card);
+    border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;display:flex;flex-direction:column}
+.hk-galerie figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;display:block;
+    border:0;padding:0;border-radius:0}
+.hk-galerie figcaption{font-size:13px;line-height:1.45;padding:10px 12px 12px;color:var(--ink2);margin:0}
+.hk-galerie figure.hk-sensibel{position:relative;cursor:pointer}
+.hk-galerie figure.hk-sensibel img{filter:blur(24px) brightness(.6);transition:filter .3s}
+.hk-galerie figure.hk-sensibel.frei img{filter:none;cursor:zoom-in}
+.hk-warnung{position:absolute;left:0;right:0;top:0;aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fff;text-align:center;font-size:13px;padding:12px}
+.hk-warnung b{font-size:14px}
+.hk-warnung i{font-style:normal;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:5px 12px;margin-top:4px}
+.hk-sensibel.frei .hk-warnung{display:none}
+.hk-gross{position:fixed;inset:0;z-index:130;background:rgba(6,6,5,.94);display:none;align-items:center;justify-content:center;padding:20px;flex-direction:column;gap:12px}
+.hk-gross.auf{display:flex}
+.hk-gross img{max-width:min(1100px,94vw);max-height:calc(100vh - 140px);border-radius:var(--radius-s)}
+.hk-gross p{color:#ddd8ca;font-size:13.5px;margin:0;text-align:center}
+.hk-gross button{position:absolute;top:16px;right:18px;width:46px;height:46px;border-radius:50%;background:rgba(20,20,17,.82);color:#fff;border:1px solid rgba(255,255,255,.22);font-size:24px;cursor:pointer}
+.hk-pfeil{position:absolute;top:calc(50% - 36px);z-index:4;width:44px;height:44px;border-radius:50%;
+    border:1px solid var(--line-strong);background:var(--card);color:var(--accent);font-size:22px;line-height:1;
+    cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow-m)}
+.hk-pfeil:hover{background:var(--accent);color:var(--on-accent)}
+.hk-pfeil[disabled]{opacity:0;pointer-events:none}
+.hk-pfeil.links{left:-18px}.hk-pfeil.rechts{right:-18px}
+.hk-zaehler{font-size:12px;color:var(--muted);text-align:center;letter-spacing:.04em;margin:0 0 8px}
+.hk-videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,360px));justify-content:center;gap:22px;margin:26px 0}
+.hk-video{margin:0}
+.hk-video video{width:100%;border-radius:var(--radius-m);background:#000;display:block}
+.hk-video figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
+.hk-logo-zeile{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:8px 0 18px}
+.hk-logo-zeile img{width:120px;height:auto;border-radius:var(--radius-m);flex:0 0 auto}
+.hk-logo-zeile img.hk-logo-weiss{width:230px;background:#fff;padding:8px 12px}
+.hk-logo-zeile .section-intro{flex:1;min-width:240px;margin:0}
+.hk-schritte{max-width:820px;padding-left:22px}
+.hk-schritte li{margin-bottom:10px;color:var(--ink2)}
+.hk-spende{display:flex;gap:20px;align-items:center;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);
+    border-radius:var(--radius-m);padding:18px;margin:22px 0}
+.hk-spende img{width:150px;border-radius:var(--radius-s);background:#fff;padding:6px}
+.hk-spende div{flex:1;min-width:220px}
+.hk-ziel{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:10px;margin-top:auto}
+.hk-ziel span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.hk-ziel b{font-family:var(--serif);font-size:26px;color:var(--accent)}
+.hk-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.hk-chips span{border:1px solid var(--line-strong);border-radius:999px;padding:5px 13px;font-size:13px;color:var(--ink2)}
+.hk-projekte{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}
+.hk-projekt{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+    overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.hk-projekt:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);border-color:var(--accent)}
+.hk-projekt img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.hk-projekt div{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.hk-projekt .ort{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.hk-projekt h4{margin:0 0 6px;font-size:16px;border:0;padding:0}
+.hk-projekt p{font-size:13.5px;color:var(--ink2);margin:0 0 10px;flex:1}
+.hk-projekt .mehr{font-size:13px;font-weight:700;color:var(--accent)}
+@media (max-width:1000px){.hk-galerie{grid-auto-columns:calc((100% - 2 * 14px) / 2.4);gap:14px}}
+@media (max-width:640px){.hk-galerie{grid-auto-columns:78%;gap:12px}.hk-pfeil{display:none}}
+@media (max-width:640px){.hk-projekte{grid-template-columns:1fr}}
