@@ -1697,7 +1697,9 @@ nav.topnav a.nl-suche{display:none}
 }
 @media print{.top-suche{display:none}}
 
-/* ---------- NACHTBLAU (23.11.2026) ----------
+/* ---------- NACHTBLAU → BORDEAUX/OLIV (23.11.2026) ----------
+   Farben auf Wunsch der Betreiberin: Hintergrund Bordeauxrot statt Blau,
+   Akzent Olivgrün statt Gold (Variablennamen --gold/--gold-tief beibehalten).
    Inspiration: kids4hope.com (nicht übernommen, nur die Stimmung): nachtblauer
    Verlauf statt Schwarz, Glas-Kacheln mit hellem Haarrand und großen Radien,
    unscharfe Kopfleiste mit farbiger Linie (hier: Farben der palästinensischen
@@ -1705,34 +1707,34 @@ nav.topnav a.nl-suche{display:none}
    Hauptknopf, pillenförmige Knöpfe. Serifen-Überschriften und Grün als
    Linkfarbe bleiben – die Seite ist eine Informationsseite. */
 :root{
-  --bg:#070b22;
+  --bg:#170610;
   --card:rgba(255,255,255,.065);
-  --card-solid:#111a45;
+  --card-solid:#2b0c1a;
   --ink:#f4efe6;
   --ink2:rgba(244,239,230,.82);
   --muted:rgba(244,239,230,.64);
   --line:rgba(244,239,230,.14);
-  --gold:#f3c46e;
-  --gold-tief:#e8a947;
+  --gold:#b4c26a;
+  --gold-tief:#8c9a43;
   --radius-s:12px; --radius-m:18px; --radius-l:22px;
-  --shadow-s:0 6px 22px rgba(2,4,20,.45), inset 0 1px 0 rgba(255,255,255,.06);
-  --shadow-m:0 18px 40px rgba(2,4,20,.55), inset 0 1px 0 rgba(255,255,255,.07);
+  --shadow-s:0 6px 22px rgba(12,2,6,.5), inset 0 1px 0 rgba(255,255,255,.06);
+  --shadow-m:0 18px 40px rgba(12,2,6,.6), inset 0 1px 0 rgba(255,255,255,.07);
 }
-html{background:#060a22}
+html{background:#12040b}
 body{background:
-    radial-gradient(1100px 640px at 78% 8%, rgba(64,104,224,.22), transparent 66%),
-    radial-gradient(820px 560px at 4% 46%, rgba(52,96,210,.13), transparent 70%),
-    linear-gradient(180deg,#060a22 0%,#0a1238 30%,#0e1847 55%,#0a1238 80%,#060a22 100%);
+    radial-gradient(1100px 640px at 78% 8%, rgba(176,40,72,.26), transparent 66%),
+    radial-gradient(820px 560px at 4% 46%, rgba(150,30,58,.16), transparent 70%),
+    linear-gradient(180deg,#12040b 0%,#250917 30%,#330c1f 55%,#250917 80%,#12040b 100%);
   background-attachment:fixed}
 
 /* Kopfleiste: Glas + Flaggenlinie */
-nav.topnav{background:rgba(7,11,34,.78);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
+nav.topnav{background:rgba(23,6,16,.8);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);
     border-bottom:0}
 nav.topnav::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;pointer-events:none;
     background:linear-gradient(90deg,#e4312b 0%,#e4312b 18%,#0b0b0b 34%,#f4efe6 55%,#149954 78%,#149954 100%);opacity:.85}
 
 /* Seitenköpfe: nachtblau statt schwarz abgedunkelt */
-header.hero::before{background:linear-gradient(180deg, rgba(6,10,34,.74) 0%, rgba(6,10,34,.55) 45%, rgba(6,10,34,.95) 100%)}
+header.hero::before{background:linear-gradient(180deg, rgba(23,6,14,.74) 0%, rgba(23,6,14,.55) 45%, rgba(23,6,14,.95) 100%)}
 header.hero,header.page-hero{border-bottom-color:rgba(244,239,230,.10)}
 h1{letter-spacing:-.02em}
 
@@ -1746,7 +1748,7 @@ header.hero .kicker{color:var(--gold)}
     border-color:rgba(255,255,255,.14)}
 .callout{background-image:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
     border-color:rgba(255,255,255,.14);border-radius:0 var(--radius-m) var(--radius-m) 0}
-.card:hover,.tile:hover{border-color:rgba(243,196,110,.45)}
+.card:hover,.tile:hover{border-color:rgba(180,194,106,.5)}
 
 /* Zahlenband als einzelne Glas-Kacheln */
 .zahlenband{gap:12px;border-block:0}
@@ -1756,9 +1758,9 @@ header.hero .kicker{color:var(--gold)}
 
 /* Knöpfe: Pillen, Hauptknopf golden mit leichtem Leuchten */
 .btn{border-radius:999px;padding:12px 22px;font-weight:600;
-    background:linear-gradient(180deg,var(--gold),var(--gold-tief));color:#1d1406;border:1px solid transparent;
-    box-shadow:0 8px 26px rgba(243,196,110,.28)}
-.btn:hover{color:#1d1406;filter:brightness(1.06)}
+    background:linear-gradient(180deg,var(--gold),var(--gold-tief));color:#141a05;border:1px solid transparent;
+    box-shadow:0 8px 26px rgba(150,170,70,.26)}
+.btn:hover{color:#141a05;filter:brightness(1.06)}
 .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border-color:rgba(255,255,255,.22);box-shadow:none}
 .btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
 .top-suche input[type=search]{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18)}
@@ -1767,7 +1769,27 @@ header.hero .kicker{color:var(--gold)}
 details.auf > summary{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.06)}
 details.auf > summary:hover{background:rgba(255,255,255,.10)}
 .suche-form input[type=search]{border-radius:999px;padding-left:18px;background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18)}
-.suche-form button{border-radius:999px;background:linear-gradient(180deg,var(--gold),var(--gold-tief));color:#1d1406;font-weight:600;
-    box-shadow:0 8px 22px rgba(243,196,110,.25)}
+.suche-form button{border-radius:999px;background:linear-gradient(180deg,var(--gold),var(--gold-tief));color:#141a05;font-weight:600;
+    box-shadow:0 8px 22px rgba(150,170,70,.24)}
 /* Bänder (volle Breite) durchscheinend, damit Verlauf und Sterne sichtbar bleiben */
 .band{background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015));border-color:rgba(255,255,255,.10)}
+
+/* ---------- SCHRIFT POPPINS (23.11.2026) ----------
+   Auf Wunsch der Betreiberin statt Fraunces/Inter. Lokal eingebunden
+   (assets/fonts, Fontsource, SIL Open Font License – POPPINS-OFL.txt),
+   kein Abruf bei Google – DSGVO. */
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/poppins-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/poppins-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/poppins-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/poppins-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/poppins-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/poppins-latin-ext-400-normal.woff2") format("woff2");
+    unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{
+  --serif:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+body{font-size:15.5px;line-height:1.72}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.015em}
+h1{line-height:1.12}
+.zb b{font-weight:600}
