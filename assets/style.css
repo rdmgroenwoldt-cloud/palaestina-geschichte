@@ -1578,3 +1578,51 @@ h1,h2,h3,h4,.zb span,.ct,.ms-kick,.sub,.kb-kt,.mm-t{hyphens:auto;-webkit-hyphens
 body{background:#000;isolation:isolate}
 #sterne{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block;pointer-events:none}
 @media print{#sterne{display:none}}
+
+/* ---------- BREITE & AUFKLAPPER (22.11.2026) ----------
+   Vorgabe der Betreiberin: „die Seite wird nicht voll genutzt … mehr mit
+   Aufklappen … die Quellenangaben zum Aufklappen“.
+   1) Aufklapper .auf: „Weiterlesen“ (lange Absatzfolgen) und Quellen
+      (Abschnitt #quellen, Quellenzeilen unter Abschnitten). Erzeugt per
+      Skript; Links auf Ziele darin öffnen sie, Druck öffnet alles.
+   2) Breite Fenster: breitere Spalte; ab 1300 px stehen Kapitelzeile und
+      Überschrift jedes Abschnitts links, der Inhalt rechts daneben. */
+details.auf{margin:6px 0 16px;max-width:80ch}
+details.auf > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
+    font-size:13.5px;font-weight:600;color:var(--accent);padding:7px 14px;border:1px solid var(--line-strong);
+    border-radius:99px;background:var(--accent-soft);user-select:none}
+details.auf > summary::-webkit-details-marker{display:none}
+details.auf > summary::marker{content:""}
+details.auf > summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;
+    border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+details.auf[open] > summary::after{transform:rotate(-135deg) translateY(-1px)}
+details.auf > summary:hover{background:color-mix(in srgb,var(--accent) 24%,transparent)}
+details.auf > summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+details.auf .auf-zahl{font-weight:400;color:var(--ink2)}
+details.auf[open] > summary{margin-bottom:12px}
+details.weiter[open] > summary{opacity:.85}
+details.quellen-auf{max-width:none}
+details.quellen-auf[open]{border-top:1px solid var(--line);padding-top:6px}
+.callout details.auf{margin-bottom:4px}
+
+@media (min-width:1200px){
+  .wrap{max-width:1280px}
+  p{max-width:80ch}
+  .section-intro{max-width:76ch}
+  .expand-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:1500px){
+  .wrap{max-width:1400px}
+}
+@media (min-width:1300px){
+  main.wrap > section:has(> h2){display:grid;grid-template-columns:250px minmax(0,1fr);
+      column-gap:44px;align-items:start}
+  main.wrap > section:has(> h2) > *{grid-column:2;min-width:0}
+  main.wrap > section:has(> h2) > .sub{grid-column:1;grid-row:1;margin-top:6px;align-self:start}
+  main.wrap > section:has(> h2) > h2{grid-column:1;grid-row:1 / span 12;font-size:clamp(24px,1.9vw,30px);
+      margin-top:34px;position:sticky;top:84px;align-self:start}
+  main.wrap > section:has(> h2) > h2::after{margin-top:12px}
+  main.wrap > section:has(> h2) p{max-width:88ch}
+  main.wrap > section:has(> h2) .callout{max-width:none}
+  main.wrap > section:has(> h2) details.auf{max-width:88ch}
+}
