@@ -1228,3 +1228,12 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
   if (ruhig) { zeichne(0); addEventListener("scroll", () => zeichne(0), { passive: true }); }
   else requestAnimationFrame(zeichne);
 })();
+
+/* ================= Fußzeile (22.11.2026) =================
+   Auf schmalen Bildschirmen sind die Linkgruppen der Fußzeile beim Laden
+   zugeklappt (Akkordeon); auf breiten bleiben sie offen. */
+(function fusszeile() {
+  "use strict";
+  if (!window.matchMedia("(max-width: 759px)").matches) return;
+  document.querySelectorAll("footer details.fg[open]").forEach(function (d) { d.open = false; });
+})();

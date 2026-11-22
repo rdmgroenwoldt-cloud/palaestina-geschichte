@@ -1619,8 +1619,11 @@ details.quellen-auf[open]{border-top:1px solid var(--line);padding-top:6px}
       column-gap:44px;align-items:start}
   main.wrap > section:has(> h2) > *{grid-column:2;min-width:0}
   main.wrap > section:has(> h2) > .sub{grid-column:1;grid-row:1;margin-top:6px;align-self:start}
-  main.wrap > section:has(> h2) > h2{grid-column:1;grid-row:1 / span 12;font-size:clamp(24px,1.9vw,30px);
-      margin-top:34px;position:sticky;top:84px;align-self:start}
+  main.wrap > section:has(> h2) > h2{grid-column:1;grid-row:2 / span 12;font-size:clamp(24px,1.9vw,30px);
+      position:sticky;top:84px;align-self:start}
+  /* erstes Inhaltselement neben Kapitelzeile UND Überschrift, damit eine
+     zweizeilige Kapitelzeile die Überschrift nicht überlappt */
+  main.wrap > section:has(> h2) > .sub + h2 + *{grid-row:1 / span 2}
   main.wrap > section:has(> h2) > h2::after{margin-top:12px}
   main.wrap > section:has(> h2) p{max-width:88ch}
   main.wrap > section:has(> h2) .callout{max-width:none}
@@ -1633,3 +1636,38 @@ details.quellen-auf[open]{border-top:1px solid var(--line);padding-top:6px}
 a.card{color:var(--ink);text-decoration:none}
 a.card > b,a.card > strong,a.card h3,a.card h4{display:block;color:var(--accent);margin-bottom:4px}
 a.card:hover > b,a.card:hover > strong{text-decoration:underline}
+
+/* ---------- FUSSZEILE NEU (22.11.2026) ----------
+   Vorgabe: „Fußzeile sehr unübersichtlich und überladen“. Statt ~75 Links
+   als Fließtext: Gruppen wie im Menü. Breit: offenes Raster, Überschrift
+   nicht klickbar. Schmal (< 760 px): jede Gruppe zum Aufklappen (zu beim
+   Laden, siehe interactions.js „Fußzeile“). „Über diese Seite“ klappt auf. */
+footer .fgruppen{display:block;columns:175px 6;column-gap:32px;margin:4px 0 30px}
+footer .fg{min-width:0;break-inside:avoid;margin:0 0 24px}
+footer .fg > summary{list-style:none;font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:10px;line-height:1.35}
+footer .fg > summary::-webkit-details-marker{display:none}
+footer .fg > summary::marker{content:""}
+footer .fg ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+footer .fg a{color:var(--ink2);font-size:13.5px;line-height:1.35;text-decoration:none}
+footer .fg a:hover{color:var(--accent);text-decoration:underline}
+footer details.f-ueber{margin:0 0 10px;max-width:90ch}
+footer details.f-ueber > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:600;color:var(--ink2)}
+footer details.f-ueber > summary::-webkit-details-marker{display:none}
+footer details.f-ueber > summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;
+    border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+footer details.f-ueber[open] > summary::after{transform:rotate(-135deg)}
+footer details.f-ueber p{margin-top:8px;font-size:13px;color:var(--muted)}
+@media (min-width:760px){ footer .fg > summary{pointer-events:none} }
+@media (max-width:759px){
+  footer .fgruppen{columns:1}
+  footer .fg{border-top:1px solid var(--line);margin:0}
+  footer .fg > summary{cursor:pointer;margin:0;padding:13px 2px;display:flex;justify-content:space-between;align-items:center}
+  footer .fg > summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;
+      border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .2s}
+  footer .fg[open] > summary::after{transform:rotate(-135deg)}
+  footer .fg ul{padding:0 2px 14px}
+  footer .fg a{font-size:15px;padding:3px 0;display:inline-block}
+}
+@media print{ footer .fgruppen{display:none} }
