@@ -1899,3 +1899,51 @@ nav.topnav .brand:hover .brand-name .bn-1{color:#3fcf85}
   body.nur-qr-drucken .qr-karte{box-shadow:none;max-width:9cm;margin:2cm auto}
   body.nur-qr-drucken #sterne{display:none !important}
 }
+
+/* =========================================================================
+   NEUES DESIGN WIE MEDICAL POINT (23.11.2026) – eigene Gestaltung übernommen:
+   Schrift IBM Plex Sans (selbst gehostet, OFL), Tatreez-Stoff als Hintergrund
+   (interactions.js, Leinwand #sterne), kantige Formen mit hartem Versatzschatten,
+   Stich-Ecken in Rot/Grün, Rauten statt Kreise.
+   ========================================================================= */
+@font-face{font-family:"Plex";src:url("fonts/plex-sans-latin-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex";src:url("fonts/plex-sans-latin-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Plex";src:url("fonts/plex-sans-latin-600.woff2") format("woff2");font-weight:500 600;font-style:normal;font-display:swap}
+@font-face{font-family:"Plex";src:url("fonts/plex-sans-latin-700.woff2") format("woff2");font-weight:700 900;font-style:normal;font-display:swap}
+:root{--serif:"Plex",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--sans:"Plex",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{font-family:var(--sans);background:#02040f}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;letter-spacing:-.01em}
+#sterne{display:block !important}
+
+/* Alles eckig – Ausnahmen: Logo-Zeichen, Fotos von Personen bleiben wie sie sind */
+*,*::before,*::after{border-radius:0 !important}
+
+/* Knöpfe: rechteckig, kräftiger Rand, harter versetzter Schatten */
+.btn,.kasten-mehr,.pdf-cta a,.carousel-btn{border-width:2px;letter-spacing:.02em}
+.btn{border:2px solid var(--rot);box-shadow:4px 4px 0 #7d1612;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #7d1612}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7);box-shadow:4px 4px 0 rgba(255,255,255,.14)}
+.btn.ghost:hover{box-shadow:6px 6px 0 rgba(255,255,255,.22)}
+.btn:active,.btn.ghost:active{transform:translate(2px,2px);box-shadow:1px 1px 0 rgba(0,0,0,.5)}
+.kasten-mehr{box-shadow:3px 3px 0 rgba(0,0,0,.5)}
+
+/* Flächen und Karten: scharfe Kante, harter Schatten, kleine Stich-Ecke oben links */
+.callout,.card,a.card,.tile,.doc,.event,.lernkarte,.merksatz,.person,.featured,.f-card,.stat,
+details.gp,details.auf,details.expand,.qr-karte{box-shadow:6px 6px 0 rgba(0,0,0,.5)}
+.callout,.card,a.card,.merksatz,details.gp,.tile,.doc,.lernkarte,.featured{position:relative}
+.callout::after,.card::after,a.card::after,.merksatz::after,details.gp::after,.tile::after,.doc::after,.featured::after{
+  content:"";position:absolute;top:-1px;left:-1px;width:10px;height:10px;background:var(--rot);box-shadow:10px 0 0 var(--gruen);pointer-events:none}
+
+/* Kreise -> Rauten (Kreuzstich-Form) */
+.punkte .pz{position:relative;isolation:isolate;background:transparent !important;border:0 !important;min-width:28px;height:28px;color:#fff !important}
+.punkte .pz::before{content:"";position:absolute;inset:4px;z-index:-1;transform:rotate(45deg);background:var(--rot);box-shadow:3px 3px 0 rgba(0,0,0,.45)}
+.kn-punkt,.tl-item::before{transform:rotate(45deg)}
+
+/* Kleine Schilder und Eingabefelder eckig, mit dünnem harten Schatten */
+.badge,.top-suche input,.suche-form input,.teilen-link input,.mm-panel,.tab-list button{border-radius:0 !important}
+.mm-panel{box-shadow:6px 6px 0 rgba(0,0,0,.55)}
+
+/* Kopfleiste: gerade Akzentlinie Rot/Grün statt Verlauf */
+nav.topnav{border-bottom:0;box-shadow:none}
+nav.topnav::after{background:linear-gradient(90deg,var(--rot) 0 50%,var(--gruen) 50% 100%) !important;opacity:1 !important;height:3px}
+@media print{ #sterne{display:none !important} .callout,.card,details.gp{box-shadow:none} }

@@ -1170,64 +1170,196 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
   }
 })();
 
-/* ================= Sternenhimmel (22.11.2026) =================
-   Übernommen von der Medical-Point-Website (C:\Claude\medical-point,
-   assets/js/app.js): Canvas hinter allen Inhalten, funkelnde Sterne,
-   leichte Tiefenwirkung beim Scrollen, gelegentlich eine Sternschnuppe.
-   Bei „Bewegung reduzieren“ steht der Himmel still. Die Leinwand wird
-   hier erzeugt, damit keine Seite einzeln angepasst werden muss. */
-(function sterne() {
-  return; /* Sternenhimmel abgeschaltet (Kim 23.11.2026) */
+/* ================= Tatreez-Stoff als Hintergrund (23.11.2026) =================
+   Übernommen von der Medical-Point-Website (eigene Gestaltung): dunkler Stoff mit
+   Stickraster, Kreuzstich-Borte links und rechts, blasse Stickmotive über die Fläche,
+   Spur aus Kreuzstichen bei Mausbewegung, Antippen einer freien Fläche stickt ein Motiv.
+   Nichts wird gespeichert. Bei „Bewegung reduzieren“ steht alles still. */
+(function () {
   "use strict";
-  if (document.getElementById("sterne")) return;
-  const c = document.createElement("canvas");
-  c.id = "sterne"; c.setAttribute("aria-hidden", "true");
-  document.body.insertBefore(c, document.body.firstChild);
-  const ctx = c.getContext("2d"); if (!ctx) return;
-  const ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let w, h, dpr, liste = [], schnuppe = null, naechste = performance.now() + 4000;
-  function aufbau() {
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
-    w = c.width = Math.floor(innerWidth * dpr); h = c.height = Math.floor(innerHeight * dpr);
-    const anzahl = Math.min(1000, Math.floor((innerWidth * innerHeight) / 1700));
-    liste = Array.from({ length: anzahl }, () => ({
-      x: Math.random() * w, y: Math.random() * h,
-      r: (Math.random() ** 2 * 1.8 + 0.45) * dpr,
-      a: Math.random() * 0.45 + 0.55, s: Math.random() * 0.002 + 0.0005, p: Math.random() * 6.28,
-      t: Math.random() < 0.9 ? 0.06 + Math.random() * 0.12 : 0.25,
-      f: Math.random() < 0.12 ? "180,200,255" : Math.random() < 0.05 ? "255,220,200" : "255,255,255",
-    }));
-  }
-  function zeichne(zeit) {
-    ctx.clearRect(0, 0, w, h);
-    const sy = (window.scrollY || 0) * dpr;
-    for (const s of liste) {
-      const fl = ruhig ? s.a : s.a * (0.7 + 0.3 * Math.sin(zeit * s.s + s.p));
-      let y = (s.y - sy * s.t) % h; if (y < 0) y += h;
-      ctx.beginPath(); ctx.arc(s.x, y, s.r, 0, 6.283);
-      ctx.fillStyle = `rgba(${s.f},${fl})`; ctx.fill();
-      if (s.r > 1.3 * dpr) { ctx.beginPath(); ctx.arc(s.x, y, s.r * 3.2, 0, 6.283); ctx.fillStyle = `rgba(${s.f},${fl * 0.14})`; ctx.fill(); }
+  const $ = (s, r = document) => r.querySelector(s);
+  const ruhig = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const SPRACHE = (document.documentElement.lang || "de").slice(0, 2);
+  (function stickgrund() {
+    /* Dunkelblauer Stoff mit feinem Stickraster. Bewegung hinterlässt Kreuzstiche, die verblassen;
+       beim Scrollen stickt sich am Rand eine Borte; Antippen setzt ein bleibendes Motiv. Nichts wird gespeichert. */
+    if (document.getElementById("sterne")) return;
+    const c = document.createElement("canvas"); c.id = "sterne"; c.setAttribute("aria-hidden", "true");
+    document.body.insertBefore(c, document.body.firstChild);
+    const ctx = c.getContext("2d");
+    // Eigene Ebene für die Borte, damit Kopfbilder und breite Bänder sie nicht verdecken (Klicks gehen durch)
+    const ebene = document.createElement("canvas");
+    ebene.setAttribute("aria-hidden", "true");
+    ebene.style.cssText = "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:45";
+    document.body.appendChild(ebene);
+    const ectx = ebene.getContext("2d");
+    const INHALT = 1400;
+    const ROT = "#e4312b", GRUEN = "#22b067", CREME = "#f1e4c4";
+    const FARBE = { r: ROT, g: GRUEN, c: CREME };
+    const BORTE = ["...r...", "..rgr..", ".rgcgr.", "rgc.cgr", ".rgcgr.", "..rgr..", "...r...", ".......", "...c...", "......."];
+    /*stickmotive*/ const STICKMOTIVE = [{"id":"stern-bethlehem","de":"Stern von Bethlehem","en":"Star of Bethlehem","ar":"نجمة بيت لحم","r":["......r......","...r..r..r...","....r.r.r....","...rgrgrgr...","....grgrg....",".r.rgcccgr.r.","rrrggcccggrrr",".r.rgcccgr.r.","....grgrg....","...rgrgrgr...","....r.r.r....","...r..r..r...","......r......"],"b":{"de":"Der achtzackige Stern steht für die überlieferten geometrischen Sternformen der palästinensischen Stickerei.","en":"The eight-pointed star stands for the traditional geometric star shapes of Palestinian embroidery.","ar":"النجمة الثمانية ترمز إلى أشكال النجوم الهندسية المتوارثة في التطريز الفلسطيني."}},{"id":"zypresse-gaza","de":"Zypresse","en":"Cypress","ar":"السرو","r":["......g......",".....grg.....",".....grg.....","....ggrgg....",".....grg.....","...gggrggg...","....grgrg....","..ggggrgggg..","...ggrgrgg...",".gggggrggggg.",".....crc.....",".....crc.....","....ccccc...."],"b":{"de":"Die Zypresse ist ein häufiges Baumornament und wird mit Beständigkeit verbunden.","en":"The cypress is a common tree ornament and is associated with steadfastness.","ar":"السرو زخرفة شجرية شائعة ترتبط بالثبات."}},{"id":"palme-ramallah","de":"Dattelpalme","en":"Date palm","ar":"النخلة","r":["......g......","..g...g...g..","...g..g..g...","....ggggg....",".gggggrggggg.","...gg.g.gg...","....ggrgg....","......r......",".....crc.....","......r......","......r......",".....rrr.....","....ccccc...."],"b":{"de":"Die Palme erinnert an die Landschaft und die landwirtschaftliche Kultur Palästinas.","en":"The palm recalls the landscape and agricultural culture of Palestine.","ar":"النخلة تذكّر بطبيعة فلسطين وثقافتها الزراعية."}},{"id":"orangenbluete-beit-dajan","de":"Orangenblüte","en":"Orange blossom","ar":"زهر البرتقال","r":[".............","......g......",".....gcg.....","...g.ccc.g...","....ccrcc....","..g.ccrcc.g..","..gccrrrccg..","..g.ccrcc.g..","....ccrcc....","...g.ccc.g...",".....gcg.....","......g......","............."],"b":{"de":"Die Orangenblüte verweist auf die Zitrusgärten der palästinensischen Küstenebene.","en":"The orange blossom refers to the citrus groves of the Palestinian coastal plain.","ar":"زهر البرتقال يشير إلى بساتين الحمضيات في السهل الساحلي الفلسطيني."}},{"id":"federn-hebron","de":"Federn","en":"Feathers","ar":"الريش","r":["......r......",".....rgr.....","....rgcgr....","...rgc.cgr...","..rgc...cgr..",".rgc.....cgr.","rgc.......cgr",".rgc.....cgr.","..rgc...cgr..","...rgc.cgr...","....rgcgr....",".....rgr.....","......r......"],"b":{"de":"Federartige Zacken gehören zu den naturbezogenen Stickformen der Region Hebron.","en":"Feather-like points are among the nature-inspired forms of the Hebron region.","ar":"الأشكال المسننة الشبيهة بالريش من الأشكال المستوحاة من الطبيعة في منطقة الخليل."}},{"id":"weinrebe-gaza","de":"Weinrebe","en":"Grapevine","ar":"دالية العنب","r":["......g......","....ggggg....","...g..g..g...","..g...g...g..","...r..g..r...","..rrr.g.rrr..","..rcr.g.rcr..","...r..g..r...","....g.g.g....",".....ggg.....","......g......",".....gcg.....","....ggggg...."],"b":{"de":"Die Weinrebe veranschaulicht die Bedeutung von Pflanzen und Früchten in traditionellen Motiven.","en":"The grapevine shows the importance of plants and fruit in traditional motifs.","ar":"دالية العنب تُظهر مكانة النباتات والثمار في النقوش التقليدية."}},{"id":"rose-gaza","de":"Rose","en":"Rose","ar":"الوردة","r":[".............",".....rrr.....","....rcrcr....","...rccrccr...","..rrccrccrr..","..rcccrcccr..","..rrrcrcrrr..","...rccrccr...","....rcrcr....",".....rrr.....","......g......",".....ggg.....","......g......"],"b":{"de":"Die stilisierte Rose gehört zu den Blütenformen palästinensischer Sticktraditionen.","en":"The stylised rose is one of the flower forms of Palestinian embroidery traditions.","ar":"الوردة المحوّرة من أشكال الزهور في تقاليد التطريز الفلسطيني."}},{"id":"mond-bethlehem","de":"Mond von Bethlehem","en":"Moon of Bethlehem","ar":"قمر بيت لحم","r":["......c......","...c..c..c...","....crcrc....","..ccrrgrrcc..","....rgggr....",".crrggcggrrc.","ccrggcccggrcc",".crrggcggrrc.","....rgggr....","..ccrrgrrcc..","....crcrc....","...c..c..c...","......c......"],"b":{"de":"Der Bethlehem-Mond bezeichnet eine überlieferte geometrische Stern- beziehungsweise Mondform.","en":"The Moon of Bethlehem is a traditional geometric star or moon shape.","ar":"قمر بيت لحم شكل هندسي تقليدي لنجمة أو قمر."}},{"id":"raute-hebron","de":"Raute","en":"Diamond","ar":"المعيّن","r":["......r......",".....rcr.....","....rcccr....","...rccgccr...","..rccgggccr..",".rccggcggccr.","rccgggrgggccr",".rccggcggccr.","..rccgggccr..","...rccgccr...","....rcccr....",".....rcr.....","......r......"],"b":{"de":"Rauten sind ein Grundelement vieler geometrischer palästinensischer Kreuzstichmuster.","en":"Diamonds are a basic element of many geometric Palestinian cross-stitch patterns.","ar":"المعيّن عنصر أساسي في كثير من نقوش التطريز الفلسطيني الهندسية."}},{"id":"zaehne-alte-frau","de":"Zähne der alten Frau","en":"Old woman's teeth","ar":"سنان العجوز","r":[".............","..r..r.r..r..","..rr.r.r.rr..","..rcrrrrrcr..","..rccrcrccr..","..rcrrcrrcr..","..rccrcrccr..","..rcrrcrrcr..","..rccrcrccr..","..rcrrrrrcr..","..rr.r.r.rr..","..r..r.r..r..","............."],"b":{"de":"Eine traditionelle volkstümliche Bezeichnung für gezackte, sägeähnliche Geometriemuster.","en":"A traditional folk name for jagged, saw-like geometric patterns.","ar":"اسم شعبي تقليدي للنقوش الهندسية المسننة الشبيهة بالمنشار."}},{"id":"granatapfel","de":"Granatapfel","en":"Pomegranate","ar":"الرمان","r":[".............",".....rgr.....","....rrrrr....",".....rgr.....","...rrrgrrr...","..rcccccccr..",".rcccrcrcccr.",".rcccrcrcccr.","..rcccccccr..","...rcccccr...","....rcccr....",".....rrr.....","............."],"b":{"de":"Der Granatapfel steht als Fruchtmotiv für die reichhaltige Pflanzenwelt Palästinas.","en":"As a fruit motif, the pomegranate stands for the rich plant life of Palestine.","ar":"الرمان، بوصفه نقشة ثمرية، يرمز إلى غنى الحياة النباتية في فلسطين."}},{"id":"olivenzweig","de":"Olivenzweig","en":"Olive branch","ar":"غصن الزيتون","r":[".............","......g......","...g..g..g...","..ggg.g.ggg..","...c..g..c...","....ggggg....","..gg..g..gg..","..gcg.g.gcg..","...g..g..g...","....ggggg....",".....ggg.....","......g......","............."],"b":{"de":"Der Olivenzweig verbindet das Motiv mit dem Olivenanbau und der Verbundenheit zum Land.","en":"The olive branch links the motif to olive growing and the bond with the land.","ar":"غصن الزيتون يربط النقشة بزراعة الزيتون وبالارتباط بالأرض."}},{"id":"schluessel-palaestina","de":"Schlüssel der Rückkehr","en":"Key of Return","ar":"مفتاح العودة","r":["....rrrrr....","...rr...rr...","..rr.....rr..","..r...c...r..","..rr.....rr..","...rr...rr...","....rrrrr....","......r......","......r......","....rrrrr....","....r.r.r....","....r.r.r....","....rrrrr...."],"b":{"de":"Der Schlüssel erinnert an die verlorenen Häuser palästinensischer Familien, an die Vertreibung 1948 (Nakba) und an das Recht auf Rückkehr.","en":"The key recalls the lost homes of Palestinian families, the expulsion of 1948 (Nakba) and the right of return.","ar":"يذكّر المفتاح بالبيوت التي فقدتها العائلات الفلسطينية، وبالتهجير عام 1948 (النكبة)، وبحق العودة."}}]; /*/stickmotive*/
+    let dpr = 1, w = 0, h = 0, zelle = 12, bz = 10, schmal = false, stoff = null;
+    let spur = [], motive = [], letzte = "", naechsteRuhe = 0, letztesMotiv = -1;
+
+    function aufbau() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = innerWidth; h = innerHeight; schmal = w < 760;
+      zelle = schmal ? 10 : 12; bz = schmal ? 4 : 10;
+      c.width = Math.floor(w * dpr); c.height = Math.floor(h * dpr);
+      ebene.width = c.width; ebene.height = c.height;
+      // Stoff einmal vorzeichnen: Grundfarbe, leichtes Licht in der Mitte, Stickraster als Punkte
+      stoff = document.createElement("canvas"); stoff.width = c.width; stoff.height = c.height;
+      const s = stoff.getContext("2d"); s.scale(dpr, dpr);
+      s.fillStyle = "#02040f"; s.fillRect(0, 0, w, h);
+      const licht = s.createRadialGradient(w * 0.5, h * 0.35, 0, w * 0.5, h * 0.35, Math.max(w, h) * 0.75);
+      licht.addColorStop(0, "rgba(22,44,130,.38)"); licht.addColorStop(1, "rgba(0,0,0,0)");
+      s.fillStyle = licht; s.fillRect(0, 0, w, h);
+      s.fillStyle = "rgba(255,255,255,.07)";
+      for (let y = 0; y < h; y += zelle) for (let x = 0; x < w; x += zelle) s.fillRect(x, y, 1, 1);
     }
+    function stich(x, y, farbe, alpha, gr, g = ctx) {
+      const p = gr * 0.2;
+      g.globalAlpha = alpha; g.strokeStyle = farbe; g.lineWidth = Math.max(1.2, gr * 0.17); g.lineCap = "round";
+      g.beginPath(); g.moveTo(x + p, y + p); g.lineTo(x + gr - p, y + gr - p);
+      g.moveTo(x + gr - p, y + p); g.lineTo(x + p, y + gr - p); g.stroke();
+    }
+    function borte() {
+      // Immer vollständig links und rechts; läuft beim Scrollen wie ein Stoffband mit der Seite mit
+      const muster = BORTE.length * bz;
+      const versatz = ruhig ? 0 : -(scrollY % muster);
+      const reihen = Math.ceil(h / bz) + BORTE.length;
+      const alpha = schmal ? 0.32 : 0.5;
+      const xL = schmal ? 2 : 10, xR = w - (schmal ? 2 : 10) - 7 * bz;
+      // Großer Bildschirm: auf der oberen Ebene (über Bildern). Handy: hinter dem Inhalt, damit Text lesbar bleibt.
+      const randFrei = Math.max(0, (w - INHALT) / 2) + Math.min(48, w * 0.05) >= 7 * bz + 14; // nur wenn neben dem Inhalt genug Platz ist, sonst hinter den Inhalt
+      const g = schmal || !randFrei ? ctx : ectx;
+      ectx.setTransform(1, 0, 0, 1, 0, 0); ectx.clearRect(0, 0, ebene.width, ebene.height); ectx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      for (let r = 0; r < reihen; r++) {
+        const zeile = BORTE[r % BORTE.length], y = versatz + r * bz;
+        if (y > h) break;
+        for (let k = 0; k < 7; k++) {
+          const f = zeile[k]; if (f === ".") continue;
+          stich(xL + k * bz, y, FARBE[f], alpha, bz, g);
+          stich(xR + k * bz, y, FARBE[f], alpha, bz, g);
+        }
+      }
+      ectx.globalAlpha = 1;
+    }
+    function zeichne(jetzt) {
+      if (!w || !h || !stoff.width || innerWidth !== w || innerHeight !== h) aufbau(); // z. B. Fenster war beim Laden noch unsichtbar
+      if (!w || !h) return;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.globalAlpha = 1; ctx.drawImage(stoff, 0, 0, w, h);
+      borte();
+      // bleibende Motive (wandern mit der Seite)
+      for (const m of motive) {
+        const mz = m.mz || (schmal ? 7 : 9), halb = (m.groesse * mz) / 2;
+        const x0 = m.x - halb, y0 = m.y - scrollY - halb;
+        if (y0 < -m.groesse * mz - 40 || y0 > h + 20) continue;
+        if (m.t0 === null) m.t0 = jetzt; // feste Motive sticken sich ein, sobald man hinscrollt
+        const sichtbar = ruhig ? 1e9 : (jetzt - m.t0) / 22; // Stich für Stich, von der Mitte nach außen
+        for (let i = 0; i < m.zellen.length && i <= sichtbar; i++) {
+          const [k, r, f] = m.zellen[i];
+          stich(x0 + k * mz, y0 + r * mz, FARBE[f], m.alpha || 0.92, mz);
+        }
+        if (m.fest) continue;
+        // Name des Motivs kurz darunter einblenden
+        const alter = jetzt - m.t0;
+        const na = ruhig ? 0 : alter < 600 ? alter / 600 : alter < 3200 ? 1 : Math.max(0, 1 - (alter - 3200) / 1200);
+        if (na > 0) {
+          ctx.globalAlpha = na; ctx.fillStyle = CREME; ctx.textAlign = "center";
+          ctx.font = `600 ${schmal ? 12 : 13}px system-ui, "Segoe UI", Tahoma, sans-serif`;
+          ctx.fillText(m.name, m.x, y0 + m.groesse * mz + 18);
+        }
+      }
+      // Spur und leise Zufallsstiche verblassen
+      spur = spur.filter((s) => jetzt - s.t0 < s.dauer);
+      for (const s of spur) {
+        const t = Math.max(0, (jetzt - s.t0) / s.dauer);
+        stich(s.x, s.y, s.f, s.a * (t < 0.12 ? t / 0.12 : 1 - (t - 0.12) / 0.88), zelle);
+      }
+      ctx.globalAlpha = 1;
+    }
+    function lauf() {
+      const jetzt = performance.now(); // gleiche Uhr wie bei den Stichen
+      if (!document.hidden) {
+        if (jetzt > naechsteRuhe) { // ab und zu ein leiser Stich irgendwo
+          naechsteRuhe = jetzt + 650 + Math.random() * 700;
+          spur.push({ x: Math.floor(Math.random() * w / zelle) * zelle, y: Math.floor(Math.random() * h / zelle) * zelle,
+            f: [ROT, GRUEN, CREME][Math.floor(Math.random() * 3)], t0: jetzt, dauer: 4200, a: 0.45 });
+        }
+        zeichne(jetzt);
+      }
+      requestAnimationFrame(lauf); // (zeichne fängt eine leere Zeichenfläche selbst ab)
+    }
+    const farbeZufall = () => (Math.random() < 0.45 ? ROT : Math.random() < 0.6 ? GRUEN : CREME);
     if (!ruhig) {
-      if (!schnuppe && zeit > naechste) {
-        schnuppe = { x: Math.random() * w * 0.8, y: Math.random() * h * 0.4, vx: (6 + Math.random() * 4) * dpr, vy: (2 + Math.random() * 2) * dpr, l: 1 };
-        naechste = zeit + 7000 + Math.random() * 9000;
-      }
-      if (schnuppe) {
-        const g = ctx.createLinearGradient(schnuppe.x, schnuppe.y, schnuppe.x - schnuppe.vx * 14, schnuppe.y - schnuppe.vy * 14);
-        g.addColorStop(0, `rgba(255,255,255,${schnuppe.l})`); g.addColorStop(1, "rgba(255,255,255,0)");
-        ctx.strokeStyle = g; ctx.lineWidth = 1.6 * dpr; ctx.beginPath();
-        ctx.moveTo(schnuppe.x, schnuppe.y); ctx.lineTo(schnuppe.x - schnuppe.vx * 14, schnuppe.y - schnuppe.vy * 14); ctx.stroke();
-        schnuppe.x += schnuppe.vx; schnuppe.y += schnuppe.vy; schnuppe.l -= 0.012;
-        if (schnuppe.l <= 0 || schnuppe.x > w + 200) schnuppe = null;
-      }
-      requestAnimationFrame(zeichne);
+      addEventListener("pointermove", (e) => {
+        const x = Math.floor(e.clientX / zelle) * zelle, y = Math.floor(e.clientY / zelle) * zelle, key = x + "," + y;
+        if (key === letzte) return; letzte = key;
+        spur.push({ x, y, f: farbeZufall(), t0: performance.now(), dauer: 2600, a: 0.85 });
+        if (spur.length > 400) spur.splice(0, spur.length - 400);
+      }, { passive: true });
     }
-  }
-  aufbau();
-  addEventListener("resize", () => { aufbau(); if (ruhig) zeichne(0); });
-  if (ruhig) { zeichne(0); addEventListener("scroll", () => zeichne(0), { passive: true }); }
-  else requestAnimationFrame(zeichne);
+    // Antippen auf freie Fläche (nicht auf Knöpfe, Links, Karten …) setzt ein bleibendes Motiv
+    addEventListener("pointerdown", (e) => {
+      if (e.button !== 0 || !e.target.closest || e.target.closest("a, button, input, textarea, select, summary, details, video, iframe, dialog, label, img, svg, canvas:not(#sterne), table, .btn, .card, .callout, .merksatz, .tile, .doc, .event, .lernkarte, .flipcard, nav, header, footer, p, li, h1, h2, h3, h4, blockquote, figure")) return;
+      // zufälliges Motiv, nicht zweimal hintereinander dasselbe
+      const pool = STICKMOTIVE.map((_, i) => i).filter((i) => i !== letztesMotiv);
+      const wahl = pool[Math.floor(Math.random() * pool.length)];
+      letztesMotiv = wahl;
+      const vorlage = STICKMOTIVE[wahl];
+      motive.push({ x: e.clientX, y: e.clientY + scrollY, t0: performance.now(), zellen: zellenVon(vorlage), groesse: vorlage.r.length, name: vorlage[SPRACHE] || vorlage.de });
+      const eigene = motive.filter((m) => !m.fest);
+      if (eigene.length > 40) motive.splice(motive.indexOf(eigene[0]), 1);
+      if (ruhig) zeichne(performance.now());
+    });
+
+    /* ---------- Feste Motive: von Anfang an verteilt, abwechselnd links und rechts neben dem Inhalt ---------- */
+    function feste() {
+      motive = motive.filter((m) => !m.fest);
+      const mz = 9, gr = 13 * mz, randEnde = 10 + 7 * bz + 18;
+      const frei = Math.max(0, (w - INHALT) / 2) - randEnde;     // Platz zwischen Borte und Inhalt
+      const genug = frei >= gr + 20;
+      const xL = randEnde + (genug ? frei / 2 : gr / 2 + 6), xR = w - xL;
+      const hoehe = document.documentElement.scrollHeight;
+      let samen = 0; for (const z of location.pathname) samen = (samen * 31 + z.charCodeAt(0)) % 997; // jede Seite etwas anders
+      let i = 0;
+      for (let y = 380; !schmal && y < hoehe - 260; y += 540, i++) { // kräftige Motive am Rand nur auf größeren Bildschirmen
+        const links = i % 2 === 0, vorlage = STICKMOTIVE[(samen + i * 5) % STICKMOTIVE.length];
+        motive.push({ x: links ? xL : xR, y: y + (links ? 0 : 170), t0: null, fest: true, alpha: genug ? 0.85 : 0.4,
+          zellen: zellenVon(vorlage), groesse: vorlage.r.length, name: "" });
+      }
+      // Viele kleine, verblasste Ornamente über die ganze Fläche (auch hinter dem Inhalt, auch auf dem Handy)
+      let z = samen + 7;
+      const zufall = () => ((z = (z * 9301 + 49297) % 233280) / 233280);
+      const innen = (schmal ? 34 : 10 + 7 * bz + 24), abstand = schmal ? 230 : 260;
+      for (let y = 140; y < hoehe - 80; y += abstand) {
+        const proReihe = schmal ? 1 : w > 1300 ? 3 : 2;
+        for (let s = 0; s < proReihe; s++) {
+          const breite = (w - 2 * innen) / proReihe;
+          const vorlage = STICKMOTIVE[Math.floor(zufall() * STICKMOTIVE.length)];
+          const mz = schmal ? 4 : 5 + Math.floor(zufall() * 2);   // klein: 4–6 Pixel je Stich
+          motive.push({ x: innen + breite * s + breite * (0.2 + zufall() * 0.6), y: y + zufall() * (abstand * 0.6),
+            t0: null, fest: true, mz, alpha: (schmal ? 0.18 : 0.22) + zufall() * 0.1,
+            zellen: zellenVon(vorlage), groesse: vorlage.r.length, name: "" });
+        }
+      }
+    }
+
+    function zellenVon(vorlage) {
+      const n = vorlage.r.length, mitte = (n - 1) / 2, zellen = [];
+      vorlage.r.forEach((zeile, r) => [...zeile].forEach((f, k) => { if (f !== ".") zellen.push([k, r, f]); }));
+      return zellen.sort((a, b) => Math.hypot(a[0] - mitte, a[1] - mitte) - Math.hypot(b[0] - mitte, b[1] - mitte));
+    }
+
+    aufbau();
+    feste();
+    addEventListener("load", feste);   // erst wenn Bilder geladen sind, stimmt die Seitenhöhe
+    addEventListener("resize", () => { aufbau(); feste(); if (ruhig) zeichne(performance.now()); });
+    if (ruhig) { zeichne(performance.now()); addEventListener("scroll", () => zeichne(performance.now()), { passive: true }); }
+    else requestAnimationFrame(lauf);
+  })();
 })();
 
 /* ================= Fußzeile (22.11.2026) =================
