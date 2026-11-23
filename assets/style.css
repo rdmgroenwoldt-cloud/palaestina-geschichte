@@ -1876,3 +1876,26 @@ nav.topnav .brand:hover .brand-name .bn-1{color:#3fcf85}
 @media (max-width:560px){ nav.topnav .brand-zeichen{height:38px} nav.topnav .brand-name{font-size:18px} }
 @media print{ nav.topnav .brand-zeichen{display:none} }
 
+
+/* Websites der Hilfsprojekte unter den Projektkarten (23.11.2026) */
+.projekt-websites{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:22px}
+.projekt-websites .pw-t{font-weight:700;color:var(--ink);margin-right:4px}
+
+/* ---------- SEITE TEILEN / QR-CODE (23.11.2026) ---------- */
+.teilen-raster{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:32px;align-items:start}
+.qr-karte{margin:0;background:#fff;border-radius:18px;padding:14px;box-shadow:0 14px 40px rgba(0,0,0,.45)}
+.qr-karte img{width:100%;height:auto;display:block}
+.teilen-knoepfe{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.teilen-knoepfe .callout{margin-top:8px}
+.teilen-link{display:flex;gap:10px;flex-wrap:wrap;max-width:640px}
+.teilen-link input{flex:1;min-width:220px;font:inherit;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink)}
+.teilen-dienste{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 8px}
+@media (max-width:760px){ .teilen-raster{grid-template-columns:1fr} .qr-karte{max-width:320px} }
+@media print{
+  body.nur-qr-drucken > *:not(main){display:none !important}
+  body.nur-qr-drucken main > *:not(#qr-code){display:none !important}
+  body.nur-qr-drucken #qr-code > *:not(.teilen-raster),body.nur-qr-drucken .teilen-knoepfe{display:none !important}
+  body.nur-qr-drucken .teilen-raster{display:block}
+  body.nur-qr-drucken .qr-karte{box-shadow:none;max-width:9cm;margin:2cm auto}
+  body.nur-qr-drucken #sterne{display:none !important}
+}
