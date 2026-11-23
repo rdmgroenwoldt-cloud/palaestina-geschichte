@@ -1827,3 +1827,41 @@ details.auf > summary{color:var(--gruen-hell);border-color:rgba(63,207,133,.45);
 
 /* Kopfleiste: Linie als Flaggenverlauf (rot – weiß – grün) */
 nav.topnav::after{background:linear-gradient(90deg,var(--rot) 0%,var(--rot) 22%,#f4efe6 50%,var(--gruen) 78%,var(--gruen) 100%);opacity:.9}
+
+/* ---------- PUNKTE ZUM AUFKLAPPEN, ZWEI NEBENEINANDER (23.11.2026) ----------
+   Vorgabe: „keine solchen Textblöcke, zum Aufklappen, besser angeordnet: 2 und 2“.
+   Lange Listenpunkte (ab 70 Wörtern) sind details.gp: zugeklappt Nummer, Titel
+   und ggf. Prüf-Abzeichen; aufgeklappt Behauptung und Prüfung. */
+.punkte.zwei{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+@media (min-width:900px){ .punkte.zwei,.punkte:has(> li > details.gp){grid-template-columns:repeat(2,minmax(0,1fr))} }
+.punkte:has(> li > details.gp){align-items:start}
+.punkte > li:has(> details.gp){padding:0}
+details.gp > summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;
+    padding:14px 46px 14px 16px;position:relative;line-height:1.4}
+details.gp > summary::-webkit-details-marker{display:none}
+details.gp > summary::marker{content:""}
+details.gp > summary .pz{flex:0 0 auto}
+details.gp > summary .gp-titel{flex:1 1 220px;min-width:0;color:var(--ink);font-size:15px}
+details.gp > summary .badge{margin-left:0}
+details.gp > summary::after{content:"";position:absolute;right:18px;top:20px;width:9px;height:9px;
+    border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(45deg);transition:transform .2s}
+details.gp[open] > summary::after{transform:rotate(-135deg);top:24px}
+details.gp > summary:hover .gp-titel{color:var(--accent)}
+details.gp > summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:var(--radius-m)}
+details.gp .gp-body{padding:4px 16px 16px;border-top:1px solid var(--line);margin:0 16px 0 16px;padding-left:0;padding-right:0}
+details.gp .gp-body p{margin:12px 0 0;max-width:none}
+details.gp .gp-body .gp-pruef{padding-left:12px;border-left:3px solid var(--accent)}
+@media print{ details.gp > summary::after{display:none} }
+
+/* Lange Kästen in Rastern: gekürzt mit „Weiterlesen“ (interactions.js) */
+.kasten-huelle{display:flex;flex-direction:column;min-width:0}
+.kasten-huelle > .callout,.kasten-huelle > .card,.kasten-huelle > .steckbrief{margin-bottom:0}
+.gekuerzt{max-height:300px;overflow:hidden;position:relative}
+.gekuerzt::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;pointer-events:none;
+    background:linear-gradient(180deg,transparent,rgba(6,12,40,.96))}
+.kasten-mehr{align-self:flex-start;margin:10px 0 18px;cursor:pointer;font:inherit;font-size:13.5px;font-weight:600;
+    color:var(--accent);background:rgba(20,153,84,.12);border:1px solid rgba(63,207,133,.45);border-radius:99px;padding:7px 16px}
+.kasten-mehr:hover{background:rgba(20,153,84,.22)}
+.kasten-mehr:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media print{ .gekuerzt{max-height:none !important;overflow:visible !important} .gekuerzt::after,.kasten-mehr{display:none !important} }
+.druck-offen{max-height:none !important}

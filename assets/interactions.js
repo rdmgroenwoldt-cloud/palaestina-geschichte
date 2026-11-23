@@ -1276,3 +1276,42 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
     if (e.key === "Escape" && form.classList.contains("offen")) { form.classList.remove("offen"); lupe.setAttribute("aria-expanded", "false"); lupe.focus(); }
   });
 })();
+
+/* ================= Lange Kästen in Rastern kürzen (23.11.2026) =================
+   Vorgabe: keine langen Textblöcke nebeneinander. Kästen in .duo/.trio/.bento/
+   .split-inhalt, die höher als HOEHE sind, werden gekürzt und bekommen einen
+   Knopf „Weiterlesen“. Kernaussage-Abschnitte bleiben offen; Druck und Sprung-
+   ziele (#anker) öffnen sie. */
+(function kaestenKuerzen() {
+  "use strict";
+  var HOEHE = 300;
+  var lang = (document.documentElement.lang || "de").slice(0, 2);
+  var T = { de: ["Weiterlesen", "Weniger anzeigen"], en: ["Read more", "Show less"], es: ["Seguir leyendo", "Mostrar menos"] }[lang] || ["Weiterlesen", "Weniger anzeigen"];
+  var sel = ".duo > .callout, .trio > .callout, .bento > .callout, .split-inhalt > .callout, " +
+            ".duo > .card, .trio > .card, .duo > .steckbrief, .trio > .steckbrief";
+  var kaesten = [].slice.call(document.querySelectorAll(sel)).filter(function (k) {
+    return !k.closest("#kernaussage, #einordnung, #kern, header, footer, nav");
+  });
+  function zu(k, b) { k.classList.add("gekuerzt"); b.textContent = T[0]; b.setAttribute("aria-expanded", "false"); }
+  function auf(k, b) { k.classList.remove("gekuerzt"); b.textContent = T[1]; b.setAttribute("aria-expanded", "true"); }
+  kaesten.forEach(function (k) {
+    if (k.querySelector("details") || k.scrollHeight <= HOEHE + 80) return;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "kasten-mehr";
+    k.insertAdjacentElement("afterend", b);
+    var huelle = document.createElement("div"); huelle.className = "kasten-huelle";
+    k.parentNode.insertBefore(huelle, k); huelle.appendChild(k); huelle.appendChild(b);
+    zu(k, b);
+    if (k.scrollHeight - k.clientHeight < 60) { k.classList.remove("gekuerzt"); huelle.parentNode.insertBefore(k, huelle); huelle.remove(); return; }
+    b.addEventListener("click", function () { k.classList.contains("gekuerzt") ? auf(k, b) : zu(k, b); });
+  });
+  function zielOeffnen() {
+    if (!location.hash) return;
+    var z = null; try { z = document.querySelector(decodeURIComponent(location.hash)); } catch (e) {}
+    var k = z && z.closest(".gekuerzt");
+    if (k) { var b = k.parentNode.querySelector(".kasten-mehr"); if (b) auf(k, b); }
+  }
+  zielOeffnen(); window.addEventListener("hashchange", zielOeffnen);
+  window.addEventListener("beforeprint", function () { document.querySelectorAll(".gekuerzt").forEach(function (k) { k.classList.add("druck-offen"); }); });
+  window.addEventListener("afterprint", function () { document.querySelectorAll(".druck-offen").forEach(function (k) { k.classList.remove("druck-offen"); }); });
+})();

@@ -1,0 +1,1933 @@
+ 
+Human Rights Council 
+Fifty-fifth session 
+26 February–5 April 2024 
+Agenda item 7 
+Human Rights situation in Palestine and other occupied Arab territories 
+ 
+ Anatomy of a Genocide 
+ 
+ 
+Report of the Special Rapporteur on the situation of human rights in 
+the Palestinian territories occupied since 1967, Francesca Albanese* 
+Summary 
+After five months of military operations, Israel has destroyed Gaza. Over 30,000 
+Palestinians have been killed, including more than 13,000 children. Over 12,000 are 
+presumed dead and 71,000 injured, many with life-changing mutilations. Seventy percent of 
+residential areas have been destroyed. Eighty percent of the whole population has been 
+forcibly displaced. Thousands of families have lost loved ones or have been wiped out. Many 
+could not bury and mourn their relatives, forced instead to leave their bodies decomposing 
+in homes, in the street or under the rubble. Thousands have been detained and systematically 
+subjected to inhuman and degrading treatment. The incalculable collective trauma will be 
+experienced for generations to come. 
+By analysing the patterns of violence and Israel’s policies in its onslaught on Gaza, 
+this report concludes that there are reasonable grounds to believe that the threshold indicating 
+Israel’s commission of genocide is met. One of the key findings is that Israel's executive and 
+military leadership and soldiers have intentionally distorted jus in bello principles, subverting 
+their protective functions, in an attempt to legitimize genocidal violence against the 
+Palestinian people. 
+ 
+ 
+ 
+ 
+ 
+ 
+* The present report was submitted to the conference services for processing after the deadline so as to 
+include the most recent information. 
+A/HRC/55/73
+ 
+Advance unedited version 
+Distr.: General 
+25 March 2024 
+Original: English 
+A/HRC/55/73 
+2 
+ 
+ 
+I. Introduction 
+1. 
+In this report, Francesca Albanese, the Special Rapporteur on the situation of human 
+rights in the Palestinian territory occupied since 1967 (“oPt”), addresses the crime of 
+genocide as perpetrated by the State of Israel (“Israel”) in the oPt, specifically in the Gaza 
+Strip, since 7 October 2023. As Israel prohibits her visits, this report is based on data and 
+analyses from organisations on the ground, international jurisprudence, investigative reports 
+and consultations with affected individuals, authorities, civil society and experts. 
+2. 
+The Special Rapporteur firmly condemns the crimes committed by Hamas and other 
+Palestinian armed groups in Israel on 7 October and urges accountability and the release of 
+hostages.1 This report does not examine those events, as they are beyond the geographic scope 
+of her mandate.2 Nor does it examine the situation in the West Bank, including east Jerusalem.  
+3. 
+Since it imposed the siege on Gaza in 2007, which tightened the closure imposed since 
+1993, Israel, the occupying power, has carried out five major assaults before the present one. 
+4. 
+By Day 9, this assault had already caused more deaths (2,670)3 than Israel’s previous 
+deadliest war against Gaza, in 2014 (2,251)4. Only a fraction of the mass killing, severe harm 
+and ruthless, life-threatening conditions inflicted on Palestinians over the following five 
+months of assault can be captured in this report. 
+5. 
+UN independent experts,5 scholars,6 and states,7 including South Africa before the 
+International Court of Justice (“ICJ”),8 have warned that acts committed in this latest 
+onslaught may amount to genocide. The ICJ found a plausible risk of “irreparable prejudice” 
+to the rights of Palestinians in Gaza, a protected group under the Genocide Convention,9 and 
+ordered Israel, inter alia, to “take all measures within its power” to prevent genocidal acts, 
+prevent and punish incitement to genocide, and ensure urgent humanitarian aid.10 
+6. 
+In its defense, Israel has argued that its conduct complies with international 
+humanitarian law (“IHL”).11 A key finding of this report is that Israel has strategically 
+invoked the IHL framework as “humanitarian camouflage” to legitimize its genocidal 
+violence in Gaza. 
+7. 
+The context, facts and analysis presented in this report lead to the conclusion that there 
+are reasonable grounds to believe that the threshold indicating Israel’s commission of 
+genocide is met. More broadly, they also indicate that Israel’s actions have been driven by a 
+genocidal logic integral to its settler-colonial project in Palestine, signalling a tragedy 
+foretold. 
+ 
+ 
+ 
+1  https://www.ohchr.org/en/press-releases/2023/10/israeloccupied-palestinian-territory-un-experts-
+deplore-attacks-civilians#:~:text=%E2%80%9CThis%20amounts%20to%20collective%20 
+punishment,amounts%20to%20a%20war%20crime.%E2%80%9D  
+ 
+2 https://undocs.org/Home/Mobile?FinalSymbol=A%2F77%2F356&Language=E&DeviceType= 
+Desktop&LangRequested=False para 4 
+ 
+3  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-9  
+ 
+4  https://www.ochaopt.org/data/casualties 
+ 
+5  https://www.ohchr.org/en/press-releases/2023/11/gaza-un-experts-call-international-community-
+prevent-genocide-against  
+ 
+6  https://contendingmodernities.nd.edu/global-currents/statement-of-scholars-7-october/ Scholars  
+ 
+7  https://www.oic-oci.org/topic/?t_id=40224&t_ref=26858&lan=en, https://www.icj-
+cij.org/sites/default/files/case-related/192/192-20240208-pre-01-00-en.pdf; 
+https://www.youtube.com/watch?v=aoQeOsgs0Dc; https://au.int/ar/node/43236 
+ 
+8  https://www.icj-cij.org/sites/default/files/case-related/192/192-20240111-ora-01-00-bi.pdf  
+ 
+9  Ibid, Preliminary-Measures-Judgement, 26 January 2024, para. 54 
+ 
+10  Ibid, paras. 77–86 
+ 
+11  Ibid, https://www.icj-cij.org/sites/default/files/case-related/192/192-20240112-ora-01-00-bi.pdf 12 
+January 2024, paras. 6, 37; https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Hamas-Israel Conflict 2023 - Some Factual and Legal Aspects - Israel 
+Ministry of Foreign Affairs (2 NOV 2023).pdf  
+A/HRC/55/73 
+ 
+3 
+ 
+II. Contextualizing genocide 
+ 
+A. 
+Genocide as inherent to settler-colonialism  
+8. 
+Genocide, as the denial of the right of a people to exist and the subsequent attempt or 
+success in annihilating them, entails various modes of elimination.12 Raphael Lemkin, who 
+coined the term “genocide”, observed that genocide is “a composite of different acts of 
+persecution or destruction”,13 ranging from physical elimination to the “forced 
+disintegration” of a people’s political and social institutions, culture, language, national 
+sentiments and religion.14 Genocide is a process, not an act.15 
+9. 
+Genocidal intent and practices are integral to the ideology and processes of settler-
+colonialism,16 as the experience of Native Americans in the U.S., First Nations in Australia 
+or Herero in Namibia illustrates. As settler-colonialism aims to acquire Indigenous land and 
+resources, the mere existence of Indigenous peoples poses an existential threat to the settler 
+society.17 Destruction and replacement of Indigenous people become therefore ‘unavoidable’ 
+and take place through different methods depending on the perceived threat to the settler 
+group. These include removal (forcible transfer, ethnic cleansing), movement restrictions 
+(segregation, largescale carceralization), mass killings (murder, disease, starvation), 
+assimilation (cultural erasure, child removal) and birth prevention.18 Settler-colonialism is a 
+dynamic, structural process and a confluence of acts aimed at displacing and eliminating 
+Indigenous groups, of which genocidal extermination/annihilation represents the peak.19 
+ 
+B. 
+Palestine and the context of genocide 
+10. 
+Historical patterns of genocide demonstrate that persecution, discrimination and other 
+preliminary stages prepare the ground for the annihilation stage of genocide.20 In Palestine, 
+displacing and erasing the Indigenous Arab presence has been an inevitable part of the 
+forming of Israel as a ‘Jewish state’.21 In 1940, Joseph Weitz, head of the Jewish Colonization 
+Department stated: “there is no room for both peoples, together in this country. The only 
+solution is Palestine without Arabs. And there is no other way but to transfer all of them: not 
+one village, not one tribe should be left.”22 
+11. 
+Practices leading to the mass ethnic cleansing of Palestine’s non-Jewish population 
+occurred in 1947–1949, and again in 1967, when Israel occupied the West Bank, east 
+Jerusalem and the Gaza Strip with mass displacement of hundreds of thousands, killings, 
+destruction of villages and towns, looting and the denial of the right to return of expelled 
+Palestinians.23 
+ 
+ 
+ 
+12  Mohamed Adhikari, ed., Civilian-Driven Violence and the Genocide of Indigenous Peoples in Settler 
+Societies (London: Routledge, 2019), p. 13 
+ 
+13  Raphael Lemkin, Axis Rule in Occupied Europe, (The Lawbook Exchange: 2008), p. 92 
+ 
+14  Ibid, p. 79 
+ 
+15  Penny Green et al., Countdown to Annhilation: Genocide in Myanmar, (London: 2015) 
+ 
+16  Alexander Laban Hinton, "The Dark Side of Modernity: Toward an Anthropology of Genocide", in 
+Annihilating Difference: The Anthropology of Genocide, ed. Alexander Laban Hinton (University of 
+California Press, 2002), pp. 1-40 
+ 
+17  Lorenzo Veracini, “Settler Collective, Founding Violence and Disavowal: The Settler Colonial 
+Situation”, Journal of Intercultural Studies, vol. 29, no. 4 (2008), p. 369 
+ 
+18  Patrick Wolfe, "Settler colonialism and the elimination of the native," Journal of Genocide Research, 
+vol. 8, no. 4 (2006), p. 402 
+ 
+19  Lemkin, Axis Rule (footnote13), p. 92; Pauline Wakeham, “The Slow Violence of Settler 
+Colonialism,” Journal of Genocide Research, vol. 24, no. 3 (2022), pp. 340-346. 
+ 
+20  Gregory H. Stanton, The Ten Stages of Genocide, Genocide Watch (1996). 
+ 
+21  Rashid Khalidi, The Hundred Years’ War on Palestine (New York, Metropolitan Books, 2020). 
+ 
+22  Cited in Uri Davis, "Palestine into Israel”, Journal of Palestine Studies, vol. 3, no. 1 (Autumn, 1973), 
+p. 89 
+ 
+23  Salman Abu-Sitta, The Palestinian Nakba 1948: The Register of Depopulated Localities in Palestine 
+(The Palestinian Return Centre, 2000), ch. 15; Minorities at Risk Project, Chronology for Palestinians 
+in Jordan, (2004) 
+A/HRC/55/73 
+4 
+ 
+12. 
+Since 1967, Israel has advanced its settler-colonial project through military 
+occupation, stripping the Palestinian people of their right to self-determination.24 This has 
+resulted in the segregation and control of Palestinians, including through land confiscation, 
+house demolitions, revoked residencies and deportation.25 Punishing their indigeneity and 
+rejection of colonization, Israel construed Palestinians as a ‘security threat’ to justify their 
+oppression and “de-civilianization”, namely the denial of their status as protected civilians.26 
+13. 
+Israel has progressively turned Gaza into a highly controlled enclave.27 Since the 2005 
+evacuation of Israeli settlers (which Israel’s current Prime Minister Benjamin Netanyahu 
+strongly opposed),28 Israel’s settler movement and leaders have framed Gaza as a territory to 
+be “re-colonized” and its population as invaders to be expelled.29 These unlawful claims are 
+integral to the project of consolidating the “exclusive and unassailable right of the Jewish 
+people” on the land of “Greater Israel”, as reaffirmed by Prime Minister Netanyahu in 
+December 2022.30 
+14. 
+This is the historical background against which the atrocities in Gaza are unfolding. 
+ 
+III. Legal Framework 
+15. 
+The 1948 Convention on the Prevention and Punishment of the Crime of Genocide 
+(“the Convention”) codifies genocide as an international crime the prohibition of which is a 
+non-derogable peremptory norm (jus cogens). The erga omnes obligation to prevent and 
+punish genocide binds all states under both the Convention and customary international law 
+and requires them all to prevent and prosecute genocidal acts.31 Genocide cannot be justified 
+under any circumstances, including purported self-defence.32 Complicity is expressly 
+prohibited, giving rise to obligations for third states.33 
+16. 
+The ICJ and the International Criminal Court (“ICC”) have jurisdiction over the crime 
+of genocide,34 and so do State domestic courts. Prior to the establishment of the ICC, ad hoc 
+international criminal tribunals advanced their interpretation of what constitutes genocide,35 
+its intent and required evidence.36 
+ 
+ 
+ 
+24  http://www.undocs.org/A/77/35 (2022) 
+ 
+25  https://badil.org/phocadownloadpap/badil-new/publications/research/working-papers/FT-Coercive-
+Environments.pdf (2017) 
+ 
+26  http://www.undocs.org/A/HRC/53/59 paras. 80, 95 
+ 
+27  Ibid, para. 82 
+ 
+28  https://www.theguardian.com/world/2005/aug/08/israel  
+ 
+29  Nicola Perugini, “Settler-Colonial Inversions: Israel’s ‘disengagement’ and the Gush Katif ‘Museum 
+of Expulsion’ in Jerusalem”, Settler-Colonial Studies, vol. 9.1 (2019), pp. 44-45; Smotrich, 
+https://hashiloach.org.il/israels-decisive-plan/; see https://www.jpost.com/israel-news/otzma-
+candidate-ben-gvir-calls-to-return-to-gush-katif-584665  
+ 
+30  https://www.reuters.com/world/middle-east/netanyahu-set-retake-power-head-far-right-government-
+2022-12-29/. See also Jewish Nation-State Basic Law of 19 July 2018 
+ 
+31  M. Cherif Bassiouni, “International Crimes: Jus Cogens and Obligatio Erga Omnes”, Law and 
+Contemporary Problems, vol. 59, no. 4 (1996), p. 68; A/CN.4/L.960/Add.1 (2022), conclusions 5, 17. 
+ 
+32  William Schabas, Genocide in International Law: The Crime of Crimes (Cambridge: 2009), p.395; 
+A/CN.4/L.960/Add.1 (2022), conclusions 3, 17. 
+ 
+33  Convention, article III 
+ 
+34  https://www.un.org/en/genocideprevention/documents/atrocity-
+crimes/Doc.1_Convention%20on%20the%20Prevention%20and%20Punishment%20of%20the%20C
+rime%20of%20Genocide.pdf, article IX; and https://www.icc-cpi.int/sites/default/files/RS-Eng.pdf 
+(1998), article 6  
+ 
+35  https://www.ohchr.org/en/instruments-mechanisms/instruments/statute-international-tribunal-
+prosecution-persons-responsible (1993); http://www.undocs.org/S/RES/955(1994) (1994); Prosecutor 
+v. Blagojević and Jokić, IT-02-60-T ICTY, Judgement, 17 January 2005; Prosecutor v. Brdjanin, IT-
+99-36-T ICTY, Judgement, 01 September 2004; Prosecutor v. Krstić, IT-98-33-T ICTY, Judgement, 
+02 August 2001; Prosecutor v. Jelisić, IT-95-10-T ICTY, Judgement, 14 December 1999 
+ 
+36  Prosecutor v. Popović et al., IT-05-88-A ICTY, Appeal-Judgement, 30 January 2015; Prosecutor v. 
+Karadžić, IT-95-5/18-T ICTY, Judgement, 24 March 2016; Prosecutor v. Mladic, IT-09-92-T ICTY, 
+Judgement, 22 November 2017; Prosecutor v. Tolimir, IT-05-88/2-A ICTY, Appeal-Judgement, 08 
+April 2015 
+A/HRC/55/73 
+ 
+5 
+ 
+A. 
+Constitutive elements of genocide 
+17. 
+The Convention codifies genocide as “any of the [specified] acts committed with 
+intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such.”37 
+Accordingly, the crime of genocide comprises two interconnected elements: 
+(a) 
+The actus reus: the commission of any one or more specific acts against a 
+protected group, namely: 
+(i) 
+killing members of the group; 
+(ii) 
+causing serious bodily or mental harm to members of the group; 
+(iii) 
+deliberately inflicting on the group conditions of life calculated to bring 
+about its physical destruction in whole or in part; 
+(iv) 
+imposing measures intended to prevent births within the group;  
+(v) 
+forcibly transferring children of the group to another group.38  
+(b) 
+The mens rea: the intent behind the commission of one or more of the above-
+mentioned acts that must be established, which includes two intertwined elements: 
+(i) 
+a general intention to carry out the criminal acts (dolus generalis), and  
+(ii) 
+a specific intention to destroy the target group as such (dolus 
+specialis).39 
+18. 
+Both components must be satisfied for conduct to legally constitute genocide.40 The 
+perpetrator’s intent to destroy the group in whole or in part distinguishes genocidal acts from 
+other international crimes.41 Specific intent may be established by direct evidence, e.g. 
+statements by high command or official documents, or inferred from patterns of conduct.42 
+In the latter case, the patterns of conduct or the manner in which the acts are perpetrated must 
+be such that they “only point to the existence of such [genocidal] intent”,43 and the existence 
+of intent results in “the only inference that could reasonably be drawn.”44  
+19. 
+Evidence of the result is required to establish the commission of three of the 
+underlying acts (killing, inflicting harm and transferring children).45 For the remaining two 
+acts (inflicting conditions calculated to destroy the group and preventing births), the 
+evidentiary threshold requires proof of an intent to achieve a given outcome, rather than its 
+achievement.46 Accordingly, if displacement, ethnic cleansing or mass deportation are 
+perpetrated with the requisite intent to destroy the protected group as such, this may amount 
+to genocide.47 Similarly, these displacement actions can also be evidence of specific 
+genocidal intent.48 
+ 
+ 
+ 
+37  Convention, article II 
+ 
+38  Ibid; Rome Statute, article 6 
+ 
+39  Kai Ambos, "What Does ‘Intent to Destroy’ in Genocide Mean?", International Review of the Red 
+Cross, vol. 91, no. 876 (2009), p. 834 
+ 
+40  ICJ, Bosnia and Herzegovina v. Serbia and Montenegro, Judgment (2007), paras. 187-188 
+ 
+41  Prosecutor v. Kupreskic et al., IT-95-16-T ICTY, Judgement, 14 January 2000, para. 636 
+ 
+42  https://ccrjustice.org/sites/default/files/attach/2023/11/Declaration Expert William Schabas_w.pdf 11 
+January 24, para. 16 
+ 
+43  Bosnia v. Serbia (footnote 40), para. 373 
+ 
+44  ICJ, Croatia v. Serbia, Judgment (2015), para. 148 
+ 
+45  Schabas, Genocide in International Law (footnote 32), p. 177  
+ 
+46  Ibid., pp. 177, 192, 195-197; A-G Israel v. Eichmann (1968), para. 196 
+ 
+47  ICJ, Gambia v. Myanmar, Joint Declaration of Intervention of Canada, Denmark, France, Germany, 
+the Netherlands, and the United Kingdom (2023), paras. 44-47; ICJ, Bosnia v. Serbia, Provisional-
+Measures-Judgement, 1993, Judge-Lauterpacht, para. 123; and Judgment (2007), para. 190; 
+Prosecutor v. Karadžić and Mladić, IT-95-5-R61 ICTY, Review-of-Indictments, 16 July 1996, para. 
+94; Prosecutor v. Krstić, IT-98-33-A ICTY, Appeal Judgement, 19 April 2004, para. 31-33 
+ 
+48  Gambia v. Myanmar (footnote 47), para. 72-74; IT-98-33-A, paras. 31-33 
+A/HRC/55/73 
+6 
+ 
+ 
+B. 
+State Responsibility and Individual Criminal Liability  
+20. 
+The crime of genocide gives rise to both individual and State responsibility. The 
+Convention stresses the need for individual accountability before domestic or international 
+courts,49 regardless of any official role held by the perpetrator.50 Individual criminal liability 
+arises from direct involvement in committing, attempting, conspiring, directly and publicly 
+inciting, planning, instigating, ordering and aiding and abetting (complicity in) genocidal 
+acts, requiring a specific intent to contribute to the destruction of the target group.51 This 
+implies knowledge of the possibility that an act will result in destruction of the group in whole 
+or in part.52 Genocide gives rise to State responsibility when an individual has committed 
+genocide exercising state authority; in this case the individual’s conduct is attributable to the 
+State.53 
+ 
+IV. Genocidal Acts in Gaza 
+21. 
+Genocidal acts can include deliberate actions or omissions, including the failure to 
+protect the group from harm.54 The evidence presented in the following sections suggests 
+Israel has committed at least three of the acts proscribed in the Convention. 
+ 
+A. 
+“Killing Members of the Group” 
+22. 
+This act encompasses deaths resulting from direct actions or arising from neglect, 
+including those caused by deliberate starvation, disease or other survival-threatening 
+conditions imposed on the group.55 
+23. 
+Since 7 October, Israel has killed over 30,000 Palestinians in Gaza, equivalent to 
+approximately 1.4 percent of its population, through lethal weapons and deliberate imposition 
+of life-threatening conditions. By the end of February, a further 12,000 Palestinians were 
+reported missing, presumed dead under the rubble.56 
+24. 
+During the first months of the campaign, Israel’s army employed over 25,000 tons of 
+explosives (equivalent to two nuclear bombs)57 on innumerable buildings, many of which 
+were identified as targets by Artificial Intelligence.58 Israel used unguided munitions (“dumb 
+bombs”)59 and 2000-pound “bunker buster” bombs on densely populated areas and “safe 
+zones”.60 In the initial weeks, Israeli forces killed around 250 people daily, including 100 
+ 
+ 
+ 
+49  Rome Statute, article 6 
+ 
+50  Convention, article IV 
+ 
+51  Convention, article III; Rome Statute, article 25 
+ 
+52  Prosecutor v. Popović et al., IT-05-88-T ICTY, Judgement, 10 June 2010, para. 1178; IT-98-33-T, 
+para. 595; Ambos, "What Does ‘Intent to Destroy’ in Genocide Mean?” (footnote 39), p. 841 
+ 
+53  http://www.undocs.org/A/RES/56/83 (2002), article 4; Bosnia v. Serbia (footnote 40), paras. 384, 
+385-386, 396-400 
+ 
+54  Prosecutor v. Kambanda, ICTR-97-23-S, Judgment, 04 September 1998, para.39 (ix); 
+Schabas, Genocide in International Law (footnote 32), pp. 177–178. 
+ 
+55  ICC, Elements of Crimes, (2013), p. 113; Prosecutor v. Krnojelac, IT-97-25-T, Judgement, 15 March 
+2002, para. 326; Schabas, Genocide in International Law (footnote 32), p. 180 
+ 
+56  https://www.unrwa.org/resources/reports/unrwa-situation-report-86-situation-gaza-strip-and-west-
+bank-including-east-Jerusalem  
+ 
+57  https://www.washingtonpost.com/world/2023/11/13/palestine-gaza-west-bank-nakba-displacement-
+israel-catastrophe/; https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-
+gaza/; https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-
+bombing-targets 
+ 
+58  https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/; Omar Yusef 
+Shehabi and Asaf Lubin, “Algorithms of War: Military AI and the War in Gaza”, Articles of War, 24 
+January 2024 
+ 
+59  https://www.washingtonpost.com/national-security/2023/12/14/israel-unguided-dumb-bombs-gaza/ 
+ 
+60  https://edition.cnn.com/gaza-israel-big-bombs/index.html; 
+https://www.nytimes.com/2023/12/21/world/middleeast/israel-gaza-bomb-investigation.html 
+A/HRC/55/73 
+ 
+7 
+children,61 in attacks obliterating entire neighbourhoods and essential infrastructure.62 
+Thousands were killed by bombing, sniper fire or in summary executions;63 thousands more 
+were killed while fleeing via routes and in areas declared “safe” by Israel.64 The victims 
+included 125 journalists and 340 doctors, nurses and other health workers (four percent of 
+Gaza’s healthcare personnel), students, academics, scientists and their family members.65 
+25. 
+Seventy percent of recorded deaths have consistently been women and children. Israel 
+failed to prove that the remaining 30 percent, i.e. adult males, were active Hamas combatants 
+– a necessary condition for them to be lawfully targeted. By early-December, Israel’s security 
+advisors claimed the killing of “7,000 terrorists” in a stage of the campaign when less than 
+5,000 adult males in total had been identified among the casualties, thus implying that all 
+adult males killed were “terrorists”.66 This is indicative of an intent to indiscriminately target 
+members of the protected group, assimilating them to active fighter status by default. 
+26. 
+Moreover, Israel’s heightened blockade of Gaza has caused death by starvation, 
+including 10 children daily, by impeding access to vital supplies.67 Lack of hygiene and 
+overcrowded shelters could cause more deaths than bombings,68 having created “the perfect 
+storm for disease”.69 A quarter of Gaza’s population could die from preventable health 
+conditions within a year.70 
+ 
+B. 
+“Causing serious bodily or mental harm to members of the group”  
+27. 
+This act must involve “a grave and long-term disadvantage to a person’s ability to 
+lead a normal and constructive life”.71 The harm does not need to be permanent or 
+irremediable,72 and can be brought about by various causes as torture, inhuman or degrading 
+treatment,73 sexual violence,74 persecution,75 deportation76 or other conditions “designed to 
+cause victims’ degradation and deprivation of their rights, and to suppress them and cause 
+inhumane suffering and torture”.77 
+ 
+ 
+ 
+61  https://www.savethechildren.org.au/media/media-releases/gaza-10000-children-killed-in-nearly-100-
+days-of  
+ 
+62  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-72; 
+https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/  
+ 
+63  https://www.un.org/unispal/document/unlawful-killings-in-gaza-city-ohchr-press-release/; 
+https://www.pbs.org/newshour/world/israeli-strikes-kill-civilians-sheltering-in-northern-gaza-as-
+assault-on-hamas-intensifies.  
+ 
+64  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-22; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-45; 
+https://www.theguardian.com/world/2023/oct/14/gaza-civilians-afraid-to-leave-home-after-bombing-
+of-safe-routes 
+ 
+65  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-145  
+ 
+66  https://www.timesofisrael.com/liveblog_entry/israel-has-killed-over-7000-terrorists-no-deadline-for-
+gaza-war-national-security-adviser/ 09 December 2023; https://www.ochaopt.org/content/hostilities-
+gaza-strip-and-israel-reported-impact-day-63  
+ 
+67  https://www.wfp.org/news/preventing-famine-and-deadly-disease-outbreaks-gaza-requires-faster-
+safer-aid-access-and-more  
+ 
+68  https://gaza-projections.org/  
+ 
+69  https://www.youtube.com/watch?v=2MJFBaUXvYU&ab_channel=MiddleEastEye 06 December 
+2023; https://www.bostonreview.net/articles/the-war-on-hospitals/ 20 December 2023; 
+https://www.emro.who.int/images/stories/Sitrep_-_issue_22.pdf?ua=1 30 January 2024 
+ 
+70  https://gaza-projections.org/  
+ 
+71  IT-98-33-T, para. 513; Prosecutor v. Krajišnik, IT-00-39-T ICTY, Judgement, 27 September 2006, 
+para. 862 
+ 
+72  Schabas, Genocide in International Law (footnote 32), pp. 182, 184 
+ 
+73  Prosecutor v. Akayesu, ICTR-96-4-T, Judgement, 02 September 1998, para. 503 
+ 
+74  Ibid., para.731; Prosecutor v. Stakic, IT-97-24-T ICTY, Judgement, 31 July 2003, para. 516; IT-95-5-
+R61, para. 93 
+ 
+75  ICTR-96-4-T, para. 503; A-G Israel v. Eichmann (footnote 46), para. 199 
+ 
+76  ICTY-98-33-T, para. 513 
+ 
+77  Schabas, Genocide in International Law (footnote 32) p. 182 
+A/HRC/55/73 
+8 
+ 
+28. 
+Since 7 October, Palestinians have suffered relentless physical and psychological 
+harm. Many have endured violence and deprivation including severe hunger.78 
+29. 
+Israeli forces have detained thousands of Palestinians, mostly men and young boys, 
+often refusing to disclose their whereabouts.79 Many of them have been severely mistreated, 
+including through torture at times leading to death.80 
+30. 
+Israel’s lethal weapons and methods have injured seventy-thousand Palestinians, 
+many with agonizing injuries, in some cases leading to long-term impairment or death.81 
+31. 
+By causing critical shortages of medical supplies, including antibiotics and 
+disinfectants, Israel’s actions resulted in hazardous health procedures, such as amputations 
+without anaesthetics, including on children.82 This has also prevented the administration of 
+life-saving treatment to those with medical conditions, including chronic diseases.83 
+32. 
+The survivors will carry an indelible trauma, having witnessed so much death, and 
+experienced destruction, homelessness, emotional and material loss, endless humiliation and 
+fear.84 Such experiences include fleeing amidst the chaos of war without telecommunications 
+and electricity; witnessing the systematic destruction of entire neighbourhoods, homes, 
+universities, religious and cultural landmarks;85 digging through the rubble, often with bare 
+hands, searching for loved ones;86 seeing bodies desecrated;87 being rounded up, stripped 
+naked, blindfolded and subjected to torture and other cruel, inhuman and degrading 
+treatment;88 and ultimately, being starved, adults and children alike.89 
+33. 
+The savagery of Israel's latest assault is best illustrated by the torment inflicted upon 
+children of all ages,90 killed or rescued from under the rubble, maimed, orphaned,91 many 
+without surviving family.92 Considering the significance of children to the future 
+development of a society, inflicting serious bodily or mental harm to them can be reasonably 
+“interpreted as a means to destroy the group in whole or in part”.93 
+ 
+ 
+ 
+78  https://www.ohchr.org/en/press-releases/2024/03/un-experts-condemn-flour-massacre-urge-israel-
+end-campaign-starvation-gaza  
+ 
+79  https://www.adalah.org/uploads/uploads/Submission_SR_Torture_final-15.2.24.pdf  
+ 
+80  https://www.ohchr.org/en/press-releases/2024/02/israelopt-un-experts-appalled-reported-human-
+rights-violations-against; https://www.nytimes.com/2024/01/23/world/middleeast/israel-gaza-
+palestinian-detainees.html; https://www.amnesty.org/en/latest/news/2023/12/urgently-investigate-
+inhumane-treatment-and-enforced-disappearance-of-palestinians-detainees-from-gaza; IT-09-92-T, 
+para. 634-691, 835-838, 3451; IT-05-88-T, para. 1097, 1120, 1122, 1177 
+ 
+81  https://www.msf.org/no-safe-place-gaza-people-are-crushed-continuous-bombing; 
+https://amnesty.ca/human-rights-news/israel-opt-identifying-the-israeli-armys-use-of-white-
+phosphorus-in-gaza/; https://www.who.int/news-room/fact-sheets/detail/white-phosphorus 
+ 
+82  https://news.un.org/en/story/2024/01/1145332; https://www.emro.who.int/media/news/risk-of-
+disease-spread-soars-in-gaza-as-health-facilities-water-and-sanitation-systems-disrupted.html; 
+https://www.savethechildren.net/news/gaza-more-10-children-day-lose-limb-three-months-brutal-
+conflict  
+ 
+83  https://news.un.org/en/story/2023/12/1145017  
+ 
+84  IT-98-33-T, para 596 
+ 
+85  https://press.un.org/en/2024/sc15564.doc.htm  
+ 
+86  https://www.aljazeera.com/gallery/2023/11/10/this-israel-war-has-no-mercy-gaza-civil-rescuers-say  
+ 
+87  https://edition.cnn.com/2023/12/23/middleeast/kamal-adwan-hospital-gaza-israel-abuse-allegations-
+intl-cmd/index.html  
+ 
+88  https://www.alhaq.org/advocacy/22337.html; https://reliefweb.int/report/occupied-palestinian-
+territory/un-human-rights-office-opt-disturbing-reports-north-gaza-mass-detentions-ill-treatment-and-
+enforced-disappearances-possibly-thousands-palestinians; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-73; 
+https://www.ohchr.org/en/press-briefing-notes/2024/01/gaza-report-ground  
+ 
+89  https://edition.cnn.com/2024/01/30/middleeast/famine-looms-in-gaza-israel-war-intl/index.html  
+ 
+90  https://www.savethechildren.net/news/children-s-mental-health-gaza-pushed-beyond-breaking-point-
+after-nearly-month-siege-and  
+ 
+91  By January there were 17,000 unaccompanied children, see https://www.unicef.org/sop/reports/ 
+unicef-state-palestine-escalation-humanitarian-situation-report-no17  
+ 
+92  https://www.washingtonpost.com/world/2024/02/29/gaza-children-wcnsf-orphans/  
+ 
+93  Gambia v. Myanmar (footnote 47), para. 39 
+A/HRC/55/73 
+ 
+9 
+ 
+C. 
+“Deliberately inflicting on the group conditions of life calculated to 
+bring about its physical destruction in whole or in part” 
+34. 
+This act involves conduct that does not directly kill members of the group, but is 
+capable of leading, through various means, to its physical destruction.94 These may include 
+starving, dehydrating, forcibly displacing the protected group, destroying objects 
+indispensable for their survival, reducing essential medical services to below the minimum 
+requirement,95 depriving of housing, clothes, education, employment and hygiene.96 
+35. 
+By mid-December, Israel’s bombs and shells had destroyed or severely damaged most 
+life-sustaining infrastructure, including 77 percent of healthcare facilities, 68 percent of 
+telecommunication infrastructure, large numbers of municipal services (72), commercial and 
+industrial sites (76), almost half of all roads,97 over 60 percent of Gaza’s 439,000 homes,98 
+68 percent of residential buildings,99 all universities, 60 percent of other educational facilities, 
+including 13 libraries.100 Israel has also destroyed at least 195 heritage sites, 208 mosques, 3 
+churches, and Gaza’s Central Archives (150 years of history).101 By the end of January, over 
+one million civilians were forcibly displaced southward, their cities devastated.102 
+36. 
+Sixteen years of blockade had already transformed Gaza into an isolated, densely 
+populated depleted and nearly “uninhabitable” enclave, when, on 9 October 2023, Israeli 
+Defense Minister Yoav Gallant, announced a “complete siege (…) no electricity, no food, no 
+water, no fuel”.103 Israeli Minister of Foreign Affairs Israel Katz (then Minister of Energy) 
+went further: “Humanitarian aid to Gaza? No electrical switch will be turned on, no water 
+hydrant will be opened.”104 Deliberately denying essential supplies to an already besieged 
+population was destined to cause deaths “more silent than those caused by bombs”.105 
+37. 
+The total siege and near-constant carpet-bombing, along with draconian evacuation 
+orders and ever-shifting ‘safe zones’, have created an unparalleled humanitarian catastrophe. 
+Over 1.7 million Palestinians were displaced and forced into overcrowded UNRWA shelters 
+and cramped quarters in southern Gaza,106 systematically targeted by the Israeli army, and 
+later into makeshift shelters.107  
+38. 
+Israel’s assault has decimated Gaza’s already fragile healthcare system.108 Hospitals, 
+also sheltering displaced Palestinians, have been overwhelmed.109 By deliberately targeting 
+ 
+ 
+ 
+94  Convention, article II(c); Rome Statute, article 6; ICTR-96-4-T, paras. 505–506 
+ 
+95  ICTR-96-4-T, paras 505–506; Prosecutor v Rutaganda, ICTR-96-3-T, Judgement 06 December 1999 
+para 52 
+ 
+96  IT-97-24-T, para. 517 
+ 
+97  https://www.wsj.com/world/middle-east/gaza-destruction-bombing-israel-aa528542  
+ 
+98  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-70  
+ 
+99  https://www.conflict-damage.org/; https://unosat.org/products/3793  
+ 
+100  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-145; 
+https://librarianswithpalestine.org/wp-content/uploads/2024/02/LAP-Gaza-Report-2024.pdf  
+ 
+101  https://www.ica.org/statement-of-the-international-council-on-archives-on-the-destruction-of-the-
+central-archives-of-the-municipality-of-gaza/; https://www.aljazeera.com/news/ 
+2024/1/14/a-cultural-genocide-which-of-gazas-heritage-sites-have-been-destroyed  
+ 
+102  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-107  
+ 
+103  https://www.youtube.com/watch?v=ZbPdR3E4hCk 09 October 2023 
+ 
+104  https://www.theguardian.com/world/2023/oct/12/no-power-water-or-fuel-to-gaza-until-hostages-
+freed-says-israeli-minister 12 October 2023 
+ 
+105  https://www.ohchr.org/en/press-releases/2023/11/israel-must-stop-using-water-weapon-war-un-expert 
+ 
+106  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-108  
+ 
+107  https://www.unocha.org/publications/report/occupied-palestinian-territory/hostilities-gaza-strip-and-
+israel-flash-update-108  
+ 
+108  https://www.ohchr.org/en/press-releases/2023/12/gaza-un-expert-condemns-unrelenting-war-health-
+system-amid-airstrikes; https://edition.cnn.com/interactive/2024/01/middleeast/gaza-hospitals-
+destruction-investigation-intl-cmd  
+ 
+109  https://forensic-architecture.org/investigation/destruction-of-medical-infrastructure-in-gaza; 
+https://x.com/UNOCHA/status/1719305737782878629?s=20; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-17; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-24 
+A/HRC/55/73 
+10 
+ 
+hospitals,110 air and ground attacks gradually turned them into death zones.111 Israeli soldiers 
+have occupied hospitals,112 encircling them with tanks and (drone-)snipers.113 By 12 February, 
+only 11 of 36 hospitals and 17 percent of primary healthcare centres were functioning, only 
+partially.114 Israeli soldiers have arrested, mistreated and tortured medical staff, patients and 
+displaced people,115 and forced them – even premature babies – out of hospitals, in some 
+cases causing the death of babies.116 The doctors who remained have worked night and day, 
+making “impossible decisions” on patients to treat based on chance of survival.117 
+39. 
+Ground invasion and aerial bombardment have destroyed agricultural land,118 farms, 
+crops, animals and fishing assets,119 gravely undermining people’s livelihoods, the 
+environment and agricultural system. 
+40. 
+From 8–21 October, Israel impeded the entry of any aid into Gaza, subsequently 
+allowing woefully inadequate amounts,120 largely confined to the south.121 No fuel supplies 
+were delivered until 18 November.122 In January, Israel-led attacks against UNRWA, the 
+main agency providing a lifeline of support in Gaza, resulted in several States suspending 
+payments to UNRWA, further aggravating the humanitarian situation.123 
+41. 
+By 7 December, over 90 percent of Gaza residents were suffering from severe food 
+insecurity.124 By February 2024, Palestinians trapped in northern Gaza resorted to animal 
+ 
+ 
+ 
+110  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-28; 
+https://www.hrw.org/news/2023/11/07/gaza-israeli-ambulance-strike-apparently-unlawful; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-35; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-45; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-119 
+ 
+111  https://www.who.int/news/item/18-11-2023-who-leads-very-high-risk-joint-humanitarian-mission-to-
+al-shifa-hospital-in-gaza  
+ 
+112  https://forensic-architecture.org/investigation/destruction-of-medical-infrastructure-in-gaza; 
+https://www.nytimes.com/2023/11/14/us/politics/gaza-hospitals-cancer-israel.html; 
+https://shifa.forensic-architecture.org/; https://indonesian.alhaq.org/; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-121 
+ 
+113  https://www.hrw.org/news/2023/11/14/gaza-unlawful-israeli-hospital-strikes-worsen-health-crisis; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-36; 
+https://www.emro.who.int/images/stories/palestine/WHO_Sitrep_13.pdf?ua=1; 
+https://indonesian.alhaq.org/; https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-
+update-115; https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-87 
+ 
+114  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-128  
+ 
+115  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-73; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-121; 
+https://x.com/HCWWatch/status/1750365056728965214?s=20; 
+https://www.reuters.com/world/middle-east/gaza-doctor-describes-ordeal-detention-2024-02-04/ - 
+:~:text=He%20described%20having%20his%20hands,and%20with%20loud%20music%20blaring.; 
+https://www.bbc.com/news/world-middle-east-68513408  
+ 
+116  https://news.un.org/en/story/2023/11/1143497; https://www.ochaopt.org/content/hostilities-gaza-
+strip-and-israel-flash-update-34; https://www.washingtonpost.com/world/2023/12/03/gaza-premature-
+babies-dead-nasr/ 
+ 
+117  Mohammed Qandil, “Gaza: providing emergency care under fire”, Emergency Medicine Journal (9 
+February 2024) 
+ 
+118 https://unosat.org/products/3792; https://www.hrw.org/news/2023/12/18/israel-starvation-used-
+weapon-war-gaza  
+ 
+119  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-115; https:// 
+www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-125  
+ 
+120  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-15  
+ 
+121  https://news.un.org/en/story/2024/01/1145557; https://www.newyorker.com/news/q-and-a/how-
+israels-inspection-process-is-obstructing-aid-delivery; https://edition.cnn.com/2024 
+/03/01/middleeast/gaza-aid-israel-restrictions-investigation-intl-cmd/index.html  
+ 
+122  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-43 
+ 
+123  https://www.ohchr.org/en/press-releases/2024/02/states-must-reinstate-and-strengthen-support-unrwa-
+amid-unfolding-genocide  
+ 
+124  https://www.ipcinfo.org/fileadmin/user_upload/ipcinfo/docs/IPC_Gaza_Acute_Food_Insecurity 
+_Nov2023_Feb2024.pdf  
+A/HRC/55/73 
+ 
+11 
+feed and grass for sustenance,125 with deaths by starvation on the rise.126 Between mid-January 
+and the end of February, the UN recorded numerous attacks against Palestinians seeking 
+aid.127 
+42. 
+The supply of water was also severely affected.128 Fuel scarcity hampered water 
+sanitation, driving people to use water contaminated by sewage, solid waste and seawater.129 
+43. 
+The impact of these conditions on children is well-known:130 in Gaza the risk of 
+starvation,131 with thousands suffering from wasting,132 is already a tangible horrific reality. 
+44. 
+These human-made conditions have put at risk an estimated 50,000 pregnant 
+Palestinian women and 20,000 newborn babies,133 and increased miscarriages by up to 300 
+percent.134 
+45. 
+Gaza has been completely sacked. Israel’s relentless targeting of all means of basic 
+survival has compromised the ability of Palestinians in Gaza to live on that land.135 This 
+engineered collapse of life-sustaining infrastructure corresponds to the stated intentions to 
+make Gaza “permanently impossible to live in” where “no human being can exist”.136 
+ 
+V. Genocidal Intent 
+46. 
+The definition of genocide requires the commission of any of the listed acts with a 
+specific intent. It must be established that the perpetrator, by committing one or more of the 
+prohibited acts, seeks to achieve the total or partial destruction of a national, ethnical, racial 
+or religious group, as such.137 This intent must be established either through direct or indirect 
+evidence.138  
+47. 
+As genocide is an organized crime, the commission of which invariably implies a 
+collective dimension,139 evidence of a state plan, including through statements and 
+declarations by state officials, is usually decisive in establishing direct intent.140 
+48. 
+Proof of indirect intent can be inferred from facts or circumstances, including the 
+overall context of the acts or omissions, scale of atrocities, systematic targeting of victims 
+based on their affiliation with a particular group, perpetration of other “culpable acts” 
+ 
+ 
+ 
+125  https://edition.cnn.com/2024/01/30/middleeast/famine-looms-in-gaza-israel-war-intl/index.html  
+ 
+126  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-129; 
+https://mondoweiss.net/2024/03/un-expert-israel-is-engineering-famine-in-gaza/  
+ 
+127  https://reliefweb.int/report/occupied-palestinian-territory/un-human-rights-office-opt-un-human-
+rights-office-strongly-deplores-killing-least-112-palestinians-during-food-aid-distribution-gaza-city-
+enar  
+ 
+128  https://reliefweb.int/attachments/a4b1eefa-3717-4407-8101-bba6df81f488/Health WASH - Advocacy 
+note on public health catastrophe - Final.pdf  
+ 
+129  Ibid. 
+ 
+130  Gambia v. Myanmar (footnote 47), paras. 40, 42 
+ 
+131  https://www.unicef.org/mena/press-releases/intensifying-conflict-malnutrition-and-disease-gaza-strip-
+creates-deadly-cycle; https://www.savethechildren.net/news/gaza-time-running-out-reports-emerging-
+children-dying-due-lack-food-save-children; 
+https://twitter.com/AJEnglish/status/1761601918344790340  
+ 
+132  https://www.wfp.org/news/preventing-famine-and-deadly-disease-outbreaks-gaza-requires-faster-
+safer-aid-access-and-more  
+ 
+133  https://www.who.int/news/item/03-11-2023-women-and-newborns-bearing-the-brunt-of-the-conflict-
+in-gaza-un-agencies-warn; https://www.hrw.org/news/2023/12/01/birth-and-death-intertwined-gaza-
+strip; https://news.un.org/en/story/2024/01/1145677  
+ 
+134  https://twitter.com/CARE/status/1748007265754312767  
+ 
+135  See ICTR-96-4-T, para. 505-506 
+ 
+136  https://www.ynet.co.il/yedioth/article/yokra13625377 10 October 2023; https://balfourproject.org/the-
+hamas-attack-and-israels-war-on-gaza-a-place-where-no-human-being-can-exist/, 24 November 2023  
+ 
+137  Prosecutor v. Jelisic, IT-95-10-A ICTY, Appeal Judgement, 05 July 2001, para. 46 
+ 
+138  IT-98-33-A, para. 34; IT-99-36-T, para. 704-706 
+ 
+139  IT-98-33-T, para 549; Schabas, Genocide in International Law (footnote 32), pp. 242–243, 250–255 
+ 
+140  IT-95-10-A, para.48; Prosecutor v. Kayishema and Ruzindana, ICTR-95-1-T, Judgment, 21 May 
+1999, para. 94, 276; Schabas, Genocide in International Law (footnote 32), pp. 245–250, 265 
+A/HRC/55/73 
+12 
+ 
+directed against the group, or repetition of destructive and discriminatory acts.141 The ICC 
+requires that such facts or circumstances take “place in the context of a manifest pattern of 
+similar conduct directed against the group or… conduct that could itself effect such 
+destruction”.142 International tribunals have also established that indirect intent can consist of 
+a manifest pattern of similar conduct over time.143 The systematicity with which genocidal 
+acts are committed implies a degree of “preconceived plan or policy”.144 
+49. 
+The nature and scale of the atrocities, if demonstrably capable of achieving the 
+genocidal outcome, are strong evidence of intent.145 The words of state authorities, including 
+dehumanizing language, combined with acts, are considered a circumstantial basis from 
+which intent can be inferred.146 Dehumanization can be understood as foundational to the 
+process of genocide.147 Evidence of context may help determine the intent, and must be 
+considered with the actual conduct: intent should be evident above all from words and deeds, 
+and “patterns of purposeful action”,148 such that no other inference can be reasonably 
+drawn.149 
+50. 
+In the latest Gaza assault, direct evidence of genocidal intent is uniquely present. 
+Vitriolic genocidal rhetoric has painted the whole population as the enemy to be eliminated 
+and forcibly displaced.150 High-ranking Israeli officials with command authority have issued 
+harrowing public statements evincing genocidal intent, including as follows: 
+(a) 
+President Isaac Herzog stated that “an entire nation out there…is responsible” 
+for the 7 October attack, and that Israel would “break their backbone”;151  
+(b) 
+Prime Minister Benjamin Netanyahu referred to Palestinians as “Amalek”152 
+and “monsters”.153 The Amalek reference is to a biblical passage in which God commands 
+Saul “Now go and smite Amalek, and utterly destroy all that they have, and spare them not; 
+but slay both man and woman, infant and suckling, ox and sheep, camel and ass”.154 
+(c) 
+Minister of Defense Yoav Gallant referred to Palestinians as “human 
+animals”,155 and announced “full offense” on Gaza, having “released all the restraints”, and 
+that “Gaza will never return to what it was”;156  
+ 
+ 
+ 
+141  IT-95-10-A, para. 47; IT-98-33-A, para. 27, 34-35; T-05-88-T, para. 1178; 
+https://ccrjustice.org/israel-s-unfolding-crime-genocide-palestinian-people-us-failure-prevent-and-
+complicity-genocide  
+ 
+142  ICC (footnote 55), pp. 6-8 
+ 
+143  Bosnia v. Serbia (footnote 40), para. 373; ICTR-95-1-T, para. 93 
+ 
+144  ICTR-96-4-T, para. 118, 478, 579-580; Schabas, Genocide in International Law (footnote 32), p. 248  
+ 
+145  Prosecutor v. Muhimana, ICTR-95-1B-T, Judgement, 28 April 2005, para. 498; Prosecutor v. 
+Gacumbitsi, ICTR-2001-64-T, Judgement, 17 June 2004, para.253; ICTR-95-1-T, para. 93; 
+Prosecutor v. Seromba, ICTR-01-66-A, Appeal Judgement, 12 March 2008, para. 176 
+ 
+146  http://www.undocs.org/A/HRC/39/64 (2018), para. 85 refers to “broader oppressive context and hate 
+rhetoric; specific utterances of commanders and direct perpetrators; exclusionary policies, including 
+to alter the demographic composition…and the extreme scale and brutality of the violence 
+committed”; ICTR-95-1B-T, para. 496 
+ 
+147  Penny Green and Tony Ward, State Crime: Governments, Violence and Corruption (London: Pluto 
+Press, 2004); Raz Segal, “A Textbook Case of Genocide”, Jewish Currents (13 October 2023). 
+ 
+148  ICTR-95-1-T, para. 93; Prosecutor v. Bagilishema, ICTR-95-1A-T, Judgement, 07 June 2001, para. 
+63  
+ 
+149  Croatia v. Serbia (footnote 44), para. 148; Bosnia v. Serbia (footnote 40), para. 373 
+ 
+150  https://law4palestine.org/law-for-palestine-releases-database-with-500-instances-of-israeli-
+incitement-to-genocide-continuously-updated/  
+ 
+151  https://www.itv.com/news/2023-10-13/israeli-president-says-gazans-could-have-risen-up-to-fight-
+hamas 13 October 2023 
+ 
+152  https://www.youtube.com/watch?v=lIPkoDk6isc 28 October 2023 
+ 
+153  https://www.gov.il/en/departments/news/christmas-message-from-pm-netanyahu-24-dec-2023 24 
+December 2023 
+ 
+154  Holy Bible 1 Samuel 15:3  
+ 
+155  https://www.youtube.com/watch?v=ZbPdR3E4hCk 09 October 2023 
+ 
+156  https://www.timesofisrael.com/liveblog_entry/gallant-israel-moving-to-full-offense-gaza-will-never-
+return-to-what-it-was/ 10 October 2023 
+A/HRC/55/73 
+ 
+13 
+(d) 
+IDF Spokesperson Daniel Hagari stated that focus should be on causing 
+“maximum damage”, demonstrating a strategy of disproportionate and indiscriminate 
+violence;157  
+(e) 
+Minister of Agriculture Avi Dichter referred to Israel’s action as “the Gaza 
+Nakba”;158  
+(f) 
+Minister of Heritage Amihai Eliyahu called for striking Gaza with “nuclear 
+bombs”;159 
+(g) 
+Likud MK Revital Gottlieb wrote on her social media: “Bring down buildings!! 
+Bomb without distinction!!…Flatten Gaza. Without mercy! This time, there is no room for 
+mercy!”.160  
+51. 
+Such calls for annihilatory violence directed at troops on duty,161 constitute strong 
+evidence of direct and public incitement to commit genocide.162 Decades of discourse 
+dehumanizing Palestinians have prepared the groundwork for such incitements.163 
+52. 
+Since 7 October, the proliferation of statements inciting genocide have also involved 
+several sectors of Israeli society, religious leaders,164 journalists,165 artists,166 and various 
+professionals (including doctors167 and political commentators168). 
+53. 
+There is cogent evidence that these statements have been internalized and acted upon 
+by troops on the ground.169 Israeli soldiers have, including on social media channels run by 
+the Israeli military,170 referred to Palestinians as “terrorists”, “roaches”, “rats”,171 and have 
+ 
+ 
+ 
+157  https://www.idf.il/en/mini-sites/hamas-israel-war-24/briefings-by-idf-spokesperson-rear-admiral-
+daniel-hagari/october-press-briefings/press-briefing-by-idf-spokesperson-rear-admiral-daniel-hagari-
+october-10th-morning/ 10 October 2023 
+ 
+158  https://twitter.com/hahauenstein/status/1723441134221869453 11 November 2023 
+ 
+159  https://www.timesofisrael.com/liveblog_entry/far-right-minister-nuking-gaza-is-an-option-
+population-should-go-to-ireland-or-deserts/ 5 November 2023 
+ 
+160  https://twitter.com/YehudaShaul/status/1714301964886917631 17 October 2023 
+ 
+161  https://law4palestine.org/law-for-palestine-releases-database-with-500-instances-of-israeli-
+incitement-to-genocide-continuously-updated/  
+ 
+162  Prosecutor v. Muvunyi, ICTR-2000-55A-T, Judgement, 12 September 2006, paras. 502-505; 
+Prosecutor v. Kajelijeli, ICTR-98-44A-T, Judgment,01 December 2003, paras. 851-852; see also 
+https://www.hrw.org/reports/ictr0110webwcover.pdf 2010, p. 64-66, 69-70  
+ 
+163  https://ccrjustice.org/genocide-palestinian-people-international-law-and-human-rights-perspective; 
+Nurit Peled-Elhanan, Palestine in Israeli School Books: Ideology and Propaganda in Education 
+(London: I.B. Taurus, 2012), p.162; see also 
+http://www.theguardian.com/commentisfree/2023/oct/16/the-language-being-used-to-describe-
+palestinians-is-genocidal  
+ 
+164  https://www.middleeasteye.net/news/israel-palestine-war-dozens-israeli-rabbis-endorse-bombing-
+hospitals-enemies 01 November 2023; 
+https://twitter.com/RavOuryCherki/status/1719713406050066491 01 November 2023 
+ 
+165  https://x.com/MiddleEastEye/status/1732639958664356223?s=20 07 December 2023; https://x.com/ 
+jeremyscahill/status/1737489631199850519?s=20 20/12/2023; 
+https://x.com/YehudaShaul/status/1714301988358283769?s=20 17 October 2023; 
+https://twitter.com/dverthaim/status/1710684531114602891 07 October 2023 
+ 
+166  https://www.youtube.com/watch?v=2bnhWYJh8-I. 20 November 2023; 
+https://twitter.com/gilmishali/status/1710653974397780392?s=46&t=JaT3Sau_. 07 October 2023; 
+https://twitter.com/YehudaShaul/status/1739641280462815611 26 December 2023 
+ 
+167  https://www.phr.org.il/en/physicians-call-eng/ 06 November 2023 
+ 
+168  https://www.instagram.com/middleeasteye/reel/C1elfQ7Nqeh/ 30 December 2023; 
+https://x.com/PalestineChron/status/1737491845679128918?s=20 20 December 2023 
+ 
+169  IT-09-92-T, para. 3435; ICJ, South Africa v. Israel (footnote. 8), para. 20-29 
+ 
+170  https://www.haaretz.com/israel-news/security-aviation/2024-02-04/ty-article/.premium/israeli-army-
+its-admits-staff-was-behind-graphic-gaza-telegram-channel/0000018d-70b4-dd6e-a98d-
+f4b6a9c00000, 04 February 2024 
+ 
+171  Ibid.; https://www.nytimes.com/2024/02/06/world/middleeast/israel-idf-soldiers-war-social-media-
+video.html?smid=nytcore-ios-share&referringSource=articleShare&fbclid=IwAR1KvmIO 
+ixGQNbtAkJRPgU2Y7XyctR5lMWjOxQc6T6la5ODfYWyUT7lBFsA_aem_Aa7puefGHHUwoZuho
+XZnJDZJzbGn8LuFsBZh4hLnUDtJN0lcdK2sacwGZKrJ7dGj0HI;%20and%20https://www.haaretz.c
+om/israel-news/security-aviation/2024-02-04/ty-article/.premium/israeli-army-its-admits-staff-was-
+behind-graphic-gaza-telegram-channel/0000018d-70b4-dd6e-a98d-f4b6a9c00000, 06 November 2023 
+A/HRC/55/73 
+14 
+ 
+repeated terms articulated by political leaders, chanting that “there are no ‘uninvolved 
+civilians’”,172 while also calling for the building of settlements in Gaza,173 “occupy[ing] 
+Gaza... wip[ing] off the seed of Amalek”,174 boasting about killing “families, mothers, and 
+children”,175 humiliating detained Palestinians,176 detonating dozens of homes,177 destroying 
+entire residential neighbourhoods,178 and desecrating cemeteries and places of worship.179  
+54. 
+Israel’s Prime Minister and President have stated that Israel was fighting on behalf of 
+“all civilized states and… peoples”,180 “a barbarism that has no place in the modern world,”181 
+that they “will uproot evil and it will be good for the entire region and the world”.182 This 
+racist rhetoric echoes that of other colonial powers, and tries to construe Israel’s genocidal 
+violence as legitimate in light of Palestinians’ alleged “barbarian” and “premodern” 
+character.183 
+ 
+VI. Humanitarian camouflage: distorting the laws of war to 
+conceal genocidal intent 
+55. 
+A core feature of Israel’s conduct since 7 October has been the intensification of its 
+de-civilianization of Palestinians, a protected group under the Convention. Israel has used 
+IHL terminology to justify its systematic use of lethal violence against Palestinian civilians 
+as a group and the extensive destruction of life-sustaining infrastructures. Israel has done this 
+by deploying IHL concepts such as human shields, collateral damage, safe zones, evacuations 
+and medical protection in such a permissive manner so as to gut these concepts of their 
+normative content, subverting their protective purpose and ultimately eroding the distinction 
+between civilians and combatants in Israeli actions in Gaza.184 
+56. 
+Official statements185 have translated into military conduct that repudiates the very 
+notion of civilian protection. Israel has thus radically altered the balance struck by IHL 
+ 
+ 
+ 
+172  https://www.youtube.com/watch?v=qb_oBSAZjDs 08 December 2023 
+ 
+173  https://www.nytimes.com/2024/02/06/world/middleeast/israel-idf-soldiers-war-social-media-
+video.html?smid=nytcore-ios-
+share&referringSource=articleShare&fbclid=IwAR1KvmIO%20%20ixGQNbtAkJRPgU2Y7XyctR5l
+MWjOxQc6T6la5ODfYWyUT7lBFsA_aem_Aa7puefGHHUwoZuhoXZnJDZJzbGn8LuFsBZh4hLn
+UDtJN0lcdK2sacwGZKrJ7dGj0HI;%20and%20https://www.haaretz.com/israel-news/security-
+aviation/2024-02-04/ty-article/.premium/israeli-army-its-admits-staff-was-behind-graphic-gaza-
+telegram-channel/0000018d-70b4-dd6e-a98d-f4b6a9c00000  
+ 
+174  https://www.youtube.com/watch?v=qb_oBSAZjDs, 08 December 2023 
+ 
+175  https://twitter.com/1717Bazz/status/1712176168823107986 11 October 2023; 
+https://twitter.com/MiddleEastEye/status/1712918166437806294 13 October 2023; 
+https://www.middleeastmonitor.com/20231228-israeli-soldier-says-he-possibly-killed-a-12-year-old-
+girl/ 28 December 2023 
+ 
+176  https://www.haaretz.com/israel-news/2023-11-09/ty-article-magazine/.premium/growing-number-of-
+idf-soldiers-are-documenting-and-posting-their-own-abuse-of-palestinians/0000018b-ae60-dea2-a9bf-
+fefe96070000 09 November 2023 
+ 
+177  https://twitter.com/QudsNen/status/1737593767752860117 20 December 2023 
+ 
+178  https://www.nytimes.com/2024/02/06/world/middleeast/israel-idf-soldiers-war-social-media-
+video.html?smid=nytcore-ios-
+share&referringSource=articleShare&fbclid=IwAR1KvmIO%20%20ixGQNbtAkJRPgU2Y7XyctR5l
+MWjOxQc6T6la5ODfYWyUT7lBFsA_aem_Aa7puefGHHUwoZuhoXZnJDZJzbGn8LuFsBZh4hLn
+UDtJN0lcdK2sacwGZKrJ7dGj0HI;%20and%20https://www.haaretz.com/israel-news/security-
+aviation/2024-02-04/ty-article/.premium/israeli-army-its-admits-staff-was-behind-graphic-gaza-
+telegram-channel/0000018d-70b4-dd6e-a98d-f4b6a9c00000, 06 February 2024 
+ 
+179  Ibid. 
+ 
+180 https://www.gov.il/en/departments/news/pm-netanyahu-meets-with-romanian-pm-marcel-ciolacu-17-
+oct-2023 17 October 2023 
+ 
+181  https://www.nytimes.com/2023/11/03/opinion/isaac-herzog-israel-hamas-
+gaza.html?partner=slack&smid=sl-share 03 November 2023 
+ 
+182  https://twitter.com/Isaac_Herzog/status/1713661051986678189?s=20 15 October 2023 
+ 
+183  Antony Anghie, Imperialism, Sovereignty and the Making of International Law (Cambridge: 
+Cambridge University Press, 2004), pp. 55–57, 75  
+ 
+184  AP-I, articles 48, 51, 52 and 57; Customary IHL, rules 1, 7, 14-15 
+ 
+185  https://law4palestine.org/law-for-palestine-releases-database-with-500-instances-of-israeli-
+incitement-to-genocide-continuously-updated/  
+A/HRC/55/73 
+ 
+15 
+between civilian protection and military necessity, as well as the customary rules of 
+distinction, proportionality and precaution. This has obscured one cardinal tenet of IHL: 
+indiscriminate attacks, which do not distinguish military targets from protected persons and 
+objects, cannot be proportionate and are always unlawful.186  
+57. 
+On the ground, this distortion of IHL articulated by Israel as a state policy in its official 
+documents, has transformed an entire national group and its inhabited space into a 
+destroyable target, revealing an eliminationist conduct of hostilities. This has had devastating 
+effects, costing the lives of tens of thousands of Palestinian civilians, destroying the structural 
+fabric of life in Gaza and causing irreparable harm. This illustrates a clear pattern of conduct 
+from which the requisite genocidal intent is the only reasonable inference to be drawn.187 
+ 
+A. 
+Human Shields and the logic of genocide 
+58. 
+IHL strictly prohibits the use of human shields.188 Their use constitutes a war crime,189 
+as it violates the duty to protect the civilian population from dangers arising from military 
+operations.190 When human shields are used, the attacking party must take into account the 
+risk to civilians.191 Indiscriminate or disproportionate harm to civilians remains unlawful and 
+the civilian population can never be targeted. 
+59. 
+Israel has accused Palestinian armed groups of deliberately using civilians as human 
+shields in previous aggressions on Gaza (including in 2008-09,192 2012,193 2014,194 2021195 
+and 2022196). It also used it to justify high civilian casualties and attacks against paramedics, 
+journalists and others during the 2018–2019 ‘Great March of Return’.197 UN independent 
+fact-finding missions198 and reputable human rights organizations199 have consistently 
+challenged these allegations, sometimes concluding that evidence of human shields had been 
+ 
+ 
+ 
+186  Customary IHL, rule 12; Luigi Daniele, “A lethal misconception, in Gaza and beyond: disguising 
+indiscriminate attacks as potentially proportionate in discourses on the laws of war”, EJIL: Talk!, blog 
+of European Journal of International Law, 7 November 2023.  
+ 
+187  Bosnia v. Serbia (footnote 40), para. 373; Croatia v. Serbia (footnote 44), para. 148; ICTR-96-4-T, 
+paras. 579-581; ICTR-95-1-T, para. 93-94; Schabas, Genocide in International Law (footnote 32), p. 
+248 
+ 
+188  Customary IHL, rule 97; GCIII, article 23(1); GCIV, article 28; AP-I, articles 12 and 51(7) 
+ 
+189  Rome Statute, article 8 (2) (b) (xxiii) 
+ 
+190  AP-I, article 51 
+ 
+191  Ibid, article 51(8) 
+ 
+192  https://www.amnesty.org/en/documents/mde15/015/2009/en/ 
+ 
+193  https://twitter.com/IDF/status/269218659472400384?s=20; 
+https://www.theguardian.com/world/2012/dec/11/gaza-child-killed-nothing-changed 
+ 
+194  https://www.amnesty.org/en/latest/news/2014/07/israelgaza-conflict-questions-and-answers/; Neve 
+Gordon and Nicola Perugini, “The politics of human shielding: On the resignification of space and the 
+constitution of civilians as shields in liberal wars”, Environment and Planning D: Society and Space, 
+vol. 34 (2016), pp. 168, 182–183 
+ 
+195  https://www.hrw.org/news/2021/08/23/gaza-israels-may-airstrikes-high-rises 
+ 
+196  https://www.amnesty.org.uk/files/2022-10/Gaza 
+Offensive.pdf?VersionId=f4O59c6Vn1FMnx5KvdJbnqVxAhXVvhVR - 
+:~:text=On%205%20August%202022%2C%20Israel,five%20children%20at%20a%20cemetery 
+ 
+197  Neve Gordon and Nicola Perugini. Human Shields, A History of People in the Line of Fire 
+(University of California Press, 2020), pp. 214–216 
+ 
+198  http://www.undocs.org/A/HRC/12/48 (2009), paras. 449–452 
+ 
+199  https://www.amnesty.org.uk/files/2022-10/Gaza 
+Offensive.pdf?VersionId=f4O59c6Vn1FMnx5KvdJbnqVxAhXVvhVR - 
+:~:text=On%205%20August%202022%2C%20Israel,five%20children%20at%20a%20cemetery; 
+https://www.hrw.org/report/2009/08/13/white-flag-deaths/killings-palestinian-civilians-during-
+operation-cast-lead  
+A/HRC/55/73 
+16 
+ 
+fabricated.200 Nevertheless, Israel has used these accusations – sometimes then retracted201 – 
+to justify widespread and systematic killing of Palestinian civilians in its ongoing assault.202 
+60. 
+After 7 October, this macro-characterization of Gaza’s civilians as a population of 
+human shields has reached unprecedented levels, with Israel’s top-ranking political and 
+military leaders consistently framing civilians as either Hamas operatives, “accomplices”, or 
+human shields among whom Hamas is “embedded”.203 In November, Israel’s Ministry of 
+Foreign Affairs defined “the residents of the Gaza Strip as human shields” and accused 
+Hamas of using “the civilian population as human shields”.204 The Ministry defines armed 
+groups fighting from urban areas as deliberately “embedded” in the population to such an 
+extent that it “cannot be concluded from the mere fact that seeming ‘civilians’ or ‘civilian 
+objects’ have been targeted, that an attack was unlawful”.205 Two rhetorical elements of this 
+key legal policy document indicate the intention to transform the entire Gaza population and 
+its infrastructures of life into a ‘legitimate’ targetable shield: the use of the all-encompassing 
+the combined with the quotation marks to qualify civilians and civilian objects. Israel has 
+thus sought to camouflage genocidal intent with humanitarian law jargon. 
+61. 
+International law does not permit the blanket claim that an opposing force is using the 
+entire population as human shields en bloc. Any such usage must be assessed and established 
+on a case-by-case basis before each individual attack.206 The crime of using human shields 
+occurs when the use of civilians or civilian objects to impede attacks on lawful targets is the 
+result of a deliberate tactical choice, not merely arising from the nature of the battlefield, such 
+as hostilities in densely populated urban terrain.207  
+62. 
+Nevertheless, Israeli authorities have characterized churches,208 mosques,209 
+schools,210 UN facilities,211 universities,212 hospitals and ambulances213 as connected with 
+Hamas to reinforce the perception of a population characterized as broadly ‘complicit’ and 
+therefore killable. Significant numbers of Palestinian civilians are defined as human shields 
+ 
+ 
+ 
+200  Law For Palestine, Submission to the ICC [Forthcoming] 
+ 
+201  http://www.undocs.org/A/HRC/12/48 (2009), paras. 449–452; 
+https://www.amnesty.org.uk/files/2022-10/Gaza 
+Offensive.pdf?VersionId=f4O59c6Vn1FMnx5KvdJbnqVxAhXVvhVR - 
+:~:text=On%205%20August%202022%2C%20Israel,five%20children%20at%20a%20cemetery 
+ 
+202  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Israel-Hamas Conflict 2023 - FAQs (Israel MFA, 6.12.23).pdf: FAQs, 
+pp. 2–3 
+ 
+203  https://www.gov.il/en/departments/news/president-herzog-reveals-hamas-captive-taking-handbook-
+15-oct-2023; https://www.whitehouse.gov/briefing-room/speeches-remarks/2023/10/18/remarks-by-
+president-biden-and-prime-minister-benjamin-netanyahu-of-israel-before-expanded-bilateral-
+meeting-tel-aviv-israel/; https://www.gov.il/en/departments/news/1swordsofiron151023; 
+https://www.idf.il/en/mini-sites/hamas-israel-war-24/briefings-by-idf-spokesperson-rear-admiral-
+daniel-hagari/october-press-briefings/press-briefing-by-idf-spokesperson-rear-admiral-daniel-hagari-
+october-10th-evening/ 
+ 
+204  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Hamas-Israel Conflict 2023 - Some Factual and Legal Aspects - Israel 
+Ministry of Foreign Affairs (2 NOV 2023).pdf: :Key Legal Aspects, 02 November 2023, p. 7, 9 
+ 
+205  Ibid, p. 2 
+ 
+206  Stéphanie Bouchié de Belle, “Chained to Cannons or Wearing Targets on Their T-shirts: Human 
+Shields in International Humanitarian Law”, ICRC, vol. 90, no. 872 (2008), pp. 899-905 
+ 
+207  Ibid., pp. 890-898; R. Geiß and J. G. Devaney, “Zealots, Victims and Captives: Maintaining Adequate 
+Protection of Human Shields in Contemporary International Humanitarian Law”, Israel Yearbook on 
+Human Rights, vol. 47 (2017), p. 11. 
+ 
+208  https://www.aljazeera.com/news/2023/10/20/war-crime-israel-bombs-gaza-church-sheltering-
+displaced-people - :~:text=War%20on%20Gaza-
+,Israel%20bombs%20Greek%20Orthodox%20Gaza%20church%20sheltering%20displaced%20peopl
+e,%27large%20number%27%20of%20people. 
+ 
+209  https://twitter.com/IDF/status/1727059761466650632?s=20 
+ 
+210 https://twitter.com/IDF/status/1725683576522334603?s=20 
+ 
+211  https://www.cbsnews.com/news/israel-photos-hamas-gaza-weapons-un-facilities-including-schools/, 
+08/11/2023; https://twitter.com/IDF/status/1724002788810600946?s=20 
+ 
+212  https://www.timeshighereducation.com/news/academia-gaza-has-been-destroyed-israeli-educide 
+ 
+213  https://twitter.com/IDF/status/1725455901824323697?s=20 
+A/HRC/55/73 
+ 
+17 
+simply by being in “proximity to” potential Israeli targets.214 Israel has thus transformed Gaza 
+into a “world without civilians” in which “everything from taking shelter in hospitals to 
+fleeing for safety is declared a form of human shielding”.215 The accusation of using human 
+shields has thus become a pretext, justifying the killing of civilians under a cloak of purported 
+legality, whose all-enveloping pervasiveness admits only of genocidal intent. 
+ 
+B. 
+Turning Gaza as a whole into a ‘military objective’ 
+63. 
+International law stipulates that attacks must be “strictly limited” to those objects 
+which “by their nature, location, purpose or use make an effective contribution to military 
+action”, whose “total or partial destruction, capture or neutralization” in the circumstances 
+ruling at the time “must offer a definite military advantage”.216 
+64. 
+Israel has misused this rule to “militarize” civilian objects and whatever surrounds 
+them, justifying their indiscriminate destruction. According to Israel’s Ministry of Foreign 
+Affairs, “many ostensibly civilian objects may become legitimate targets”,217 losing their 
+protection under IHL or become “collateral” damage as a result of Hamas’s choice. Gaza’s 
+civilian population and infrastructure are presented as obstructions positioned amongst, in 
+front of and above targets.218 Instead of abiding by circumstantial status determinations in 
+line with IHL for each attack undertaken, as is required, Israel has characterized the whole 
+territory as a military objective. 
+65. 
+Protected civilian objects can lose their immunity from attacks if and for as long as 
+they are used by combatants in hostilities. However, Israel considers any object that has 
+allegedly been or might be used militarily as a legitimate target, so that entire neighbourhoods 
+can be razed or demolished under fictions of legality.219 In Israel’s logic, civilian objects, such 
+as houses and apartments, become military objectives by proximity, as if the status of ‘lawful’ 
+target spread through a vicinity by ‘viral contagion’. For example, residential tower blocks, 
+each comprising dozens of floors and hundreds of (functionally separate and autonomously 
+usable) flats, purportedly become military objectives in their entirety if a single flat or room 
+had allegedly been used by armed groups.220  
+66. 
+Paradigmatic examples are referred to as “power targets”,221 encompassing any 
+civilian object, including residential buildings, under the pretext that “Hamas is everywhere 
+in Gaza”.222 Entire multi-storey buildings have been levelled while full of civilians, 
+knowingly killing hundreds in single strikes.223 The attack on the Al-Taj tower in Gaza City, 
+bombed on 25 October, killed 101 people, including 44 children and 37 women, and injured 
+hundreds.224  
+67. 
+Israel has thus de facto abolished the distinction between civilian objects and military 
+objectives. In the offensive’s first three weeks, entire residential areas across northern Gaza 
+were erased.225 Meanwhile, neighbourhoods in ‘safe areas’ in the south were already being 
+ 
+ 
+ 
+214  Gordon & Perugini (footnote 197), pp.159–169; https://blogs.icrc.org/law-and-
+policy/2021/11/18/proximate-human-shields/ 
+ 
+215  Elyse Semerdjian, “A World Without Civilians”, Journal of Genocide Research, 24 January 2024, p.3 
+ 
+216  AP-I, article 52 (2); Customary IHL, rule 8. 
+ 
+217  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Israel-Hamas Conflict 2023 - FAQs (Israel MFA, 6.12.23).pdf: FAQs, 
+pp. 2, 9. 
+ 
+218  Ibid., p. 9 
+ 
+219  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Israel-Hamas Conflict 2023 - FAQs (Israel MFA, 6.12.23).pdf: FAQs 
+p.14; https://www.maariv.co.il/breaking-news/Article-1044157 admitted neighbourhoods attacked 
+“on a large scale and not in a surgical manner”; https://www.youtube.com/watch?v=3-APSXZy9UI 
+ 
+220  Declared previously, e.g. https://twitter.com/IDF/status/1393553534218604552?s=20; 
+https://www.justsecurity.org/76657/the-idfs-unlawful-attack-on-al-jalaa-tower/ 
+ 
+221  https://www.israeldefense.co.il/node/37949 
+ 
+222  https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/  
+ 
+223  Ibid 
+ 
+224  https://airwars.org/civilian-casualties/ispt0587-october-25-2023/ 
+ 
+225  https://www.theguardian.com/world/2023/oct/27/gaza-before-and-after-satellite-images-show-
+destruction-after-israeli-airstrikes 
+A/HRC/55/73 
+18 
+ 
+bombarded.226 By November, the devastation of cities in northern Gaza far exceeded that of 
+Dresden in 1945.227 
+68. 
+Rationalizing patterns of attacks on civilian objects, knowingly killing civilians en 
+masse, has become a military strategy premised upon probable war crimes presented as IHL-
+abiding. This strategy reasonably and solely infers a genocidal policy. 
+ 
+C. 
+Indiscriminate killing as “collateral damage”  
+69. 
+Israel has also sought to provide legal cover for indiscriminate attacks by misusing 
+the notion of ‘collateral damage’,228 unlimitedly expanding what can be considered 
+‘incidental civilian harm’. Examples of indiscriminate attacks include attacks that by any 
+methods or means strike multiple lawful targets at once in areas with high concentrations of 
+civilians or civilian objects. To justify killing members of the protected group, Israel has 
+defended such actions as causing only incidental harm to civilians, proportionate to concrete 
+and direct military advantages anticipated.229 
+70. 
+Invoking the concept of ‘proportionate collateral damage’ to knowingly shell large 
+numbers of members of the protected group, Israel asserts that when attacks result in more 
+collateral damage than expected, this does not necessarily indicate a violation, since 
+“compliance is conduct-oriented, not result-oriented”.230 
+71. 
+However, in all attacks launched against residential towers231 without warnings, 
+extensive civilian harm has been anticipated as the main outcome. The Al-Taj building was 
+full of families at the time of the 31 October strike, which must have been anticipated as 
+certainly killing or injuring all the civilians living there.232 The fact that so many people were 
+killed was entirely predictable – hence at least indirectly intended – as is evident from the 
+images that the Israeli military itself published.233 The attack on the Jabalia refugee camp on 
+25 October killed at least 126 civilians, including 69 children, and injured a further 280.234 
+Israeli military personnel affirmed that the target was one Hamas commander in an 
+underground base.235 
+72. 
+For a proportionality assessment to be lawful, the principle of distinction must first be 
+respected, otherwise the civilian harm anticipated from an attack ceases to be an incidental, 
+unintended consequence of the attack itself.236 While both indiscriminate and 
+disproportionate attacks appear to have been committed systematically and repeatedly 
+throughout the latest Israeli campaign,237 the fact that both types of unlawful attacks have 
+been consistently deemed by Israel as lawful suggests that it operates under a policy of 
+condoning mass killing. 
+73. 
+Under IHL, the concrete and direct military advantage expected from a single attack 
+must be weighed against the foreseeable incidental harm to civilians and civilian objects. 
+However, in its strained proportionality assessments, Israel’s Ministry of Foreign Affairs 
+states that “military advantage [...] may refer to the military advantage anticipated” not from 
+ 
+ 
+ 
+226  https://www.nytimes.com/2023/12/21/world/middleeast/israel-gaza-bomb-investigation.html 
+ 
+227  https://www.ft.com/content/7b407c2e-8149-4d83-be01-72dcae8aee7b 
+ 
+228  Daniele, “A lethal misconception” (footnote 186). 
+ 
+229  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Israel-Hamas Conflict 2023 - FAQs (Israel MFA, 6.12.23).pdf: FAQs, 
+pp. 4, 11–13. 
+ 
+230  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Hamas-Israel Conflict 2023 - Some Factual and Legal Aspects - Israel 
+Ministry of Foreign Affairs (2 NOV 2023).pdf: :Key Legal Aspects, 02 November 2023, pp. 10. 
+ 
+231  https://ig.ft.com/gaza-damage/:~:text=The%20bombardments%20have%20destroyed%20livelihoods 
+,flattened%20or%20suffered%20heavy%20damage 
+ 
+232  https://airwars.org/civilian-casualties/ispt0783-october-31-2023/ 
+ 
+233  https://twitter.com/IDF/status/1717840051491541077  
+ 
+234  https://airwars.org/civilian-casualties/ispt0783-october-31-2023/  
+ 
+235  https://edition.cnn.com/videos/world/2023/10/31/wolf-idf-spokesperson-gaza-refugee-camp-airstrike-
+reaction-vpx.cnn,  
+ 
+236  Daniele, “A lethal misconception” (footnote 186).  
+ 
+237  https://www.amnesty.org/en/latest/news/2023/10/damning-evidence-of-war-crimes-as-israeli-attacks-
+wipe-out-entire-families-in-gaza/ 
+A/HRC/55/73 
+ 
+19 
+a specific military action but “from an operation as a whole”,238 alluding to the overall 
+purpose of the war.239 
+74. 
+Israel’s proportionality assessments have flouted legal requirements by defining 
+military advantage, in each attack, in relation to the destruction of the whole Hamas 
+organization both politically and militarily.240 It is manifestly illegal to declare as a war aim 
+the destruction of the other side’s political capacity (particularly in the context of a 56-year 
+military occupation which deprives the occupied population of its right to self-
+determination). But when such an overall ‘political’ war purpose is taken as the value against 
+which proportionality is to be measures in relation to anticipated harm to civilians, there is 
+virtually no magnitude of expected civilian harm that could ever be considered “excessive” 
+so long as the unlawful political objective, as defined by the attacker, is not met. In this 
+context, the indiscriminate killing of protected persons and destruction of protected objects 
+will always be represented, by the attacker, as “proportionate” incidental harm despite its 
+manifest illegality.241 
+75. 
+Presenting indiscriminate lethal violence against the protected group as a 
+‘proportionate means’ to pursue the war aims points to an intent to target the Palestinian 
+population as a whole, consistent with the genocidal statements announcing the campaign. In 
+other words, Israel appears to represent itself as conducting a ‘proportionate genocide’. 
+ 
+D. 
+Evacuations and safe zones 
+76. 
+Under IHL, parties to the conflict must evacuate the civilian population and remove 
+civilian objects from the vicinity of military objectives.242 Evacuations are admissible, as long 
+as they do not displace the protected persons outside the occupied territory; evacuated 
+persons must be transferred back to their homes as soon as hostilities in the area in question 
+have ceased.243 The displaced, wounded and sick should be protected through the creation of 
+“hospital and safety zones” – also called “safe areas” or “safe zones” – which shall “be far 
+removed from military operations” and established through agreement between the parties.244 
+77. 
+The mass evacuation order of 13 October – when 1.1 million Palestinians were 
+ordered to evacuate northern Gaza in 24 hours to Israeli-designated “safe zones” in the 
+south245– was communicated through at least 23 different airdropped leaflets, social media 
+postings,246 text messages247 and recorded phone messages.248 Instead of increasing safety for 
+civilians, the sheer scale of evacuations amidst an intense bombing campaign, and the 
+ 
+ 
+ 
+238  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Hamas-Israel Conflict 2023 - Some Factual and Legal Aspects - Israel 
+Ministry of Foreign Affairs (2 NOV 2023).pdf: :Key Legal Aspects, 02 November 2023, p. 10. 
+ 
+239  https://www.justsecurity.org/90789/israels-rewriting-of-the-law-of-war/3  
+ 
+240  https://www.youtube.com/watch?v=Jb1krYLPLZI; https://www.youtube.com/watch?v=2yRl-cc-
+D3w; https://twitter.com/QudsNen/status/1723784790682358189. While such arguments have been 
+tempered over time (see https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Israel-Hamas Conflict 2023 - FAQs (Israel MFA, 6.12.23).pdf: FAQs, 
+p.11-12), action on the ground has remained ruthless; see, among others, the attacks on the Gaza 
+police while assisting food delivery in northern Gaza, 
+https://www.washingtonpost.com/world/2024/02/22/gaza-aid-deliveries-looting-police-hamas/ 
+ 
+241  Luigi Daniele, “Incidentally Capsized”, Oxford Journal of Conflict and Security Law, vol. 29, no. 1, 
+forthcoming. 
+ 
+242  API, article 58(1).  
+ 
+243  GCIII, article 49. 
+ 
+244  Ibid. 
+ 
+245  https://mezan.org/en/post/46293; https://mezan.org/en/post/46287 - 
+:~:text=Al%20Mezan%20Center%20for%20Human,Transfer%2C%20Urgent%20Intervention%20is
+%20Needed  
+ 
+246  https://x.com/AvichayAdraee/status/1712846493747495223?s=20; 
+https://www.timesofisrael.com/liveblog_entry/idf-urges-palestinians-to-leave-northern-gaza-strip-by-
+8-p-m/  
+ 
+247  https://www.nytimes.com/2023/10/15/world/middleeast/israel-gaza.html  
+ 
+248  https://www.bbc.com/news/world-middle-east-67327079  
+A/HRC/55/73 
+20 
+ 
+haphazardly communicated safe zones system, along with extended communications 
+blackouts,249 increased levels of panic, forced displacement and mass killing.250  
+78. 
+Immediately after the 13 October evacuation orders and the transformation of 
+southern Gaza into an ostensible “safe zone”, Israel illegally categorized the inhabitants of 
+northern Gaza who had remained (including the sick and wounded) as “human shields”251 
+and “accomplices” of terrorism.252 This policy points to the intention by Israel to ‘transform’ 
+hundreds of thousands of civilians into ‘legitimate’ military targets or collateral casualties 
+through impossible-to-follow evacuation orders.253 The mass evacuation order included a 
+staggering 22 hospitals in the area,254 putting at risk more than 2,000 patients and displaced 
+people sheltering in the hospitals, and depriving those remaining of life-sustaining services.255 
+79. 
+The erasure of civilian protections in the evacuated area was combined with 
+indiscriminate targeting of evacuees and inhabitants of the areas designated as safe zones. 
+Since the beginning of its assault, Israel has perfidiously bombarded the designated ‘safe’ 
+areas causing significant casualties.256 Of the roughly 500 2,000-pound bombs dropped by 
+Israel in the first six weeks of hostilities, 42 percent were deployed in the designated safe 
+zones in southern areas.257 Israel targeted southern Gaza also with other munitions from air, 
+sea and land, causing large-scale destruction of civilian areas in the “safe zones”.258 
+80. 
+By 28 October, two weeks after Israel’s mass evacuation order, about 38 percent of 
+killings in Gaza occurred in the declared safe areas south of Wadi Gaza.259 By 20 November, 
+34 percent of all Palestinians killed in Gaza were in this area,260 and by 22 January, 42 percent 
+were located in the area, which by then held the majority of the Gaza population.261 Simply 
+put, “safe areas” were deliberately turned into areas of mass killing. 
+81. 
+Similar patterns emerge from Israel’s militarization of the “humanitarian corridors” it 
+instructed the population to use in order to evacuate and reach the safe areas. In contrast with 
+the humanitarian rhetoric through which these “safe routes” were announced,262 these 
+corridors were systematically and perfidiously targeted by bombardment, shelling and sniper 
+ 
+ 
+ 
+249  https://content.forensic-architecture.org/wp-content/uploads/2024/03/Humanitarian-
+Violence_Report_FA.pdf 07/03/2024, sections 6.1.2 and 6.1.3 
+ 
+250  https://www.aljazeera.com/opinions/2024/1/6/safe-zones-israels-technologies-of-genocide 
+ 
+251  https://www.idf.il/en/mini-sites/hamas-israel-war-24/war-on-hamas-2023-resources/the-idf-continues-
+the-effort-to-move-the-residents-of-the-gaza/; 
+https://www.mezan.org/uploads/files/2024/1/17096645765 november.jpeg  
+ 
+252  https://www.theguardian.com/world/2024/feb/08/israeli-soldiers-idf-gaza-fighting-disaster-
+area?CMP=share_btn_tw; https://www.mezan.org/uploads/files/2024/1/1709664576signal-2023-10-
+22-030620_002.jpeg  
+ 
+253  Hague Regulations (1907), article 26; AP-I, article 57(2)(c). The term used in these provisions is 
+‘advance warning’; see Bosnia v. Serbia (footnote 40), para.373. 
+ 
+254  https://www.emro.who.int/images/stories/palestine/WHO_oPt_Sitrep_6s.pdf  
+ 
+255  https://www.who.int/news/item/14-10-2023-evacuation-orders-by-israel-to-hospitals-in-northern-
+gaza-are-a-death-sentence-for-the-sick-and-injured  
+ 
+256  https://edition.cnn.com/gaza-israel-big-bombs/index.html  
+ 
+257  Ibid; https://www.nytimes.com/2023/12/21/world/middleeast/israel-gaza-bomb-investigation.html  
+ 
+258  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-34; 
+https://sheltercluster.s3.eu-central-1.amazonaws.com/public/docs/gsc_opt_gaza strip_damage affected 
+areas_27october2023_a1.pdf?VersionId=bTM7V0miJzKDudKwJL8Dvy1Kdt2uy4kZ; 
+https://www.alhaq.org/advocacy/22044.html  
+ 
+259  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-22  
+ 
+260  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-45  
+ 
+261  https://english.elpais.com/international/2024-01-22/25000-deaths-in-gaza-why-the-destruction-of-
+this-war-exceeds-that-of-other-major-conflicts.html?outputType=amp  
+ 
+262  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-8; 
+https://www.theguardian.com/world/2023/oct/14/gaza-civilians-afraid-to-leave-home-after-bombing-
+of-safe-routes; https://www.nbcnews.com/news/world/live-blog/israel-hamas-war-live-updates-
+rcna120252  
+A/HRC/55/73 
+ 
+21 
+fire,263 becoming ‘death corridors’. Israel set up checkpoints for facial scans and identity 
+checks, where fleeing Palestinians were often detained and later mistreated and tortured.264 
+82. 
+By the end of November, the Palestinian death toll reached 15,000.265 Responding to 
+mounting international criticism, the Israeli military reconfigured its evacuation mechanisms, 
+introducing a new “humanitarian” tool: the “evacuation grid”.266 The army published on 
+social media a grid map dividing Gaza into 600 blocks and indicating areas to be “evacuated” 
+and “safe” areas.267 The system – introduced when the army had cut off Gaza from all forms 
+of communication268 – threw residents into panic, increasing the level of chaos and, 
+subsequently, the number of deaths.269 From early December, Israel routinely ordered 
+Palestinian civilians in the areas south of Wadi Gaza to move to new zones designated as safe 
+according to the grid. Immediately afterwards, the army targeted these “safe zones”.270 
+83. 
+From the end of December to February, Israel intensified its offensive in the ‘safe 
+areas’ of Al Muwasi and Rafah, which were sheltering the majority of the displaced 
+population.271 These assaults continued even after the ICJ ordered Israel to “take[s] all 
+measures within its power” to prevent genocide.272 Instead, by February Israel had killed a 
+further 3,135 Palestinians, many of whom while seeking refuge.273 
+84. 
+By the beginning of February, 1.4 million Palestinians had been displaced to Rafah, 
+rendering that governorate the most overcrowded in Gaza with “an average density of over 
+22,200 per square kilometre, five times its pre-conflict levels”.274 Continuous bombardment 
+of these “safe areas” targeted premises hosting displaced people275 and medical facilities.276 
+85. 
+Just as the evacuations and safe zones were being implemented, high-ranking Israeli 
+officials advocated for settler colonial replacement. Israel’s Prime Minister advocated for 
+ 
+ 
+ 
+263  https://reliefweb.int/report/occupied-palestinian-territory/pauses-corridors-and-safe-zones-gaza-
+rhetoric-vs-reality; https://www.ft.com/content/95c5fcf1-c756-415f-85b8-1e4bbff24736  
+ 
+264  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-35; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-46; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-50; 
+https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-105; 
+https://www.alhaq.org/advocacy/22452.html  
+ 
+265  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-53  
+ 
+266  https://www.theguardian.com/world/2023/dec/02/israeli-grid-system-makes-life-in-gaza-macabre-
+game-of-battleships-say-aid-workers  
+ 
+267  https://www.bbc.com/news/world-middle-east-67630489  
+ 
+268  https://www.savethechildren.net/news/complete-communication-blackout-four-days-and-counting-
+makes-aid-distribution-gazanear:~:text=Gaza%2C%2017%20December%202023%20%2D%20The 
+,Rafah%2C%20says%20Save%20the%20Children.; 
+https://edition.cnn.com/2024/01/18/middleeast/gaza-communications-blackout-one-week-israel-
+hamas-intl/index.html  
+ 
+269  https://www.reuters.com/world/middle-east/israel-says-ground-forces-operating-across-gaza-strip-
+offensive-builds-2023-12-04/  
+ 
+270  Ibid; https://www.youtube.com/watch?v=JlGmwCMETMs  
+ 
+271  https://apnews.com/article/israel-hamas-war-news-12-26-2023-
+698c895797ccb057d13fe4f68690c98b?taid=658b24eaca93ff0001d4103d&utm_campaign=TrueAnth
+em&utm_medium=AP&utm_source=Twitter; https://www.savethechildren.org/us/about-us/media-
+and-news/2024-press-releases/gaza-mostly-children-killed-by-israeli-airstrikes-near-al-
+mawasi:~:text=4%2C%202024)%E2%80%94Fourteen%20people,aid%20agency%20Save%20the%2
+0Children; https://www.amnesty.org.uk/press-releases/israelopt-fresh-evidence-probable-war-crimes-
+israeli-attacks-rafah; https://edition.cnn.com/2024/02/06/middleeast/palestinians-trapped-rafah-
+israeli-offensive-intl/index.html; https://www.reuters.com/world/middle-east/israel-strikes-rafah-
+refugee-camp-22-killed-local-health-officials-say-2024-02-12/  
+ 
+272  South Africa v. Israel (footnote 8), para.86. 
+ 
+273  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-129  
+ 
+274  https://www.nrc.no/news/2024/february/gaza-israels-military-operation-in-rafah-would-be-fatal-for-
+displaced-civilians-and-humanitarian-aid/  
+ 
+275  https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-
+101?_gl=1*11oo43s*_ga*MTExMzc0OTEwNC4xNzA3ODMyMTQ0*_ga_E60ZNX2F68*MTcwO
+TQwMDA0OC42LjEuMTcwOTQwMTEyNi42MC4wLjA.  
+ 
+276  https://forensic-architecture.org/investigation/assessment-israeli-material-icj-jan-2024  
+A/HRC/55/73 
+22 
+ 
+ethnic transfer;277 Israel’s Finance Minister expressed support for expelling two million 
+Palestinians from Gaza;278 Israel’s Minister of National Security declared the war to be an 
+opportunity to “concentrate on encouraging the migration of the residents of Gaza”, while 
+other cabinet ministers advocated to “resettle”279 Palestinians into the Sinai,280 Western 
+countries,281 and elsewhere.282 Israel’s Minister of Communications revealed that the 
+expulsion of the evacuated Palestinians outside Gaza was discussed “at government 
+meetings”.283 On 12 January, a conference for the re-colonization of Gaza and the expulsion 
+of Palestinians was attended by Israeli ministers.284  
+86. 
+The pattern of killings of civilians who evacuated to the south, in combination with 
+statements of some senior Israelis declaring an intent to forcibly displace Palestinians outside 
+Gaza and replace them with Israeli settlers, lead to reasonably infer that evacuation orders 
+and safe zones have been used as genocidal tools to achieve ethnic cleansing.  
+ 
+E. 
+Medical Shielding 
+87. 
+A final layer of Israel’s “humanitarian camouflage” concerns its efforts to provide 
+legal cover for systematic attacks against medical facilities and personnel, causing the 
+progressive collapse of Gaza’s healthcare sector.285 Targeting medical facilities while 
+accusing the enemy of shielding within them had already been employed by Israel as a 
+strategy of “medical lawfare” in previous wars.286 In the current assault, Israel has invoked 
+this legal strategy to justify genocide through the complete destruction of life-sustaining 
+infrastructure.287 
+88. 
+Civilian healthcare is specially protected under international law: there is a high 
+threshold for the protected status of civilian medical units to be lost.288 International law 
+protects hospitals while prohibiting their use for military purposes or as shields for military 
+activities, such as positioning military targets in their proximity.289 Since the beginning of the 
+hostilities, Israel has framed Gaza’s hospitals as Hamas “headquarters”290 and spaces used 
+ 
+ 
+277 https://www.israelhayom.co.il/news/geopolitics/article/15002089; https://www.trtworld.com/middle-east/live-
+blog-netanyahu-reportedly-pushes-for-voluntary-migration-from-gaza-16382395 
+ 
+278  https://www.reuters.com/world/middle-east/israeli-minister-calls-voluntary-emigration-gazans-2023-
+11-14/; https://www.timesofisrael.com/smotrich-doubles-down-on-resettlement-of-gazans-rejecting-
+us-criticism/  
+ 
+279  https://www.timesofisrael.com/ministers-call-for-resettling-gazas-palestinians-building-settlements-
+in-strip/ 01 January 2024 
+ 
+280  https://www.timesofisrael.com/intelligence-ministry-concept-paper-proposes-transferring-gazans-to-
+egypts-sinai/  
+ 
+281  https://www.facebook.com/story.php?story_fbid=pfbid036UqRhgJTnem4PTjwWbfen66cwCGA 
+P4zDQsMhcwuWE7PQ5fMJAeEwpaSYyhnR95Cbl&id=100050298347371&paipv=0&eav=AfaYu
+QI6JO9t5f79-OwyTkll4XyPbjoOR76oXREbhs_jTghukglHzjJy9kKH7cIrHWo&_rdr; 
+https://www.wsj.com/articles/the-west-should-welcome-gaza-refugees-asylum-seekers-hamas-
+terrorism-displacement-5d2b5890; https://www.timesofisrael.com/israel-in-talks-with-congo-and-
+other-countries-on-gaza-voluntary-migration-plan/; 
+https://twitter.com/israeltrnsltd/status/1741891754196901934 
+ 
+282  https://www.timesofisrael.com/israel-in-talks-with-congo-and-other-countries-on-gaza-voluntary-
+migration-plan/; https://twitter.com/israeltrnsltd/status/1741891754196901934 
+ 
+283  https://www.huffingtonpost.co.uk/entry/israeli-cabinet-minister-says-war-will-lead-to-emigration-
+from-gaza_uk_659fa54de4b0fbd2bc05cc78 11 January 2024 
+ 
+284  https://www.haaretz.com/israel-news/2024-01-28/ty-article/ministers-from-netanyahus-party-join-
+thousands-of-israelis-at-resettle-gaza-conference/0000018d-512f-dfdc-a5ad-db7f35e10000  
+ 
+285  https://www.youtube.com/watch?v=e8nyroIlXlM  
+ 
+286  Nicola Perugini and Neve Gordon, “Medical Lawfare.” Journal of Palestine Studies. Spring 2024, 
+forthcoming. 
+ 
+287 Ibid; https://forensic-architecture.org/investigation/destruction-of-medical-infrastructure-in-gaza 
+20/12/2023; https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Israel-Hamas Conflict 2023 - FAQs (Israel MFA, 6.12.23).pdf: FAQs, 
+06/12/2023, p. 2, 9, 13, 14. 
+ 
+288  AP-I, articles 13(1) and 52(3); GCI, article 21; GCIV, articles 18 and 19; AP-II 2, article 11(2). 
+ 
+289  GCIV, articles 18-19; AP-I, article 12(4). 
+ 
+290  Hagari, https://www.youtube.com/watch?v=-ggBF9rnBe0 
+A/HRC/55/73 
+ 
+23 
+for shielding military activities,291 aiming to blur the distinction between civilian and military 
+objects, transforming hospitals into “hospital shields”,292 and legitimizing the destruction of 
+Gaza’s entire healthcare sector.293 
+89. 
+In November 2023, Al Shifa Hospital in northern Gaza was hosting tens of thousands 
+of displaced people – when it was besieged and invaded.294 On 27 October, the Israeli military 
+published a 3D video representing the hospital’s underground as a complex network of 
+tunnels functioning as a “Hamas command centre”.295 On 2 November, the Ministry of 
+Foreign Affairs published a legal document designating the hospital as a military centre 
+concealing military assets.296 The hospital was then placed under siege and invaded in mid-
+November, with Israel accusing Hamas of using medical personnel as “human shields”.297 
+After days of attacks, the hospital was turned into a “death zone”;298 five newborn babies and 
+14 patients were injured;299 at least 31 people were killed,300 and parts of the hospital turned 
+into mass graves.301 
+90. 
+Media reports challenged Israel’s allegations that Hamas were using hospitals as 
+shields, asserting that there was no evidence to suggest that the rooms connected to the 
+hospital had been used by Hamas; the hospital buildings (contrary to Israeli military 3D 
+images) were found not to be connected to the tunnel network; and there was no evidence 
+that the tunnels were accessible from the hospital wards.302 In addition, Israeli army 
+reportedly rearranged weaponry at the Al Shifa before news crews visits303, raising further 
+suspicions of fabrication after the Israeli army had claimed that a “list of terrorists” it had 
+found in another Gaza hospital–the Al Rantisi–turned out to be a calendar of the days of the 
+week in Arabic.304 Whether or not Israel’s accusations of hospital shielding at Al Shifa were 
+true – but still remain to be proven –, the civilians in the hospitals should have been protected 
+and not subjected to siege and military attack.  
+91. 
+That the intent behind Israel’s “humanitarian camouflage” in this instance can only be 
+characterized as genocidal is clear for two reasons. First, Israel was aware of the large-scale 
+destruction of the healthcare system since the World Health Organization had reported in 
+mid-November that a “public health catastrophe” was developing in Gaza, with 26 of 35 
+hospitals no longer operational due to Israel’s bombing and siege.305 Second, Israel knew that 
+its military operation was resulting in a significant number of wounded.306 Physical trauma 
+constitutes the most predominant cause of excess mortality in Gaza.307 It was predictable that 
+forcibly suspending services at the largest hospital in Gaza would seriously harm the 
+ 
+ 
+ 
+291  https://www.idf.il/en/mini-sites/hamas-operations-in-hospitals/  
+ 
+292  Neve Gordon and Nicola Perugini, “‘Hospital Shields’ and the Limits of International Law”, EJIL 30, 
+no. 2 (May 2019), p. 43. 
+ 
+293  https://www.reuters.com/world/middle-east/israeli-military-says-hamas-hiding-tunnels-operations-
+centres-gaza-hospital-2023-10-27/  
+ 
+294  https://shifa.forensic-architecture.org/; https://www.ochaopt.org/content/hostilities-gaza-strip-and-
+israel-flash-update-16  
+ 
+295  https://twitter.com/IDF/status/1718010359397634252?s=20  
+ 
+296  https://www.gov.il/BlobFolder/generalpage/swords-of-iron-faq-6-dec-
+2023/en/English_Documents_Hamas-Israel Conflict 2023 - Some Factual and Legal Aspects - Israel 
+Ministry of Foreign Affairs (2 NOV 2023).pdf: :Key Legal Aspects, p. 9  
+ 
+297  https://www.theguardian.com/world/2023/nov/12/control-of-al-shifa-hospital-in-gaza-is-a-key-israeli-
+military-and-political-aim 
+ 
+298  https://www.bbc.co.uk/news/world-middle-east-67462615  
+ 
+299  https://www.reuters.com/world/middle-east/too-close-too-cold-premature-babies-grave-peril-gazas-
+al-shifa-hospital-2023-11-13/  
+ 
+300  Figures provided by WHO Eastern Mediterranean Region 24 February 2024 
+ 
+301  https://www.emro.who.int/images/stories/palestine/WHO_Sitrep_13.pdf?ua=1  
+ 
+302  https://www.washingtonpost.com/world/2023/12/21/al-shifa-hospital-gaza-hamas-israel/; 
+https://www.youtube.com/watch?v=NlBtJhI1fIw; https://forensic-
+architecture.org/investigation/assessment-israeli-material-icj-jan-2024  
+ 
+303  https://edition.cnn.com/middleeast/live-news/israel-hamas-war-gaza-news-11-18-
+23/h_1d70c190adde686e6a2b59e963499e82  
+ 
+304  https://www.france24.com/en/tv-shows/truth-or-fake/20231116-idf-claims-to-find-list-of-hamas-
+names-but-it-s-the-days-of-the-week-in-arabic  
+ 
+305  https://www.emro.who.int/images/stories/palestine/WHO_Sitrep_13.pdf?ua=1  
+ 
+306 https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-40  
+ 
+307  https://gaza-projections.org/ p. 10 
+A/HRC/55/73 
+24 
+ 
+prospects for survival of the injured, the chronically ill and newborn babies in incubators. 
+Therefore, by targeting Al Shifa Hospital, Israel knowingly condemned thousands of sick 
+and displaced people to preventable suffering and death.308  
+92. 
+The reliance on the strategy of treating hospitals as medical shields, disregarding their 
+function as indispensable hubs of societal survival for the thousands injured and many more 
+seeking shelter, exposes yet another aspect of the genocidal logic underpinning Israel’s 
+military strategy. 
+ 
+VII. Conclusions 
+93. 
+The overwhelming nature and scale of Israel's assault on Gaza and the 
+destructive conditions of life it has inflicted reveal an intent to physically destroy 
+Palestinians as a group. This report finds that there are reasonable grounds to believe 
+that the threshold indicating the commission of the following acts of genocide against 
+Palestinians in Gaza has been met: killing members of the group; causing serious bodily 
+or mental harm to groups’ members; and deliberately inflicting on the group conditions 
+of life calculated to bring about its physical destruction in whole or in part. Genocidal 
+acts were approved and given effect following statements of genocidal intent issued by 
+senior military and government officials. 
+94. 
+Israel has sought to conceal its eliminationist conduct of hostilities sanctioning 
+the commission of international crimes as IHL-abiding. Distorting IHL customary 
+rules, including distinction, proportionality and precautions, Israel has de facto treated 
+an entire protected group and its life-sustaining infrastructure as ‘terrorist’ or 
+‘terrorist-supporting’, thus transforming everything and everyone into either a target 
+or collateral damage, hence killable or destroyable. In this way, no Palestinian in Gaza 
+is safe by definition. This has had devastating, intentional effects, costing the lives of 
+tens of thousands of Palestinians, destroying the fabric of life in Gaza and causing 
+irreparable harm to its entire population. 
+95. 
+Israel’s genocide on the Palestinians in Gaza is an escalatory stage of a long-
+standing settler colonial process of erasure. For over seven decades this process has 
+suffocated the Palestinian people as a group – demographically, culturally, 
+economically and politically –, seeking to displace it and expropriate and control its 
+land and resources. The ongoing Nakba must be stopped and remedied once and for all. 
+This is an imperative owed to the victims of this highly preventable tragedy, and to 
+future generations in that land.  
+ VIII. Recommendations 
+96. 
+The Special Rapporteur urges member states to enforce the prohibition of 
+genocide in accordance with their non-derogable obligations.309 Israel and those states 
+that have been complicit in what can be reasonably concluded to constitute genocide 
+must be held accountable and deliver reparations commensurate with the destruction, 
+death and harm inflicted on the Palestinian people.  
+97. 
+The Special Rapporteur recommends that member states: 
+(a) 
+Immediately implement an arms embargo on Israel, as it appears to have 
+failed to comply with the binding measures ordered by the ICJ on 26 January 2024, as 
+well as other economic and political measures necessary to ensure an immediate and 
+lasting ceasefire and to restore respect for international law, including sanctions; 
+(b) 
+Support South Africa having resort to the UNSC under article 94(2) of the 
+UN Charter following Israel’s non-compliance with the above-mentioned ICJ 
+measures; 
+ 
+ 
+ 
+308  Perugini and Gordon, “Medical Lawfare” (footnote 286)  
+ 
+309  http://www.undocs.org/a/RES/56/83 (2002), article 31 
+A/HRC/55/73 
+ 
+25 
+(c) 
+Act to ensure a thorough, independent and transparent investigation of all 
+violations of international law committed by all actors, including those amounting to 
+war crimes, crimes against humanity and the crime of genocide, including: 
+(i) 
+cooperating 
+with 
+international 
+independent 
+fact-finding/ 
+investigative and accountability mechanisms; 
+(ii) 
+referring the situation in Palestine to the ICC immediately, in 
+support of its ongoing investigation; 
+(iii) 
+discharging their obligations under the principles of universal 
+jurisdiction, ensuring genuine investigations and prosecutions of 
+individuals who are suspected of having committed, or aided or abetted, 
+in the commission of international crimes, including genocide, starting 
+with their own nationals; 
+(d) 
+Ensure that Israel, as well as States who have been complicit in the Gaza 
+genocide, acknowledge the colossal harm done, commit to non-repetition, with 
+measures for prevention, full reparations, including the full cost of the reconstruction 
+of Gaza, for which the establishment of a register of damage with an accompanying 
+verification and mass claims process is recommended; 
+(e) 
+Within the General Assembly, develop a plan to end the unlawful and 
+unsustainable status quo constituting the root cause of the latest escalation, which 
+ultimately culminated in the Gaza genocide, including through the reconstitution of the 
+UN Special Committee against Apartheid to comprehensively address the situation in 
+Palestine, and stand ready to implement diplomatic, economic and political measures 
+provided under the United Nations Charter in case of non-compliance by Israel; 
+(f) 
+In the short term and as a temporary measure, in consultation with the 
+State of Palestine, deploy an international protective presence to constrain the violence 
+routinely used against Palestinians in the occupied Palestinian territory; 
+(g) 
+Ensure that UNRWA is properly funded to enable it to meet the increased 
+needs of Palestinians in Gaza. 
+98. 
+The Special Rapporteur calls on the Office of the High Commissioner for Human 
+Rights to enhance its efforts to end the current atrocities in Gaza, including by 
+promoting and accurately applying International Law, notably the Genocide 
+Convention, in the context of the oPt as a whole. 
+ 
+ 
+ 
+ 
