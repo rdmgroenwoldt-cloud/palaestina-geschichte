@@ -1177,6 +1177,7 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
    Bei „Bewegung reduzieren“ steht der Himmel still. Die Leinwand wird
    hier erzeugt, damit keine Seite einzeln angepasst werden muss. */
 (function sterne() {
+  return; /* Sternenhimmel abgeschaltet (Kim 23.11.2026) */
   "use strict";
   if (document.getElementById("sterne")) return;
   const c = document.createElement("canvas");

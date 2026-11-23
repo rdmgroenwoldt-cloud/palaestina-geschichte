@@ -1576,7 +1576,7 @@ h1,h2,h3,h4,.zb span,.ct,.ms-kick,.sub,.kb-kt,.mm-t{hyphens:auto;-webkit-hyphens
    Tiefenwirkung beim Scrollen, gelegentlich eine Sternschnuppe.
    Liegt per isolation unter dem Inhalt; beim Drucken ausgeblendet. */
 body{background:#000;isolation:isolate}
-#sterne{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block;pointer-events:none}
+#sterne{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:none;pointer-events:none}
 @media print{#sterne{display:none}}
 
 /* ---------- BREITE & AUFKLAPPER (22.11.2026) ----------
