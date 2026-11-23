@@ -1264,7 +1264,7 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
     '<button type="submit" class="ts-los" aria-label="' + T.knopf + '">' + lupeSvg + '</button>';
   leiste.appendChild(form);
   var feld = form.querySelector("input");
-  try { var q = new URL(window.location.href).searchParams.get("q"); if (q && /suche\.html$/.test(location.pathname)) feld.value = q; } catch (e) {}
+  try { var q = new URL(window.location.href).searchParams.get("q"); if (q && /suche(\.html)?\/?$/.test(location.pathname)) feld.value = q; } catch (e) {}
   var lupe = form.querySelector(".ts-lupe");
   lupe.addEventListener("click", function () {
     var offen = form.classList.toggle("offen");
