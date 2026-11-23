@@ -1180,6 +1180,7 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
   const $ = (s, r = document) => r.querySelector(s);
   const ruhig = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   const SPRACHE = (document.documentElement.lang || "de").slice(0, 2);
+  return; // abgeschaltet: Olivenhain statt Tatreez-Stoff (wie Medical Point, 23.11.2026)
   (function stickgrund() {
     /* Dunkelblauer Stoff mit feinem Stickraster. Bewegung hinterlässt Kreuzstiche, die verblassen;
        beim Scrollen stickt sich am Rand eine Borte; Antippen setzt ein bleibendes Motiv. Nichts wird gespeichert. */
@@ -1447,4 +1448,142 @@ var SEITEN_LOCALE = ({ en: "en-US", es: "es-ES" })[(document.documentElement.lan
   zielOeffnen(); window.addEventListener("hashchange", zielOeffnen);
   window.addEventListener("beforeprint", function () { document.querySelectorAll(".gekuerzt").forEach(function (k) { k.classList.add("druck-offen"); }); });
   window.addEventListener("afterprint", function () { document.querySelectorAll(".druck-offen").forEach(function (k) { k.classList.remove("druck-offen"); }); });
+})();
+
+
+/* =========================================================================
+   Tagesanbruch über dem Olivenhain (23.11.2026) – wie auf der Medical-Point-Website
+   (Kims eigene Aquarelle): Scrollen lässt den Tag anbrechen (Nacht → Rosa →
+   Sonnenaufgang → Morgen), Polarstern am Himmel, Schlüssel an Pusteblumen ziehen
+   mit dem Wind (der Schlüssel der Rückkehr). Klick auf eine freie Stelle lässt einen
+   weiteren fliegen. Nichts wird gespeichert, nichts von fremden Servern geladen.
+   ========================================================================= */
+(function morgen() {
+  "use strict";
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const ruhig = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const L = (document.documentElement.lang || "de").slice(0, 2);
+  const T = { de: ["Dieser Schlüssel kennt den Weg nach Hause.", "Schlüssel an einer Pusteblume"],
+              en: ["This key knows the way home.", "Key on a dandelion"],
+              es: ["Esta llave conoce el camino a casa.", "Llave en un diente de león"] }[L] || null;
+  const SATZ = T ? T[0] : "Dieser Schlüssel kennt den Weg nach Hause.", NAME = T ? T[1] : "Schlüssel an einer Pusteblume";
+  const css = (document.querySelector('link[href*="assets/style.css"]') || {}).href || "";
+  const BASIS = css ? new URL("morgen/", css).href : "assets/morgen/";
+  document.body.classList.add("mit-morgen");
+
+  /* 0. Abschnitte: kurze reine Textabschnitte stehen frei mit weichem Schatten auf dem Hain,
+        alles mit Rastern, Karten, Tabellen, Diagrammen bekommt eine durchscheinende braune Fläche */
+  $$("main > section").forEach((s) => {
+    const schwer = s.querySelector("table, .duo, .trio, .bento, .expand-grid, .punkte, .tile, .card, .doc, .event, .tl-item, .lernkarte, .flipcard, .carousel, svg, canvas, figure, .split, .split-inhalt, .stats, .callout, details, iframe, video, .namensuche, .suche-form, .featured, .person, .vz-group, .prozess");
+    const kurz = (s.innerText || "").length < 900;
+    s.classList.add(!schwer && kurz ? "frei-text" : "flaeche-dunkel");
+  });
+
+  /* 1. Kopfbilder: nicht über die ganze Breite, sondern gerahmt neben der Überschrift */
+  $$("header.page-hero, header.hero").forEach((h) => {
+    const bild = h.style.backgroundImage;
+    if (!bild || bild === "none") return;
+    const m = bild.match(/url\(["']?([^"')]+)["']?\)/);
+    const voll = m ? 'url("' + new URL(m[1], location.href).href + '")' : bild; // vollständige Adresse, sonst löst das Stylesheet den Pfad falsch auf
+    h.style.setProperty("--kopfbild", voll); h.style.backgroundImage = "none"; h.classList.add("gerahmt");
+  });
+
+  /* 2. Landschaft, die beim Scrollen hell wird */
+  const szene = document.createElement("div");
+  szene.className = "morgen-szene"; szene.setAttribute("aria-hidden", "true");
+  const bilder = [0, 1, 2, 3].map((i) => { const d = document.createElement("div"); d.className = "morgen-bild"; d.dataset.i = i; szene.appendChild(d); return d; });
+  const stern = document.createElement("div"); stern.className = "polarstern"; szene.appendChild(stern);
+  document.body.prepend(szene);
+  let geplant = false;
+  function licht() {
+    geplant = false;
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = ruhig ? 1 : max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+    const s = p * 3;
+    bilder.forEach((b, i) => { b.style.opacity = Math.max(0, 1 - Math.abs(s - i)).toFixed(3); });
+    szene.style.setProperty("--tag", p.toFixed(3));
+    szene.style.setProperty("--dunkel", (0.34 - p * 0.18).toFixed(3));
+  }
+  const bald = () => { if (!geplant) { geplant = true; requestAnimationFrame(licht); } };
+  addEventListener("scroll", bald, { passive: true }); addEventListener("resize", bald);
+
+  /* 3. Kurzer Satz beim Antippen */
+  const hinweis = document.createElement("div");
+  hinweis.className = "morgen-hinweis"; hinweis.setAttribute("role", "status"); hinweis.hidden = true;
+  document.body.appendChild(hinweis);
+  let hinweisZeit;
+  function zeigeSatz(text, x, y) {
+    hinweis.textContent = text; hinweis.hidden = false;
+    const b = Math.min(300, innerWidth - 24);
+    hinweis.style.maxWidth = b + "px";
+    hinweis.style.left = Math.max(12, Math.min(innerWidth - b - 12, x - b / 2)) + "px";
+    hinweis.style.top = Math.max(70, y - 70) + "px";
+    clearTimeout(hinweisZeit); hinweisZeit = setTimeout(() => (hinweis.hidden = true), 3800);
+  }
+
+  /* 4. Schlüssel an Pusteblumen, vom Wind getragen */
+  const ebene = document.createElement("div"); ebene.className = "schluessel-ebene"; document.body.appendChild(ebene);
+  const schluessel = [];
+  function neuerSchluessel(x, y, dauerhaft) {
+    const el = document.createElement("button");
+    el.type = "button"; el.className = "morgen-schluessel"; el.setAttribute("aria-label", NAME + " – " + SATZ);
+    const img = document.createElement("img"); img.alt = ""; img.src = BASIS + "schluessel.webp"; el.appendChild(img);
+    const schmal = innerWidth < 760, tiefe = 0.45 + Math.random() * 0.95;
+    const k = { el, x, y, vx: 0.16 + 0.3 * tiefe, vy: -0.03 - Math.random() * 0.1 * tiefe, phase: Math.random() * 6.28, groesse: (schmal ? 54 : 92) * tiefe, dauerhaft, pause: 0 };
+    el.style.setProperty("--tiefe", Math.min(1, 0.55 + tiefe * 0.45).toFixed(2));
+    el.style.height = k.groesse + "px";
+    const halt = () => { k.pause = performance.now() + 5000; const r = el.getBoundingClientRect(); zeigeSatz(SATZ, r.left + r.width / 2, r.top); };
+    el.addEventListener("click", (e) => { e.stopPropagation(); halt(); });
+    el.addEventListener("focus", halt); el.addEventListener("blur", () => (k.pause = 0));
+    ebene.appendChild(el); schluessel.push(k); setze(k, 0);
+    return k;
+  }
+  function setze(k, t) { k.el.style.transform = `translate(${k.x}px, ${k.y}px) rotate(${Math.sin(t / 900 + k.phase) * 7}deg)`; }
+  // Über Text, Bildern und Bedienelementen werden Schlüssel durchsichtig und lassen Klicks durch
+  const SCHUTZ = "nav.topnav, .btn, .card, .callout, figure, table, details, .tile, .doc, .event, .top-suche, main h1, main h2, main h3, main p, main li, header h1, header p";
+  let zonen = [], naechste = 0;
+  function zonenPruefen(jetzt) {
+    if (jetzt < naechste) return; naechste = jetzt + 250;
+    zonen = $$(SCHUTZ).map((el) => el.getBoundingClientRect()).filter((r) => r.bottom > 0 && r.top < innerHeight && r.width > 0);
+    for (const k of schluessel) {
+      const r = k.el.getBoundingClientRect();
+      k.el.classList.toggle("gedimmt", zonen.some((z) => r.left < z.right && r.right > z.left && r.top < z.bottom && r.bottom > z.top) && k.pause < jetzt);
+    }
+  }
+  let letzte = performance.now();
+  function wehen(jetzt) {
+    const dt = Math.min(50, jetzt - letzte); letzte = jetzt;
+    if (!document.hidden) {
+      zonenPruefen(jetzt);
+      for (let i = schluessel.length - 1; i >= 0; i--) {
+        const k = schluessel[i];
+        if (k.pause > jetzt) continue;
+        k.x += k.vx * dt * 0.072; k.y += (k.vy + Math.sin(jetzt / 1300 + k.phase) * 0.18) * dt * 0.06;
+        if (k.x > innerWidth + 40 || k.x < -k.groesse - 40 || k.y < -k.groesse - 60 || k.y > innerHeight + 40) {
+          if (k.dauerhaft) { k.x = -k.groesse; k.y = innerHeight * (0.08 + Math.random() * 0.62); }
+          else { k.el.parentNode && k.el.parentNode.removeChild(k.el); schluessel.splice(i, 1); continue; }
+        }
+        setze(k, jetzt);
+      }
+    }
+    requestAnimationFrame(wehen);
+  }
+  addEventListener("pointerdown", (e) => {
+    if (ruhig || e.button !== 0 || !e.target.closest) return;
+    if (e.target.closest("a, button, input, textarea, select, summary, details, video, iframe, dialog, label, img, svg, table, nav, header, footer, .btn, .card, .callout, .tile, .doc, p, h1, h2, h3, h4, li, figure, blockquote")) return;
+    if (schluessel.filter((k) => !k.dauerhaft).length >= 6) return;
+    const k = neuerSchluessel(e.clientX - 30, e.clientY - 40, false); k.vy = -0.25 - Math.random() * 0.2;
+  });
+  const start = () => {
+    licht();
+    const anzahl = innerWidth < 760 ? 1 : 4;
+    for (let i = 0; i < anzahl; i++) {
+      const x = ruhig ? (i + 0.5) * innerWidth / anzahl : (i / anzahl) * innerWidth + Math.random() * 60 - 30;
+      const y = innerHeight * (ruhig ? 0.12 + (i % 2) * 0.45 : 0.1 + Math.random() * 0.6);
+      setze(neuerSchluessel(x, y, true), 0);
+    }
+    if (!ruhig) requestAnimationFrame(wehen);
+  };
+  if (document.readyState === "complete") start(); else addEventListener("load", start);
+  licht();
 })();
